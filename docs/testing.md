@@ -4,7 +4,7 @@
 Before testing, create `js/invite-config.js` from the template:
 ```bash
 cp js/invite-config.example.js js/invite-config.js
-# Then edit js/invite-config.js with your actual invite code
+# Then edit js/invite-config.js — set your invite code inside
 ```
 
 ## Auth Flow

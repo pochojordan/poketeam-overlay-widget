@@ -6,17 +6,8 @@ import {
   createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
-let REGISTRATION_INVITE_CODE = null;
-
-try {
-  const config = await import("./invite-config.js");
-  REGISTRATION_INVITE_CODE = config.REGISTRATION_INVITE_CODE;
-} catch {
-  console.warn(
-    "invite-config.js not found. " +
-    "Create it from invite-config.example.js to enable registration."
-  );
-}
+// Invite code loaded from invite-config.js (non-module script in panel.html)
+const REGISTRATION_INVITE_CODE = window.__INVITE_CODE__ || null;
 
 /**
  * Registers a new streamer using simulated twitch-username and verify invitation code

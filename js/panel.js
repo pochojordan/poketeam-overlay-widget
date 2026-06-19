@@ -37,10 +37,14 @@ const saveFeedback = $("#saveFeedback");
 const channelDisplay = $("#channelDisplay");
 
 export async function initPanel() {
-  await loadDictionaries();
-  setupAuthObserver(handleAuthChange);
-  bindAuthEvents();
-  bindPanelEvents();
+  try {
+    await loadDictionaries();
+    setupAuthObserver(handleAuthChange);
+    bindAuthEvents();
+    bindPanelEvents();
+  } catch (err) {
+    console.error("[Panel] Init error:", err);
+  }
 }
 
 function handleAuthChange(user) {
