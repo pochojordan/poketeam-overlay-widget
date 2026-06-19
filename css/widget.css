@@ -1,0 +1,130 @@
+@import url('./variables.css');
+
+.widget-team {
+  display: flex;
+  gap: var(--slot-gap, 8px);
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: opacity var(--transition-normal);
+}
+
+/* Layout modes */
+.widget-team.layout-horizontal {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget-team.layout-vertical {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget-team.layout-grid-2x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.widget-team.layout-grid-3x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+/* Individual slot */
+.pokemon-slot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: var(--slot-border, 2px solid var(--main-color));
+  border-radius: var(--slot-radius, 8px);
+  background: var(--slot-bg, rgba(0,0,0,0.3));
+  box-shadow: var(--slot-shadow, none);
+  clip-path: var(--slot-clip, none);
+  transition: opacity 300ms ease, transform 150ms ease;
+  opacity: 1;
+}
+
+.pokemon-slot .sprite {
+  width: var(--sprite-size, 64px);
+  height: var(--sprite-size, 64px);
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.pokemon-slot .item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: calc(var(--sprite-size, 64px) * 0.35);
+  height: calc(var(--sprite-size, 64px) * 0.35);
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+/* Loading state skeleton */
+.pokemon-slot.slot-loading {
+  opacity: 0.3;
+}
+
+.pokemon-slot.slot-loading .sprite {
+  filter: blur(4px) grayscale(1);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+
+/* Empty slot */
+.pokemon-slot.slot-empty {
+  border-style: dashed;
+  opacity: 0.4;
+}
+
+/* Metallic border background */
+.pokemon-slot.border-metallic {
+  background: var(--slot-border-bg);
+  padding: 2px;
+}
+
+.pokemon-slot.border-metallic .slot-inner {
+  background: rgba(0,0,0,0.6);
+  border-radius: inherit;
+  padding: 4px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cyber border clipping */
+.pokemon-slot.border-cyber {
+  clip-path: var(--slot-clip);
+  position: relative;
+}
+
+.pokemon-slot.border-cyber::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid var(--main-color);
+  clip-path: var(--slot-clip);
+  pointer-events: none;
+}
