@@ -2,8 +2,34 @@ import { auth } from "./firebase-config.js";
 import { 
   signInWithEmailAndPassword, 
   signOut, 
-  onIdTokenChanged 
+  onIdTokenChanged,
+  createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+// Private sign-up key for alpha/beta authorization
+const REGISTRATION_INVITE_CODE = "POKETEAM_BETA_2026";
+
+/**
+ * Registers a new streamer using simulated twitch-username and verify invitation code
+ * @param {string} twitchUser 
+ * @param {string} password 
+ * @param {string} inviteCode 
+ * @returns {Promise<User>}
+ */
+export async function registerStreamer(twitchUser, password, inviteCode) {
+  if (inviteCode !== REGISTRATION_INVITE_CODE) {
+    throw new Error("Invalid registration invitation code.");
+  }
+  const email = `${twitchUser.toLowerCase().trim()}@tuoverlay.com`;
+  try {
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+    return userCredential.user;
+  } catch (error) {
+    console.error("Error registering streamer:", error);
+    throw error;
+  }
+}
+
 
 /**
  * Logs in a streamer using a simulated twitch-username email format
