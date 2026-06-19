@@ -34,7 +34,6 @@ function rebuildMaps() {
 export function parseShowdownTeam(text) {
   const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
   const slots = [];
-  let currentSlot = null;
 
   for (const line of lines) {
     if (line.startsWith('```') || line.startsWith('---')) continue;
