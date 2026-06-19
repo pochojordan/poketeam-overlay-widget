@@ -394,38 +394,14 @@ body {
   margin-bottom: 8px;
 }
 
-.border-options {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
-
-.border-option {
-  padding: 10px;
-  text-align: center;
-  border: 2px solid var(--border);
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  font-size: 0.75rem;
-  transition: all var(--transition-fast);
-  background: var(--bg-primary);
-}
-
-.border-option:hover {
-  border-color: var(--accent);
-}
-
-.border-option.selected {
-  border-color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 20%, transparent);
-}
-
+.border-options,
 .layout-options {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
 
+.border-option,
 .layout-option {
   padding: 10px;
   text-align: center;
@@ -437,10 +413,12 @@ body {
   background: var(--bg-primary);
 }
 
+.border-option:hover,
 .layout-option:hover {
   border-color: var(--accent);
 }
 
+.border-option.selected,
 .layout-option.selected {
   border-color: var(--accent);
   background: color-mix(in srgb, var(--accent) 20%, transparent);
