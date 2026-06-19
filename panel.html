@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management Panel Integration Test</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #121214;
+      color: #e1e1e6;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .card {
+      background: #202024;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    input, button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid #323238;
+    }
+    input { background: #121214; color: #fff; }
+    button { background: #8257e5; color: #fff; cursor: pointer; border: none; font-weight: bold; }
+    #console {
+      background: #09090a;
+      padding: 15px;
+      border-radius: 4px;
+      font-family: monospace;
+      height: 200px;
+      overflow-y: auto;
+      border: 1px solid #323238;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pokémon Champions Live Widget</h1>
+  <div class="card">
+    <h2>Simulated Twitch Login</h2>
+    <input type="text" id="username" placeholder="Twitch Username">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <button id="logoutBtn" style="background:#e04848;">Logout</button>
+  </div>
+  
+  <div class="card">
+    <h2>Console Logs</h2>
+    <div id="console"></div>
+  </div>
+
+  <script type="module">
+    import { loginStreamer, logoutStreamer, setupAuthObserver } from "./js/auth-service.js";
+
+    const logDiv = document.getElementById("console");
+    function log(message) {
+      const time = new Date().toLocaleTimeString();
+      logDiv.innerHTML += `<div>[${time}] ${message}</div>`;
+      logDiv.scrollTop = logDiv.scrollHeight;
+    }
+
+    log("Initializing verification page...");
+
+    setupAuthObserver((user) => {
+      if (user) {
+        log(`User logged in: ${user.email}`);
+      } else {
+        log("No logged-in user.");
+      }
+    });
+
+    document.getElementById("loginBtn").addEventListener("click", async () => {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      log(`Attempting login for: ${user}`);
+      try {
+        await loginStreamer(user, pass);
+        log("Authentication call completed.");
+      } catch (e) {
+        log(`Error: ${e.message}`);
+      }
+    });
+
+    document.getElementById("logoutBtn").addEventListener("click", async () => {
+      log("Attempting logout...");
+      try {
+        await logoutStreamer();
+        log("Logout successful.");
+      } catch (e) {
+        log(`Error: ${e.message}`);
+      }
+    });
+  </script>
+</body>
+</html>
