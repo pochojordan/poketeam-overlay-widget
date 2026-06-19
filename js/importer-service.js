@@ -2,26 +2,31 @@ let pokemonList = [];
 let itemList = [];
 
 const nameToPokemon = new Map();
-const cdnFileToPokemon = new Map();
+const keyToPokemon = new Map();
 const nameToItem = new Map();
 
 export async function loadDictionaries() {
-  const [pokeRes, itemRes] = await Promise.all([
-    fetch("./data/pokemon_list.json"),
-    fetch("./data/item_list.json")
-  ]);
-  pokemonList = await pokeRes.json();
-  itemList = await itemRes.json();
-  rebuildMaps();
+  try {
+    const [pokeRes, itemRes] = await Promise.all([
+      fetch("./data/pokemon_list.json"),
+      fetch("./data/item_list.json")
+    ]);
+    pokemonList = await pokeRes.json();
+    itemList = await itemRes.json();
+    rebuildMaps();
+  } catch (error) {
+    console.error("Error loading Pokémon dictionaries:", error);
+    throw error;
+  }
 }
 
 function rebuildMaps() {
   nameToPokemon.clear();
-  cdnFileToPokemon.clear();
+  keyToPokemon.clear();
   nameToItem.clear();
   pokemonList.forEach(p => {
     nameToPokemon.set(p.name.toLowerCase(), p);
-    cdnFileToPokemon.set(p.cdn_file.toLowerCase(), p);
+    keyToPokemon.set(p.key, p);
   });
   itemList.forEach(i => nameToItem.set(i.name.toLowerCase(), i));
 }
@@ -32,13 +37,18 @@ function rebuildMaps() {
  * @returns {Array<{pokemonKey: string|null, itemKey: string|null, shiny: boolean, pokemonName: string|null, itemName: string|null}>}
  */
 export function parseShowdownTeam(text) {
+  if (!text || typeof text !== "string") {
+    console.warn("parseShowdownTeam received invalid input");
+    return [];
+  }
+
   const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
   const slots = [];
 
   for (const line of lines) {
     if (line.startsWith('```') || line.startsWith('---')) continue;
 
-    const pokemonMatch = line.match(/^([^(]+?)(?:\s*@\s*(.+))?$/);
+    const pokemonMatch = line.match(/^(.+?)(?:\s*@\s*(.+))?$/);
     if (!pokemonMatch) continue;
 
     const rawName = pokemonMatch[1].trim();
@@ -106,5 +116,5 @@ export function searchItems(query) {
  * @returns {object|null}
  */
 export function getPokemonByKey(key) {
-  return pokemonList.find(p => p.key === key) || null;
+  return keyToPokemon.get(key) || null;
 }
