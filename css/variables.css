@@ -1,0 +1,65 @@
+:root {
+  /* Panel theme */
+  --bg-primary: #121214;
+  --bg-secondary: #202024;
+  --bg-tertiary: #2a2a2e;
+  --text-primary: #e1e1e6;
+  --text-secondary: #a8a8b3;
+  --text-muted: #737380;
+  --accent: #8257e5;
+  --accent-hover: #9466ff;
+  --accent-dim: #6b46c1;
+  --success: #2ea44f;
+  --danger: #e04848;
+  --warning: #f0a030;
+  --border: #323238;
+  --border-focus: #8257e5;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.5);
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Widget theme (defaults, overridden by panel config) */
+  --widget-bg: transparent;
+  --main-color: #8257e5;
+  --border-style: glow;
+  --layout-mode: horizontal;
+  --slot-gap: 8px;
+  --sprite-size: 64px;
+}
+
+/* Border style presets */
+:root[data-border="flat"] {
+  --border-template: none;
+  --slot-border: 2px solid var(--main-color);
+  --slot-radius: var(--radius-sm);
+  --slot-shadow: none;
+}
+
+:root[data-border="glow"] {
+  --border-template: none;
+  --slot-border: 2px solid var(--main-color);
+  --slot-radius: var(--radius-md);
+  --slot-shadow: 0 0 12px var(--main-color), 0 0 24px color-mix(in srgb, var(--main-color) 60%, transparent);
+}
+
+:root[data-border="metallic"] {
+  --border-template: linear-gradient(145deg, #c0c0c0, #808080, #c0c0c0);
+  --slot-border: 2px solid transparent;
+  --slot-radius: var(--radius-md);
+  --slot-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+:root[data-border="cyber"] {
+  --border-template: none;
+  --slot-border: 2px solid var(--main-color);
+  --slot-radius: 0;
+  --slot-shadow: none;
+  --slot-clip: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+}
