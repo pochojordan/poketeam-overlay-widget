@@ -1,5 +1,5 @@
 import { db, auth } from "./firebase-config.js";
-import { ref, set, get, onValue } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+import { ref, set, get, remove, onValue } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 
 const CHANNELS_ROOT = "canales";
 const CHANNEL_NAME_RE = /^[a-zA-Z0-9_-]+$/;
@@ -43,6 +43,7 @@ export async function saveTeamConfig(channelName, teamData) {
   const path = channelPath(channelName);
   try {
     await set(ref(db, path), {
+      ownerUid: user.uid,
       team: teamData.slots,
       config: teamData.config || {},
       updatedAt: Date.now()
@@ -83,4 +84,56 @@ export function subscribeChannel(channelName, onData) {
   }, (error) => {
     console.error("Firebase subscription error:", error);
   });
+}
+
+/**
+ * Initial registration of a channel in the database using the invite code.
+ * Validated by Firebase Database Security Rules.
+ * @param {string} channelName 
+ * @param {string} ownerUid 
+ * @param {string} inviteCode 
+ * @returns {Promise<void>}
+ */
+export async function initializeChannel(channelName, ownerUid, inviteCode) {
+  const normalizedChannel = validateChannel(channelName);
+  const requestRef = ref(db, `registration_requests/${normalizedChannel}`);
+  const channelRef = ref(db, `canales/${normalizedChannel}`);
+
+  // Step 1: Write to registration_requests (this checks the invite code in Security Rules)
+  await set(requestRef, {
+    inviteCode: inviteCode,
+    ownerUid: ownerUid
+  });
+
+  // Step 2: Initialize the channel data (this checks ownerUid against registration_requests in Security Rules)
+  try {
+    await set(channelRef, {
+      ownerUid: ownerUid,
+      team: [],
+      config: {
+        style: "glow",
+        color: "#8257e5",
+        layout: "horizontal",
+        circleSize: 72,
+        slotGap: 8,
+        itemPos: "right"
+      },
+      updatedAt: Date.now()
+    });
+  } catch (error) {
+    // If channel initialization fails, clean up the registration request and propagate error
+    try {
+      await remove(requestRef);
+    } catch (cleanupError) {
+      console.error("Failed to clean up registration request:", cleanupError);
+    }
+    throw error;
+  }
+
+  // Step 3: Clean up the registration request since we have successfully initialized the channel
+  try {
+    await remove(requestRef);
+  } catch (cleanupError) {
+    console.warn("Failed to delete temp registration request:", cleanupError);
+  }
 }

@@ -5,9 +5,7 @@ import {
   onIdTokenChanged,
   createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-
-// Invite code loaded from invite-config.js (non-module script in panel.html)
-const REGISTRATION_INVITE_CODE = window.__INVITE_CODE__ || null;
+import { initializeChannel } from "./db-service.js";
 
 /**
  * Registers a new streamer using simulated twitch-username and verify invitation code
@@ -17,15 +15,32 @@ const REGISTRATION_INVITE_CODE = window.__INVITE_CODE__ || null;
  * @returns {Promise<User>}
  */
 export async function registerStreamer(twitchUser, password, inviteCode) {
-  if (inviteCode !== REGISTRATION_INVITE_CODE) {
-    throw new Error("Invalid registration invitation code.");
-  }
   const email = `${twitchUser.toLowerCase().trim()}@tuoverlay.com`;
+  let userCredential;
   try {
-    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+    userCredential = await createUserWithEmailAndPassword(auth, email, password);
+  } catch (error) {
+    console.error("Error registering streamer auth:", error);
+    throw error;
+  }
+
+  try {
+    // Try to initialize the channel database records. 
+    // The security rules will validate the invite code and the owner UID.
+    await initializeChannel(twitchUser, userCredential.user.uid, inviteCode);
     return userCredential.user;
   } catch (error) {
-    console.error("Error registering streamer:", error);
+    console.error("Error initializing channel database records:", error);
+    // Cleanup orphan user account if database initialization failed
+    try {
+      await userCredential.user.delete();
+    } catch (cleanupError) {
+      console.error("Failed to delete user after failed DB initialization:", cleanupError);
+    }
+    // Provide a user-friendly error message if it was a permission error (bad invite code or channel already exists)
+    if (error.code === 'PERMISSION_DENIED' || error.message.includes('PERMISSION_DENIED') || error.message.includes('Permission denied')) {
+      throw new Error("Invalid invitation code or the channel name is already registered.");
+    }
     throw error;
   }
 }
