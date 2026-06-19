@@ -6,8 +6,17 @@ import {
   createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
-// Private sign-up key for alpha/beta authorization
-const REGISTRATION_INVITE_CODE = "POKETEAM_BETA_2026";
+let REGISTRATION_INVITE_CODE = null;
+
+try {
+  const config = await import("./invite-config.js");
+  REGISTRATION_INVITE_CODE = config.REGISTRATION_INVITE_CODE;
+} catch {
+  console.warn(
+    "invite-config.js not found. " +
+    "Create it from invite-config.example.js to enable registration."
+  );
+}
 
 /**
  * Registers a new streamer using simulated twitch-username and verify invitation code

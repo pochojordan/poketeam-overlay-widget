@@ -1,5 +1,12 @@
 # Manual Testing Checklist
 
+## Prerequisites
+Before testing, create `js/invite-config.js` from the template:
+```bash
+cp js/invite-config.example.js js/invite-config.js
+# Then edit js/invite-config.js with your actual invite code
+```
+
 ## Auth Flow
 - [ ] Register a new user with Twitch username + invitation code
 - [ ] Login with registered credentials
