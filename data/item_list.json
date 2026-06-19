@@ -1,140 +1,1147 @@
 [
-  { "name": "Assault Vest", "key": "assaultvest" },
-  { "name": "Black Sludge", "key": "blacksludge" },
-  { "name": "Choice Band", "key": "choiceband" },
-  { "name": "Choice Scarf", "key": "choicescarf" },
-  { "name": "Choice Specs", "key": "choicespecs" },
-  { "name": "Eviolite", "key": "eviolite" },
-  { "name": "Focus Sash", "key": "focussash" },
-  { "name": "Heavy-Duty Boots", "key": "heavydutyboots" },
-  { "name": "Leftovers", "key": "leftovers" },
-  { "name": "Life Orb", "key": "lifeorb" },
-  { "name": "Light Clay", "key": "lightclay" },
-  { "name": "Rocky Helmet", "key": "rockyhelmet" },
-  { "name": "Sitrus Berry", "key": "sitrusberry" },
-  { "name": "Weakness Policy", "key": "weaknesspolicy" },
-  { "name": "Air Balloon", "key": "airballoon" },
-  { "name": "Big Root", "key": "bigroot" },
-  { "name": "Black Glasses", "key": "blackglasses" },
-  { "name": "Bright Powder", "key": "brightpowder" },
-  { "name": "Cell Battery", "key": "cellbattery" },
-  { "name": "Damp Rock", "key": "damprock" },
-  { "name": "Destiny Knot", "key": "destinyknot" },
-  { "name": "Eject Button", "key": "ejectbutton" },
-  { "name": "Eject Pack", "key": "ejectpack" },
-  { "name": "Electric Seed", "key": "electricseed" },
-  { "name": "Expert Belt", "key": "expertbelt" },
-  { "name": "Flame Orb", "key": "flameorb" },
-  { "name": "Focus Band", "key": "focusband" },
-  { "name": "Grassy Seed", "key": "grassseed" },
-  { "name": "Heat Rock", "key": "heatrock" },
-  { "name": "Icy Rock", "key": "icyrock" },
-  { "name": "Iron Ball", "key": "ironball" },
-  { "name": "King's Rock", "key": "kingsrock" },
-  { "name": "Lagging Tail", "key": "laggingtail" },
-  { "name": "Light Ball", "key": "lightball" },
-  { "name": "Lucky Punch", "key": "luckypunch" },
-  { "name": "Luminous Moss", "key": "luminousmoss" },
-  { "name": "Macho Brace", "key": "machobrace" },
-  { "name": "Mental Herb", "key": "mentalherb" },
-  { "name": "Metronome", "key": "metronome" },
-  { "name": "Micle Berry", "key": "micleberry" },
-  { "name": "Misty Seed", "key": "mistyseed" },
-  { "name": "Muscle Band", "key": "muscleband" },
-  { "name": "Power Herb", "key": "powerherb" },
-  { "name": "Protective Pads", "key": "protectivepads" },
-  { "name": "Psychic Seed", "key": "psychicseed" },
-  { "name": "Quick Claw", "key": "quickclaw" },
-  { "name": "Razor Claw", "key": "razorclaw" },
-  { "name": "Razor Fang", "key": "razorfang" },
-  { "name": "Red Card", "key": "redcard" },
-  { "name": "Ring Target", "key": "ringtarget" },
-  { "name": "Room Service", "key": "roomservice" },
-  { "name": "Scope Lens", "key": "scopelens" },
-  { "name": "Shell Bell", "key": "shellbell" },
-  { "name": "Snowball", "key": "snowball" },
-  { "name": "Smooth Rock", "key": "smoothrock" },
-  { "name": "Sticky Barb", "key": "stickybarb" },
-  { "name": "Terrain Extender", "key": "terrainextender" },
-  { "name": "Throat Spray", "key": "throatspray" },
-  { "name": "Toxic Orb", "key": "toxicorb" },
-  { "name": "White Herb", "key": "whiteherb" },
-  { "name": "Wide Lens", "key": "widelens" },
-  { "name": "Wiki Berry", "key": "wikiberry" },
-  { "name": "Zoom Lens", "key": "zoomlens" },
-  { "name": "Absorb Bulb", "key": "absorbulb" },
-  { "name": "Adrenaline Orb", "key": "adrenalineorb" },
-  { "name": "Blunder Policy", "key": "blunderpolicy" },
-  { "name": "Booster Energy", "key": "boosterenergy" },
-  { "name": "Covert Cloak", "key": "covertcloak" },
-  { "name": "Loaded Dice", "key": "loadeddice" },
-  { "name": "Punching Glove", "key": "punchingglove" },
-  { "name": "Clear Amulet", "key": "clearamulet" },
-  { "name": "Mirror Herb", "key": "mirrorherb" },
-  { "name": "Berserk Gene", "key": "berserkgene" },
-  { "name": "Leppa Berry", "key": "leppaberry" },
-  { "name": "Lansat Berry", "key": "lansatberry" },
-  { "name": "Starf Berry", "key": "starfberry" },
-  { "name": "Enigma Berry", "key": "enigmaberry" },
-  { "name": "Custap Berry", "key": "custapberry" },
-  { "name": "Jaboca Berry", "key": "jabocaberry" },
-  { "name": "Rowap Berry", "key": "rowapberry" },
-  { "name": "Ganlon Berry", "key": "ganlonberry" },
-  { "name": "Salac Berry", "key": "salacberry" },
-  { "name": "Petaya Berry", "key": "petayaberry" },
-  { "name": "Apicot Berry", "key": "apicotberry" },
-  { "name": "Liechi Berry", "key": "liechiberry" },
-  { "name": "Figy Berry", "key": "figyberry" },
-  { "name": "Oran Berry", "key": "oranberry" },
-  { "name": "Berry Juice", "key": "berryjuice" },
-  { "name": "Gold Berry", "key": "goldberry" },
-  { "name": "Venusaurite", "key": "venusaurite" },
-  { "name": "Charizardite X", "key": "charizarditex" },
-  { "name": "Charizardite Y", "key": "charizarditey" },
-  { "name": "Blastoisinite", "key": "blastoisinite" },
-  { "name": "Beedrillite", "key": "beedrillite" },
-  { "name": "Pidgeotite", "key": "pidgeotite" },
-  { "name": "Alakazite", "key": "alakazite" },
-  { "name": "Slowbronite", "key": "slowbronite" },
-  { "name": "Gengarite", "key": "gengarite" },
-  { "name": "Kangaskhanite", "key": "kangaskhanite" },
-  { "name": "Pinsirite", "key": "pinsirite" },
-  { "name": "Gyaradosite", "key": "gyaradosite" },
-  { "name": "Aerodactylite", "key": "aerodactylite" },
-  { "name": "Mewtwonite X", "key": "mewtwonitex" },
-  { "name": "Mewtwonite Y", "key": "mewtwonitey" },
-  { "name": "Ampharosite", "key": "ampharosite" },
-  { "name": "Steelixite", "key": "steelixite" },
-  { "name": "Scizorite", "key": "scizorite" },
-  { "name": "Heracronite", "key": "heracronite" },
-  { "name": "Houndoominite", "key": "houndoominite" },
-  { "name": "Tyranitarite", "key": "tyranitarite" },
-  { "name": "Sceptilite", "key": "sceptilite" },
-  { "name": "Blazikenite", "key": "blazikenite" },
-  { "name": "Swampertite", "key": "swampertite" },
-  { "name": "Gardevoirite", "key": "gardevoirite" },
-  { "name": "Sablenite", "key": "sablenite" },
-  { "name": "Mawilite", "key": "mawilite" },
-  { "name": "Aggronite", "key": "aggronite" },
-  { "name": "Medichamite", "key": "medichamite" },
-  { "name": "Manectite", "key": "manectite" },
-  { "name": "Sharpedonite", "key": "sharpedonite" },
-  { "name": "Cameruptite", "key": "cameruptite" },
-  { "name": "Altarianite", "key": "altarianite" },
-  { "name": "Banettite", "key": "banettite" },
-  { "name": "Absolite", "key": "absolite" },
-  { "name": "Glalitite", "key": "glalitite" },
-  { "name": "Salamencite", "key": "salamencite" },
-  { "name": "Metagrossite", "key": "metagrossite" },
-  { "name": "Latiasite", "key": "latiasite" },
-  { "name": "Latiosite", "key": "latiosite" },
-  { "name": "Lopunnite", "key": "lopunnite" },
-  { "name": "Garchompite", "key": "garchompite" },
-  { "name": "Lucarionite", "key": "lucarionite" },
-  { "name": "Abomasite", "key": "abomasite" },
-  { "name": "Galladite", "key": "galladite" },
-  { "name": "Audinite", "key": "audinite" },
-  { "name": "Diancite", "key": "diancite" },
-  { "name": "Red Orb", "key": "redorb" },
-  { "name": "Blue Orb", "key": "blueorb" }
+  {
+    "name": "Ability Shield",
+    "key": "abilityshield",
+    "i": 746
+  },
+  {
+    "name": "Absorb Bulb",
+    "key": "absorbbulb",
+    "i": 2
+  },
+  {
+    "name": "Adamant Crystal",
+    "key": "adamantcrystal",
+    "i": 741
+  },
+  {
+    "name": "Adamant Orb",
+    "key": "adamantorb",
+    "i": 4
+  },
+  {
+    "name": "Adrenaline Orb",
+    "key": "adrenalineorb",
+    "i": 660
+  },
+  {
+    "name": "Air Balloon",
+    "key": "airballoon",
+    "i": 6
+  },
+  {
+    "name": "Apicot Berry",
+    "key": "apicotberry",
+    "i": 10
+  },
+  {
+    "name": "Aspear Berry",
+    "key": "aspearberry",
+    "i": 13
+  },
+  {
+    "name": "Assault Vest",
+    "key": "assaultvest",
+    "i": 581
+  },
+  {
+    "name": "Babiri Berry",
+    "key": "babiriberry",
+    "i": 17
+  },
+  {
+    "name": "Berry Juice",
+    "key": "berryjuice",
+    "i": 22
+  },
+  {
+    "name": "Berserk Gene",
+    "key": "berserkgene",
+    "i": 388
+  },
+  {
+    "name": "Big Root",
+    "key": "bigroot",
+    "i": 29
+  },
+  {
+    "name": "Binding Band",
+    "key": "bindingband",
+    "i": 31
+  },
+  {
+    "name": "Black Belt",
+    "key": "blackbelt",
+    "i": 32
+  },
+  {
+    "name": "Black Glasses",
+    "key": "blackglasses",
+    "i": 35
+  },
+  {
+    "name": "Black Sludge",
+    "key": "blacksludge",
+    "i": 34
+  },
+  {
+    "name": "Blunder Policy",
+    "key": "blunderpolicy",
+    "i": 716
+  },
+  {
+    "name": "Booster Energy",
+    "key": "boosterenergy",
+    "i": 745
+  },
+  {
+    "name": "Bright Powder",
+    "key": "brightpowder",
+    "i": 51
+  },
+  {
+    "name": "Cell Battery",
+    "key": "cellbattery",
+    "i": 60
+  },
+  {
+    "name": "Charcoal",
+    "key": "charcoal",
+    "i": 61
+  },
+  {
+    "name": "Charti Berry",
+    "key": "chartiberry",
+    "i": 62
+  },
+  {
+    "name": "Cheri Berry",
+    "key": "cheriberry",
+    "i": 63
+  },
+  {
+    "name": "Chesto Berry",
+    "key": "chestoberry",
+    "i": 65
+  },
+  {
+    "name": "Chilan Berry",
+    "key": "chilanberry",
+    "i": 66
+  },
+  {
+    "name": "Choice Band",
+    "key": "choiceband",
+    "i": 68
+  },
+  {
+    "name": "Choice Scarf",
+    "key": "choicescarf",
+    "i": 69
+  },
+  {
+    "name": "Choice Specs",
+    "key": "choicespecs",
+    "i": 70
+  },
+  {
+    "name": "Chople Berry",
+    "key": "chopleberry",
+    "i": 71
+  },
+  {
+    "name": "Clear Amulet",
+    "key": "clearamulet",
+    "i": 747
+  },
+  {
+    "name": "Coba Berry",
+    "key": "cobaberry",
+    "i": 76
+  },
+  {
+    "name": "Colbur Berry",
+    "key": "colburberry",
+    "i": 78
+  },
+  {
+    "name": "Covert Cloak",
+    "key": "covertcloak",
+    "i": 750
+  },
+  {
+    "name": "Custap Berry",
+    "key": "custapberry",
+    "i": 86
+  },
+  {
+    "name": "Damp Rock",
+    "key": "damprock",
+    "i": 88
+  },
+  {
+    "name": "Destiny Knot",
+    "key": "destinyknot",
+    "i": 95
+  },
+  {
+    "name": "Dragon Fang",
+    "key": "dragonfang",
+    "i": 106
+  },
+  {
+    "name": "Eject Button",
+    "key": "ejectbutton",
+    "i": 118
+  },
+  {
+    "name": "Eject Pack",
+    "key": "ejectpack",
+    "i": 714
+  },
+  {
+    "name": "Electric Seed",
+    "key": "electricseed",
+    "i": 664
+  },
+  {
+    "name": "Enigma Berry",
+    "key": "enigmaberry",
+    "i": 124
+  },
+  {
+    "name": "Eviolite",
+    "key": "eviolite",
+    "i": 130
+  },
+  {
+    "name": "Expert Belt",
+    "key": "expertbelt",
+    "i": 132
+  },
+  {
+    "name": "Fairy Feather",
+    "key": "fairyfeather",
+    "i": 754
+  },
+  {
+    "name": "Figy Berry",
+    "key": "figyberry",
+    "i": 140
+  },
+  {
+    "name": "Flame Orb",
+    "key": "flameorb",
+    "i": 145
+  },
+  {
+    "name": "Focus Band",
+    "key": "focusband",
+    "i": 150
+  },
+  {
+    "name": "Focus Sash",
+    "key": "focussash",
+    "i": 151
+  },
+  {
+    "name": "Ganlon Berry",
+    "key": "ganlonberry",
+    "i": 158
+  },
+  {
+    "name": "Gold Berry",
+    "key": "goldberry",
+    "i": 448
+  },
+  {
+    "name": "Grassy Seed",
+    "key": "grassyseed",
+    "i": 667
+  },
+  {
+    "name": "Griseous Core",
+    "key": "griseouscore",
+    "i": 743
+  },
+  {
+    "name": "Griseous Orb",
+    "key": "griseousorb",
+    "i": 180
+  },
+  {
+    "name": "Haban Berry",
+    "key": "habanberry",
+    "i": 185
+  },
+  {
+    "name": "Hard Stone",
+    "key": "hardstone",
+    "i": 187
+  },
+  {
+    "name": "Heat Rock",
+    "key": "heatrock",
+    "i": 193
+  },
+  {
+    "name": "Heavy-Duty Boots",
+    "key": "heavydutyboots",
+    "i": 715
+  },
+  {
+    "name": "Icy Rock",
+    "key": "icyrock",
+    "i": 221
+  },
+  {
+    "name": "Iron Ball",
+    "key": "ironball",
+    "i": 224
+  },
+  {
+    "name": "Jaboca Berry",
+    "key": "jabocaberry",
+    "i": 230
+  },
+  {
+    "name": "Kasib Berry",
+    "key": "kasibberry",
+    "i": 233
+  },
+  {
+    "name": "Kebia Berry",
+    "key": "kebiaberry",
+    "i": 234
+  },
+  {
+    "name": "King's Rock",
+    "key": "kingsrock",
+    "i": 236
+  },
+  {
+    "name": "Lagging Tail",
+    "key": "laggingtail",
+    "i": 237
+  },
+  {
+    "name": "Lansat Berry",
+    "key": "lansatberry",
+    "i": 238
+  },
+  {
+    "name": "Leek",
+    "key": "leek",
+    "i": 475
+  },
+  {
+    "name": "Leftovers",
+    "key": "leftovers",
+    "i": 242
+  },
+  {
+    "name": "Leppa Berry",
+    "key": "leppaberry",
+    "i": 244
+  },
+  {
+    "name": "Liechi Berry",
+    "key": "liechiberry",
+    "i": 248
+  },
+  {
+    "name": "Life Orb",
+    "key": "lifeorb",
+    "i": 249
+  },
+  {
+    "name": "Light Ball",
+    "key": "lightball",
+    "i": 251
+  },
+  {
+    "name": "Light Clay",
+    "key": "lightclay",
+    "i": 252
+  },
+  {
+    "name": "Loaded Dice",
+    "key": "loadeddice",
+    "i": 751
+  },
+  {
+    "name": "Lucky Punch",
+    "key": "luckypunch",
+    "i": 261
+  },
+  {
+    "name": "Lum Berry",
+    "key": "lumberry",
+    "i": 262
+  },
+  {
+    "name": "Luminous Moss",
+    "key": "luminousmoss",
+    "i": 595
+  },
+  {
+    "name": "Lustrous Globe",
+    "key": "lustrousglobe",
+    "i": 742
+  },
+  {
+    "name": "Lustrous Orb",
+    "key": "lustrousorb",
+    "i": 265
+  },
+  {
+    "name": "Macho Brace",
+    "key": "machobrace",
+    "i": 269
+  },
+  {
+    "name": "Magnet",
+    "key": "magnet",
+    "i": 273
+  },
+  {
+    "name": "Mental Herb",
+    "key": "mentalherb",
+    "i": 285
+  },
+  {
+    "name": "Metal Alloy",
+    "key": "metalalloy",
+    "i": 761
+  },
+  {
+    "name": "Metal Coat",
+    "key": "metalcoat",
+    "i": 286
+  },
+  {
+    "name": "Metal Powder",
+    "key": "metalpowder",
+    "i": 287
+  },
+  {
+    "name": "Metronome",
+    "key": "metronome",
+    "i": 289
+  },
+  {
+    "name": "Micle Berry",
+    "key": "micleberry",
+    "i": 290
+  },
+  {
+    "name": "Miracle Seed",
+    "key": "miracleseed",
+    "i": 292
+  },
+  {
+    "name": "Mirror Herb",
+    "key": "mirrorherb",
+    "i": 748
+  },
+  {
+    "name": "Misty Seed",
+    "key": "mistyseed",
+    "i": 666
+  },
+  {
+    "name": "Muscle Band",
+    "key": "muscleband",
+    "i": 297
+  },
+  {
+    "name": "Mystic Water",
+    "key": "mysticwater",
+    "i": 300
+  },
+  {
+    "name": "Never-Melt Ice",
+    "key": "nevermeltice",
+    "i": 305
+  },
+  {
+    "name": "Occa Berry",
+    "key": "occaberry",
+    "i": 311
+  },
+  {
+    "name": "Oran Berry",
+    "key": "oranberry",
+    "i": 319
+  },
+  {
+    "name": "Passho Berry",
+    "key": "passhoberry",
+    "i": 329
+  },
+  {
+    "name": "Payapa Berry",
+    "key": "payapaberry",
+    "i": 330
+  },
+  {
+    "name": "Pecha Berry",
+    "key": "pechaberry",
+    "i": 333
+  },
+  {
+    "name": "Persim Berry",
+    "key": "persimberry",
+    "i": 334
+  },
+  {
+    "name": "Petaya Berry",
+    "key": "petayaberry",
+    "i": 335
+  },
+  {
+    "name": "Poison Barb",
+    "key": "poisonbarb",
+    "i": 343
+  },
+  {
+    "name": "Power Herb",
+    "key": "powerherb",
+    "i": 358
+  },
+  {
+    "name": "Protective Pads",
+    "key": "protectivepads",
+    "i": 663
+  },
+  {
+    "name": "Psychic Seed",
+    "key": "psychicseed",
+    "i": 665
+  },
+  {
+    "name": "Punching Glove",
+    "key": "punchingglove",
+    "i": 749
+  },
+  {
+    "name": "Quick Claw",
+    "key": "quickclaw",
+    "i": 373
+  },
+  {
+    "name": "Quick Powder",
+    "key": "quickpowder",
+    "i": 374
+  },
+  {
+    "name": "Rawst Berry",
+    "key": "rawstberry",
+    "i": 381
+  },
+  {
+    "name": "Razor Claw",
+    "key": "razorclaw",
+    "i": 382
+  },
+  {
+    "name": "Razor Fang",
+    "key": "razorfang",
+    "i": 383
+  },
+  {
+    "name": "Red Card",
+    "key": "redcard",
+    "i": 387
+  },
+  {
+    "name": "Rindo Berry",
+    "key": "rindoberry",
+    "i": 409
+  },
+  {
+    "name": "Ring Target",
+    "key": "ringtarget",
+    "i": 410
+  },
+  {
+    "name": "Rocky Helmet",
+    "key": "rockyhelmet",
+    "i": 417
+  },
+  {
+    "name": "Room Service",
+    "key": "roomservice",
+    "i": 717
+  },
+  {
+    "name": "Roseli Berry",
+    "key": "roseliberry",
+    "i": 603
+  },
+  {
+    "name": "Rowap Berry",
+    "key": "rowapberry",
+    "i": 420
+  },
+  {
+    "name": "Safety Goggles",
+    "key": "safetygoggles",
+    "i": 604
+  },
+  {
+    "name": "Salac Berry",
+    "key": "salacberry",
+    "i": 426
+  },
+  {
+    "name": "Scope Lens",
+    "key": "scopelens",
+    "i": 429
+  },
+  {
+    "name": "Sharp Beak",
+    "key": "sharpbeak",
+    "i": 436
+  },
+  {
+    "name": "Shed Shell",
+    "key": "shedshell",
+    "i": 437
+  },
+  {
+    "name": "Shell Bell",
+    "key": "shellbell",
+    "i": 438
+  },
+  {
+    "name": "Shuca Berry",
+    "key": "shucaberry",
+    "i": 443
+  },
+  {
+    "name": "Silk Scarf",
+    "key": "silkscarf",
+    "i": 444
+  },
+  {
+    "name": "Silver Powder",
+    "key": "silverpowder",
+    "i": 447
+  },
+  {
+    "name": "Sitrus Berry",
+    "key": "sitrusberry",
+    "i": 448
+  },
+  {
+    "name": "Smooth Rock",
+    "key": "smoothrock",
+    "i": 453
+  },
+  {
+    "name": "Snowball",
+    "key": "snowball",
+    "i": 606
+  },
+  {
+    "name": "Soft Sand",
+    "key": "softsand",
+    "i": 456
+  },
+  {
+    "name": "Soul Dew",
+    "key": "souldew",
+    "i": 459
+  },
+  {
+    "name": "Spell Tag",
+    "key": "spelltag",
+    "i": 461
+  },
+  {
+    "name": "Starf Berry",
+    "key": "starfberry",
+    "i": 472
+  },
+  {
+    "name": "Stick",
+    "key": "stick",
+    "i": 475
+  },
+  {
+    "name": "Sticky Barb",
+    "key": "stickybarb",
+    "i": 476
+  },
+  {
+    "name": "Tanga Berry",
+    "key": "tangaberry",
+    "i": 487
+  },
+  {
+    "name": "Terrain Extender",
+    "key": "terrainextender",
+    "i": 662
+  },
+  {
+    "name": "Thick Club",
+    "key": "thickclub",
+    "i": 491
+  },
+  {
+    "name": "Throat Spray",
+    "key": "throatspray",
+    "i": 713
+  },
+  {
+    "name": "Toxic Orb",
+    "key": "toxicorb",
+    "i": 515
+  },
+  {
+    "name": "Twisted Spoon",
+    "key": "twistedspoon",
+    "i": 520
+  },
+  {
+    "name": "Utility Umbrella",
+    "key": "utilityumbrella",
+    "i": 718
+  },
+  {
+    "name": "Wacan Berry",
+    "key": "wacanberry",
+    "i": 526
+  },
+  {
+    "name": "Weakness Policy",
+    "key": "weaknesspolicy",
+    "i": 609
+  },
+  {
+    "name": "White Herb",
+    "key": "whiteherb",
+    "i": 535
+  },
+  {
+    "name": "Wide Lens",
+    "key": "widelens",
+    "i": 537
+  },
+  {
+    "name": "Wiki Berry",
+    "key": "wikiberry",
+    "i": 538
+  },
+  {
+    "name": "Wise Glasses",
+    "key": "wiseglasses",
+    "i": 539
+  },
+  {
+    "name": "Yache Berry",
+    "key": "yacheberry",
+    "i": 567
+  },
+  {
+    "name": "Zoom Lens",
+    "key": "zoomlens",
+    "i": 574
+  },
+  {
+    "name": "Venusaurite",
+    "key": "venusaurite",
+    "i": 608
+  },
+  {
+    "name": "Charizardite X",
+    "key": "charizarditex",
+    "i": 585
+  },
+  {
+    "name": "Charizardite Y",
+    "key": "charizarditey",
+    "i": 586
+  },
+  {
+    "name": "Blastoisinite",
+    "key": "blastoisinite",
+    "i": 583
+  },
+  {
+    "name": "Beedrillite",
+    "key": "beedrillite",
+    "i": 628
+  },
+  {
+    "name": "Pidgeotite",
+    "key": "pidgeotite",
+    "i": 622
+  },
+  {
+    "name": "Alakazite",
+    "key": "alakazite",
+    "i": 579
+  },
+  {
+    "name": "Slowbronite",
+    "key": "slowbronite",
+    "i": 620
+  },
+  {
+    "name": "Gengarite",
+    "key": "gengarite",
+    "i": 588
+  },
+  {
+    "name": "Kangaskhanite",
+    "key": "kangaskhanite",
+    "i": 592
+  },
+  {
+    "name": "Pinsirite",
+    "key": "pinsirite",
+    "i": 602
+  },
+  {
+    "name": "Gyaradosite",
+    "key": "gyaradosite",
+    "i": 589
+  },
+  {
+    "name": "Aerodactylite",
+    "key": "aerodactylite",
+    "i": 577
+  },
+  {
+    "name": "Mewtwonite X",
+    "key": "mewtwonitex",
+    "i": 600
+  },
+  {
+    "name": "Mewtwonite Y",
+    "key": "mewtwonitey",
+    "i": 601
+  },
+  {
+    "name": "Ampharosite",
+    "key": "ampharosite",
+    "i": 580
+  },
+  {
+    "name": "Steelixite",
+    "key": "steelixite",
+    "i": 621
+  },
+  {
+    "name": "Scizorite",
+    "key": "scizorite",
+    "i": 605
+  },
+  {
+    "name": "Heracronite",
+    "key": "heracronite",
+    "i": 590
+  },
+  {
+    "name": "Houndoominite",
+    "key": "houndoominite",
+    "i": 591
+  },
+  {
+    "name": "Tyranitarite",
+    "key": "tyranitarite",
+    "i": 607
+  },
+  {
+    "name": "Sceptilite",
+    "key": "sceptilite",
+    "i": 613
+  },
+  {
+    "name": "Blazikenite",
+    "key": "blazikenite",
+    "i": 584
+  },
+  {
+    "name": "Swampertite",
+    "key": "swampertite",
+    "i": 612
+  },
+  {
+    "name": "Gardevoirite",
+    "key": "gardevoirite",
+    "i": 587
+  },
+  {
+    "name": "Sablenite",
+    "key": "sablenite",
+    "i": 614
+  },
+  {
+    "name": "Mawilite",
+    "key": "mawilite",
+    "i": 598
+  },
+  {
+    "name": "Aggronite",
+    "key": "aggronite",
+    "i": 578
+  },
+  {
+    "name": "Medichamite",
+    "key": "medichamite",
+    "i": 599
+  },
+  {
+    "name": "Manectite",
+    "key": "manectite",
+    "i": 596
+  },
+  {
+    "name": "Sharpedonite",
+    "key": "sharpedonite",
+    "i": 619
+  },
+  {
+    "name": "Cameruptite",
+    "key": "cameruptite",
+    "i": 625
+  },
+  {
+    "name": "Altarianite",
+    "key": "altarianite",
+    "i": 615
+  },
+  {
+    "name": "Banettite",
+    "key": "banettite",
+    "i": 582
+  },
+  {
+    "name": "Absolite",
+    "key": "absolite",
+    "i": 576
+  },
+  {
+    "name": "Glalitite",
+    "key": "glalitite",
+    "i": 623
+  },
+  {
+    "name": "Salamencite",
+    "key": "salamencite",
+    "i": 627
+  },
+  {
+    "name": "Metagrossite",
+    "key": "metagrossite",
+    "i": 618
+  },
+  {
+    "name": "Latiasite",
+    "key": "latiasite",
+    "i": 629
+  },
+  {
+    "name": "Latiosite",
+    "key": "latiosite",
+    "i": 630
+  },
+  {
+    "name": "Lopunnite",
+    "key": "lopunnite",
+    "i": 626
+  },
+  {
+    "name": "Garchompite",
+    "key": "garchompite",
+    "i": 573
+  },
+  {
+    "name": "Lucarionite",
+    "key": "lucarionite",
+    "i": 594
+  },
+  {
+    "name": "Abomasite",
+    "key": "abomasite",
+    "i": 575
+  },
+  {
+    "name": "Galladite",
+    "key": "galladite",
+    "i": 616
+  },
+  {
+    "name": "Audinite",
+    "key": "audinite",
+    "i": 617
+  },
+  {
+    "name": "Diancite",
+    "key": "diancite",
+    "i": 624
+  },
+  {
+    "name": "Red Orb",
+    "key": "redorb",
+    "i": 390
+  },
+  {
+    "name": "Blue Orb",
+    "key": "blueorb",
+    "i": 41
+  },
+  {
+    "name": "Clefablite",
+    "key": "clefablite",
+    "i": 544
+  },
+  {
+    "name": "Victreebelite",
+    "key": "victreebelite",
+    "i": 545
+  },
+  {
+    "name": "Starminite",
+    "key": "starminite",
+    "i": 546
+  },
+  {
+    "name": "Skarmorite",
+    "key": "skarmorite",
+    "i": 550
+  },
+  {
+    "name": "Froslassite",
+    "key": "froslassite",
+    "i": 551
+  },
+  {
+    "name": "Meganiumite",
+    "key": "meganiumite",
+    "i": 548
+  },
+  {
+    "name": "Golurkite",
+    "key": "golurkite",
+    "i": 505
+  },
+  {
+    "name": "Meowsticite",
+    "key": "meowsticite",
+    "i": 506
+  },
+  {
+    "name": "Hawluchanite",
+    "key": "hawluchanite",
+    "i": 566
+  },
+  {
+    "name": "Scovillainite",
+    "key": "scovillainite",
+    "i": 511
+  },
+  {
+    "name": "Glimmoranite",
+    "key": "glimmoranite",
+    "i": 512
+  },
+  {
+    "name": "Chimechite",
+    "key": "chimechite",
+    "i": 498
+  },
+  {
+    "name": "Dragoninite",
+    "key": "dragoninite",
+    "i": 547
+  },
+  {
+    "name": "Feraligite",
+    "key": "feraligite",
+    "i": 549
+  },
+  {
+    "name": "Emboarite",
+    "key": "emboarite",
+    "i": 552
+  },
+  {
+    "name": "Excadrite",
+    "key": "excadrite",
+    "i": 553
+  },
+  {
+    "name": "Chandelurite",
+    "key": "chandelurite",
+    "i": 557
+  },
+  {
+    "name": "Crabominite",
+    "key": "crabominite",
+    "i": 507
+  },
+  {
+    "name": "Drampanite",
+    "key": "drampanite",
+    "i": 569
+  },
+  {
+    "name": "Raichunite X",
+    "key": "raichunitex",
+    "i": 496
+  },
+  {
+    "name": "Raichunite Y",
+    "key": "raichunitey",
+    "i": 497
+  },
+  {
+    "name": "Scraftinite",
+    "key": "scraftinite",
+    "i": 555
+  },
+  {
+    "name": "Scolipite",
+    "key": "scolipite",
+    "i": 554
+  },
+  {
+    "name": "Staraptite",
+    "key": "staraptite",
+    "i": 500
+  },
+  {
+    "name": "Pyroarite",
+    "key": "pyroarite",
+    "i": 561
+  },
+  {
+    "name": "Floettite",
+    "key": "floettite",
+    "i": 562
+  },
+  {
+    "name": "Malamarite",
+    "key": "malamarite",
+    "i": 563
+  },
+  {
+    "name": "Barbaracite",
+    "key": "barbaracite",
+    "i": 564
+  },
+  {
+    "name": "Dragalgite",
+    "key": "dragalgite",
+    "i": 565
+  },
+  {
+    "name": "Falinksite",
+    "key": "falinksite",
+    "i": 570
+  }
 ]

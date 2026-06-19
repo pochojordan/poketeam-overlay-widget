@@ -37,7 +37,7 @@ cp js/invite-config.example.js js/invite-config.js
 - [ ] Test paste-from-clipboard button
 
 ## OBS Widget
-- [ ] Open `index.html?channel=testchannel` in browser
+- [ ] Open `widget.html?channel=testchannel` in browser
 - [ ] Verify widget connects to Firebase
 - [ ] Make changes in panel — verify widget updates in <100ms
 - [ ] Verify sprite images load correctly

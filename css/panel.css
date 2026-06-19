@@ -1,4 +1,5 @@
 @import url('./variables.css');
+@import url('./widget.css');
 
 * {
   margin: 0;
@@ -20,7 +21,9 @@ body {
 
 .auth-view.active,
 .panel-view.active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 /* === AUTH === */
@@ -138,19 +141,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 24px;
+  padding: 12px 24px;
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--border);
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 .panel-header h1 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  white-space: nowrap;
 }
 
 .header-actions {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   align-items: center;
+}
+
+.header-actions .btn .spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  display: none;
+}
+
+.header-actions .btn.loading .spinner {
+  display: inline-block;
+}
+
+.header-actions .btn.loading {
+  pointer-events: none;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 .user-badge {
@@ -158,64 +186,89 @@ body {
   font-size: 0.8rem;
 }
 
-/* === PANEL LAYOUT === */
-.panel-layout {
+.save-feedback {
+  font-size: 0.75rem;
+  color: var(--success);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.save-feedback.show {
+  opacity: 1;
+}
+
+/* === PANEL BODY === */
+.panel-body {
   display: grid;
   grid-template-columns: 1fr 320px;
-  gap: 24px;
-  padding: 24px;
-  max-width: 1200px;
+  gap: 20px;
+  padding: 20px 24px;
+  max-width: 1400px;
   margin: 0 auto;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
 }
 
 @media (max-width: 1024px) {
-  .panel-layout {
+  .panel-body {
     grid-template-columns: 1fr;
   }
 }
 
 /* === PREVIEW === */
 .preview-section {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   padding: 16px;
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
 }
 
-.preview-section h2 {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
+.preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 12px;
+}
+
+.preview-header h2 {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.preview-header #importerBtn {
+  font-size: 0.7rem;
+  padding: 4px 10px;
 }
 
 .preview-frame {
   background: var(--bg-tertiary);
   border-radius: var(--radius-md);
   padding: 16px;
-  min-height: 120px;
+  min-height: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  overflow-x: auto;
 }
 
-/* Edit area */
-.edit-area {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.preview-frame .widget-team {
+  width: auto;
+  flex: none;
 }
 
-/* === SLOT EDITOR === */
+/* === SLOTS === */
+#slotsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
 .slot-editor {
   background: var(--bg-secondary);
   border-radius: var(--radius-md);
-  padding: 16px;
+  padding: 12px;
   border: 1px solid var(--border);
 }
 
@@ -223,11 +276,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .slot-editor .slot-number {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   color: var(--text-muted);
   font-weight: 600;
   text-transform: uppercase;
@@ -236,12 +289,16 @@ body {
 
 .slot-editor .slot-controls {
   display: flex;
-  gap: 8px;
+  gap: 4px;
 }
 
 .slot-editor .shiny-toggle {
-  padding: 4px 10px;
-  font-size: 0.75rem;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
   background: transparent;
@@ -257,13 +314,18 @@ body {
 }
 
 .slot-editor .clear-slot {
-  padding: 4px 10px;
-  font-size: 0.75rem;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--danger);
   background: transparent;
   color: var(--danger);
   cursor: pointer;
+  padding: 0;
 }
 
 /* === COMBOBOX === */
@@ -273,12 +335,12 @@ body {
 
 .combobox-wrapper input {
   width: 100%;
-  padding: 10px 12px;
+  padding: 8px 10px;
   background: var(--bg-primary);
   color: var(--text-primary);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .combobox-wrapper input:focus {
@@ -325,41 +387,8 @@ body {
   text-align: center;
 }
 
-/* === SAVE BAR === */
-.save-bar {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  padding: 16px 0;
-}
-
-.save-bar .btn .spinner {
-  width: 16px;
-  height: 16px;
-  border: 2px solid rgba(255,255,255,0.3);
-  border-top-color: #fff;
-  border-radius: 50%;
-  animation: spin 0.6s linear infinite;
-  display: none;
-}
-
-.save-bar .btn.loading .spinner {
-  display: inline-block;
-}
-
-.save-bar .save-feedback {
-  font-size: 0.8rem;
-  color: var(--success);
-  opacity: 0;
-  transition: opacity var(--transition-normal);
-}
-
-.save-bar .save-feedback.show {
-  opacity: 1;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
+.panel-main {
+  min-width: 0;
 }
 
 /* === STYLING SIDEBAR === */
@@ -370,11 +399,11 @@ body {
   border: 1px solid var(--border);
   height: fit-content;
   position: sticky;
-  top: 24px;
+  top: 0;
 }
 
 .styling-sidebar h3 {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -446,6 +475,70 @@ body {
   color: var(--text-primary);
 }
 
+.styling-slider {
+  width: 100%;
+  height: 6px;
+  appearance: none;
+  background: var(--bg-primary);
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.styling-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg-secondary);
+  cursor: pointer;
+}
+
+.styling-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg-secondary);
+  cursor: pointer;
+}
+
+.styling-group label span:first-child {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.toggle-group {
+  display: flex;
+  gap: 8px;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.toggle-label input {
+  display: none;
+}
+
+.toggle-label span {
+  padding: 6px 16px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  background: var(--bg-primary);
+  transition: all var(--transition-fast);
+}
+
+.toggle-label input:checked + span {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
 /* === MODAL === */
 .modal-overlay {
   position: fixed;
@@ -506,25 +599,77 @@ body {
 
 /* === MOBILE < 768px === */
 @media (max-width: 767px) {
-  .panel-header {
-    padding: 12px 16px;
-    flex-wrap: wrap;
-    gap: 8px;
+  .panel-view.active {
+    height: auto;
+    min-height: 100dvh;
   }
 
-  .panel-layout {
+  .panel-body {
     padding: 12px;
+    gap: 12px;
+    overflow: visible;
+  }
+
+  .panel-main,
+  .styling-sidebar,
+  .preview-section,
+  .preview-frame,
+  #slotsContainer,
+  .slot-editor {
+    min-width: 0;
+  }
+
+  .styling-sidebar {
+    position: static;
+    height: auto;
+  }
+
+  .panel-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 10px 16px;
+  }
+
+  .panel-header h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .header-actions {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .header-actions .btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+
+  .preview-frame {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .panel-body {
+    padding: 12px;
+    gap: 12px;
+    overflow: visible;
+  }
+
+  .panel-main {
+    display: flex;
+    flex-direction: column;
     gap: 12px;
   }
 
-  .preview-section {
-    position: sticky;
-    top: 0;
-    padding: 12px;
+  #slotsContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 
   .slot-editor {
-    padding: 12px;
+    padding: 10px;
   }
 
   .styling-sidebar {

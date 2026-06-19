@@ -1,7 +1,7 @@
 import { auth } from "./firebase-config.js";
 import { loginStreamer, logoutStreamer, registerStreamer, setupAuthObserver } from "./auth-service.js";
 import { saveTeamConfig, getTeamConfig } from "./db-service.js";
-import { loadDictionaries, searchPokemon, searchItems, parseShowdownTeam, getPokemonByKey } from "./importer-service.js";
+import { loadDictionaries, searchPokemon, searchItems, parseShowdownTeam, getPokemonByKey, getItemByKey } from "./importer-service.js";
 
 let currentUser = null;
 let channelName = "";
@@ -15,7 +15,10 @@ let teamSlots = Array(6).fill(null).map(() => ({
 let config = {
   style: "glow",
   color: "#8257e5",
-  layout: "horizontal"
+  layout: "horizontal",
+  circleSize: 72,
+  slotGap: 8,
+  itemPos: "right"
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -39,13 +42,41 @@ const channelDisplay = $("#channelDisplay");
 
 export async function initPanel() {
   try {
-    await loadDictionaries();
+    await Promise.all([
+      loadDictionaries(),
+      loadImage("https://play.pokemonshowdown.com/sprites/itemicons-sheet.png")
+    ]);
     setupAuthObserver(handleAuthChange);
     bindAuthEvents();
     bindPanelEvents();
   } catch (err) {
     console.error("[Panel] Init error:", err);
   }
+}
+
+function getSpriteId(key) {
+  const singleFile = ['nidoran-f','nidoran-m','mr-mime','mr-rime','mime-jr',
+    'farfetchd','sirfetchd','type-null','ho-oh','porygon-z',
+    'wo-chien','chien-pao','ting-lu','chi-yu','jangmo-o','hakamo-o','kommo-o'];
+  if (singleFile.includes(key)) return key.replace(/-/g, '');
+
+  if (key.endsWith('-male') || key.endsWith('-female')) {
+    const idx = key.lastIndexOf('-');
+    return key.slice(0, idx);
+  }
+
+  if (!key.includes('-')) return key;
+  const idx = key.indexOf('-');
+  return key.slice(0, idx) + '-' + key.slice(idx + 1).replace(/[^a-z0-9]/g, '');
+}
+
+function loadImage(url) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve();
+    img.onerror = () => resolve();
+    img.src = url;
+  });
 }
 
 function showView(activeView) {
@@ -150,6 +181,25 @@ function bindPanelEvents() {
     updatePreview();
   });
 
+  $("#circleSize").addEventListener("input", (e) => {
+    config.circleSize = parseInt(e.target.value);
+    $("#circleSizeValue").textContent = config.circleSize + "px";
+    updatePreview();
+  });
+
+  $("#slotGap").addEventListener("input", (e) => {
+    config.slotGap = parseInt(e.target.value);
+    $("#slotGapValue").textContent = config.slotGap + "px";
+    updatePreview();
+  });
+
+  document.querySelectorAll("[name=itemPos]").forEach(el => {
+    el.addEventListener("change", (e) => {
+      config.itemPos = e.target.value;
+      updatePreview();
+    });
+  });
+
   document.addEventListener("click", (e) => {
     if (!e.target.closest(".combobox-wrapper")) {
       document.querySelectorAll(".combobox-dropdown.open").forEach(d => d.classList.remove("open"));
@@ -167,18 +217,18 @@ function renderSlots() {
     editor.className = "slot-editor";
     editor.innerHTML = `
       <div class="slot-header">
-        <span class="slot-number">Slot ${i + 1}</span>
+        <span class="slot-number">#${i + 1}</span>
         <div class="slot-controls">
-          <button class="shiny-toggle ${slot.shiny ? 'active' : ''}" data-slot="${i}">${slot.shiny ? '★' : '☆'} Shiny</button>
-          <button class="clear-slot" data-slot="${i}">✕ Clear</button>
+          <button class="shiny-toggle ${slot.shiny ? 'active' : ''}" data-slot="${i}" title="Toggle Shiny">${slot.shiny ? '★' : '☆'}</button>
+          <button class="clear-slot" data-slot="${i}" title="Clear slot">🗑</button>
         </div>
       </div>
       <div class="combobox-wrapper" data-slot="${i}">
-        <input type="text" class="pokemon-search" placeholder="Search Pokémon..." value="${slot.pokemonName}" data-slot="${i}" autocomplete="off">
+        <input type="text" class="pokemon-search" placeholder="Pokémon..." value="${slot.pokemonName}" data-slot="${i}" autocomplete="off">
         <div class="combobox-dropdown" data-type="pokemon" data-slot="${i}"></div>
       </div>
       <div class="combobox-wrapper item-wrapper" data-slot="${i}" style="margin-top: 8px;">
-        <input type="text" class="item-search" placeholder="Held item (optional)" value="${slot.itemName}" data-slot="${i}" autocomplete="off">
+        <input type="text" class="item-search" placeholder="Item" value="${slot.itemName}" data-slot="${i}" autocomplete="off">
         <div class="combobox-dropdown" data-type="item" data-slot="${i}"></div>
       </div>
     `;
@@ -201,8 +251,8 @@ function renderSlots() {
     const pokeDropdown = editor.querySelector(".combobox-dropdown[data-type='pokemon']");
     setupCombobox(pokeInput, pokeDropdown, searchPokemon, (item) => {
       teamSlots[i].pokemonKey = item.key;
-      teamSlots[i].pokemonName = item.name;
-      pokeInput.value = item.name;
+      teamSlots[i].pokemonName = item.name.replace(/\s*\((Male|Female)\)\s*$/i, '').trim();
+      pokeInput.value = teamSlots[i].pokemonName;
       pokeDropdown.classList.remove("open");
       updatePreview();
     });
@@ -214,6 +264,7 @@ function renderSlots() {
       teamSlots[i].itemName = item.name;
       itemInput.value = item.name;
       itemDropdown.classList.remove("open");
+      updatePreview();
     });
 
     container.appendChild(editor);
@@ -221,15 +272,23 @@ function renderSlots() {
 }
 
 function setupCombobox(input, dropdown, searchFn, onSelect) {
+  function closeOthers() {
+    document.querySelectorAll(".combobox-dropdown.open").forEach(d => {
+      if (d !== dropdown) d.classList.remove("open");
+    });
+  }
+
   input.addEventListener("input", () => {
     const results = searchFn(input.value);
     renderDropdown(dropdown, results, onSelect);
+    closeOthers();
     dropdown.classList.add("open");
   });
 
   input.addEventListener("focus", () => {
     const results = searchFn(input.value);
     renderDropdown(dropdown, results, onSelect);
+    closeOthers();
     dropdown.classList.add("open");
   });
 
@@ -279,7 +338,12 @@ function updatePreview() {
   frame.innerHTML = "";
   const container = document.createElement("div");
   container.className = `widget-team layout-${config.layout}`;
-  container.dataset.border = config.style;
+  container.dataset.style = config.style;
+  container.style.setProperty("--circle-size", config.circleSize + "px");
+  container.style.setProperty("--slot-gap", config.slotGap + "px");
+  const iconScale = Math.min(1, config.circleSize / 60);
+  container.style.setProperty("--icon-scale", iconScale.toString());
+  container.dataset.itemPos = config.itemPos;
 
   for (const slot of teamSlots) {
     const slotEl = document.createElement("div");
@@ -287,30 +351,35 @@ function updatePreview() {
 
     if (slot.pokemonKey) {
       const entry = getPokemonByKey(slot.pokemonKey);
-      const cdnFile = entry ? entry.cdn_file : slot.pokemonKey.replace(/-/g, '');
+      const spriteId = getSpriteId(slot.pokemonKey);
       const spriteUrl = slot.shiny
-        ? `https://play.pokemonshowdown.com/sprites/ani-shiny/${cdnFile}.gif`
-        : `https://play.pokemonshowdown.com/sprites/ani/${cdnFile}.gif`;
+        ? `https://play.pokemonshowdown.com/sprites/home-centered-shiny/${spriteId}.png`
+        : `https://play.pokemonshowdown.com/sprites/home-centered/${spriteId}.png`;
 
-      if (config.style === "metallic") {
-        slotEl.classList.add("border-metallic");
-        slotEl.innerHTML = `<div class="slot-inner"><img class="sprite" src="${spriteUrl}" alt="${slot.pokemonName}" loading="lazy"></div>`;
-      } else {
-        if (config.style === "cyber") slotEl.classList.add("border-cyber");
-        slotEl.innerHTML = `<img class="sprite" src="${spriteUrl}" alt="${slot.pokemonName}" loading="lazy">`;
-      }
+      const circle = document.createElement("div");
+      circle.className = "slot-circle";
+      circle.style.setProperty("--slot-color", config.color);
+      circle.innerHTML = `<img class="sprite" src="${spriteUrl}" alt="${slot.pokemonName}" loading="lazy">`;
 
       if (slot.itemKey) {
-        const itemUrl = `https://play.pokemonshowdown.com/sprites/itemdex/${slot.itemKey}.png`;
-        slotEl.innerHTML += `<img class="item-icon" src="${itemUrl}" alt="${slot.itemName}" loading="lazy">`;
+        const itemEntry = getItemByKey(slot.itemKey);
+        const icon = document.createElement("div");
+        icon.className = "item-icon";
+        icon.style.setProperty("--icon-scale", iconScale.toString());
+        if (itemEntry && itemEntry.i !== undefined) {
+          const tileX = (itemEntry.i % 16) * -24;
+          const tileY = Math.floor(itemEntry.i / 16) * -24;
+          icon.style.setProperty("--item-pos", `${tileX}px ${tileY}px`);
+        }
+        circle.appendChild(icon);
       }
+
+      slotEl.appendChild(circle);
     } else {
       slotEl.classList.add("slot-empty");
-      slotEl.style.display = "flex";
-      slotEl.style.alignItems = "center";
-      slotEl.style.justifyContent = "center";
-      slotEl.style.fontSize = "1.5rem";
-      slotEl.style.color = "rgba(115, 115, 128, 0.5)";
+      const circle = document.createElement("div");
+      circle.className = "slot-circle";
+      slotEl.appendChild(circle);
     }
 
     container.appendChild(slotEl);
@@ -400,6 +469,12 @@ function applyConfigToUI() {
   });
   $("#colorPicker").value = config.color;
   $("#colorHex").textContent = config.color;
+  $("#circleSize").value = config.circleSize;
+  $("#circleSizeValue").textContent = config.circleSize + "px";
+  $("#slotGap").value = config.slotGap;
+  $("#slotGapValue").textContent = config.slotGap + "px";
+  const posRadio = document.querySelector(`[name=itemPos][value="${config.itemPos}"]`);
+  if (posRadio) posRadio.checked = true;
 }
 
 document.addEventListener("DOMContentLoaded", initPanel);

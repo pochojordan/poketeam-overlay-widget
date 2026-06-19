@@ -2,22 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokémon Team Widget</title>
-  <link rel="stylesheet" href="css/widget.css">
-  <style>
-    html, body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background: transparent;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Pokémon Champions — Management Panel</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='white'/><path d='M2,16 A14,14 0 0,1 30,16 Z' fill='%23EE1515'/><circle cx='16' cy='16' r='14' fill='none' stroke='%231a1a1a' stroke-width='2'/><line x1='2' y1='16' x2='30' y2='16' stroke='%231a1a1a' stroke-width='2'/><circle cx='16' cy='16' r='5' fill='%231a1a1a'/><circle cx='16' cy='16' r='3' fill='white'/></svg>">
+  <link rel="stylesheet" href="css/panel.css">
 </head>
 <body>
-  <div id="teamContainer" class="widget-team layout-horizontal"></div>
-  <script type="module" src="js/widget.js"></script>
+  <!-- Loading Screen -->
+  <div id="loadingView" class="auth-view active">
+    <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;">
+      <div style="text-align:center;">
+        <div style="width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.6s linear infinite;margin:0 auto 16px;"></div>
+        <p style="color:var(--text-muted);font-size:0.875rem;">Loading...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Auth View -->
+  <div id="authView" class="auth-view">
+    <div class="auth-container">
+      <h1>Pokémon Champions</h1>
+      <p>Live Widget Management Panel</p>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginUsername">Twitch Username</label>
+          <input type="text" id="loginUsername" placeholder="your_twitch_name" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+        <p style="text-align:center;margin-top:12px;font-size:0.8rem;">
+          <a href="#" id="showRegister" style="color:var(--accent);">Create account</a>
+        </p>
+      </form>
+
+      <form id="registerForm" style="display:none;">
+        <div class="form-group">
+          <label for="regUsername">Twitch Username</label>
+          <input type="text" id="regUsername" placeholder="your_twitch_name" required>
+        </div>
+        <div class="form-group">
+          <label for="regPassword">Password</label>
+          <input type="password" id="regPassword" placeholder="••••••••" required>
+        </div>
+        <div class="form-group">
+          <label for="regInvite">Invitation Code</label>
+          <input type="text" id="regInvite" placeholder="Enter alpha/beta code" required>
+        </div>
+        <button type="submit" class="btn btn-success btn-full">Register</button>
+        <p style="text-align:center;margin-top:12px;font-size:0.8rem;">
+          <a href="#" id="showLogin" style="color:var(--accent);">Already have an account?</a>
+        </p>
+      </form>
+
+      <div id="authError" class="auth-error"></div>
+    </div>
+  </div>
+
+  <!-- Panel View -->
+  <div id="panelView" class="panel-view">
+    <header class="panel-header">
+      <h1>Pokémon Champions</h1>
+      <div class="header-actions">
+        <span class="user-badge" id="channelDisplay"></span>
+        <span id="saveFeedback" class="save-feedback">Saved</span>
+        <button id="saveBtn" class="btn btn-primary"><span class="spinner"></span>Save</button>
+        <button id="logoutBtn" class="btn btn-danger">Logout</button>
+      </div>
+    </header>
+
+    <div class="panel-body">
+      <div class="panel-main">
+        <div class="preview-section">
+          <div class="preview-header">
+            <h2>Live Preview</h2>
+            <button id="importerBtn" class="btn btn-outline">📥 Import Team</button>
+          </div>
+          <div class="preview-frame" id="previewFrame"></div>
+        </div>
+        <div id="slotsContainer"></div>
+      </div>
+
+      <aside class="styling-sidebar">
+        <h3>Widget Styling</h3>
+
+        <div class="styling-group">
+          <label>Border Style</label>
+          <div class="border-options">
+            <div class="border-option selected" data-border="glow">Glow</div>
+            <div class="border-option" data-border="flat">Flat</div>
+            <div class="border-option" data-border="metallic">Metallic</div>
+            <div class="border-option" data-border="cyber">Cyber</div>
+            <div class="border-option" data-border="none">None</div>
+          </div>
+        </div>
+
+        <div class="styling-group">
+          <label>Accent Color</label>
+          <div class="color-picker-wrapper">
+            <input type="color" id="colorPicker" value="#8257e5">
+            <span class="color-hex" id="colorHex">#8257e5</span>
+          </div>
+        </div>
+
+        <div class="styling-group">
+          <label>Layout</label>
+          <div class="layout-options">
+            <div class="layout-option selected" data-layout="horizontal">Horizontal</div>
+            <div class="layout-option" data-layout="vertical">Vertical</div>
+            <div class="layout-option" data-layout="grid-2x3">Grid 2×3</div>
+            <div class="layout-option" data-layout="grid-3x2">Grid 3×2</div>
+          </div>
+        </div>
+
+        <div class="styling-group">
+          <label>Circle Size <span id="circleSizeValue">72px</span></label>
+          <input type="range" id="circleSize" min="48" max="120" value="72" class="styling-slider">
+        </div>
+
+        <div class="styling-group">
+          <label>Slot Gap <span id="slotGapValue">8px</span></label>
+          <input type="range" id="slotGap" min="4" max="48" value="8" class="styling-slider">
+        </div>
+
+        <div class="styling-group">
+          <label>Item Icon</label>
+          <div class="toggle-group">
+            <label class="toggle-label">
+              <input type="radio" name="itemPos" value="right" checked>
+              <span>Right</span>
+            </label>
+            <label class="toggle-label">
+              <input type="radio" name="itemPos" value="left">
+              <span>Left</span>
+            </label>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Importer Modal -->
+  <div id="importerModal" class="modal-overlay">
+    <div class="modal-content">
+      <h2>Import from Pokémon Showdown</h2>
+      <p style="color:var(--text-secondary);margin-bottom:12px;font-size:0.875rem;">
+        Paste your team export from Pokémon Showdown below. The parser will extract up to 6 Pokémon and their held items.
+      </p>
+      <textarea id="importerText" placeholder="Paste your Pokémon Showdown team export...&#10;&#10;Example:&#10;Charizard @ Life Orb&#10;Ability: Blaze&#10;Level: 50&#10;EVs: 252 SpA / 4 SpD / 252 Spe&#10;Timid Nature&#10;- Fire Blast&#10;- Air Slash&#10;- Focus Blast&#10;- Protect&#10;&#10;Tapu Koko @ Choice Specs&#10;Ability: Electric Surge&#10;Level: 50&#10;EVs: 252 SpA / 4 SpD / 252 Spe&#10;Timid Nature&#10;- Thunderbolt&#10;- Dazzling Gleam&#10;- Volt Switch&#10;- Grass Knot"></textarea>
+      <div class="modal-actions">
+        <button id="importerPaste" class="btn btn-outline">📋 Paste from clipboard</button>
+        <button id="importerCancel" class="btn btn-outline">Cancel</button>
+        <button id="importerApply" class="btn btn-primary">Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/invite-config.js"></script>
+  <script type="module" src="js/panel.js"></script>
 </body>
 </html>
