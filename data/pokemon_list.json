@@ -1,8 +1,793 @@
 [
   {
+    "name": "Abomasnow",
+    "key": "abomasnow",
+    "cdn_file": "abomasnow"
+  },
+  {
+    "name": "Abomasnow (Mega)",
+    "key": "abomasnow-mega",
+    "cdn_file": "abomasnowmega"
+  },
+  {
+    "name": "Abra",
+    "key": "abra",
+    "cdn_file": "abra"
+  },
+  {
+    "name": "Absol",
+    "key": "absol",
+    "cdn_file": "absol"
+  },
+  {
+    "name": "Absol (Mega)",
+    "key": "absol-mega",
+    "cdn_file": "absolmega"
+  },
+  {
+    "name": "Absol (Mega Z)",
+    "key": "absol-mega-z",
+    "cdn_file": "absolmegaz"
+  },
+  {
+    "name": "Accelgor",
+    "key": "accelgor",
+    "cdn_file": "accelgor"
+  },
+  {
+    "name": "Aegislash (Blade)",
+    "key": "aegislash-blade",
+    "cdn_file": "aegislashblade"
+  },
+  {
+    "name": "Aegislash (Shield)",
+    "key": "aegislash-shield",
+    "cdn_file": "aegislashshield"
+  },
+  {
+    "name": "Aerodactyl",
+    "key": "aerodactyl",
+    "cdn_file": "aerodactyl"
+  },
+  {
+    "name": "Aerodactyl (Mega)",
+    "key": "aerodactyl-mega",
+    "cdn_file": "aerodactylmega"
+  },
+  {
+    "name": "Aggron",
+    "key": "aggron",
+    "cdn_file": "aggron"
+  },
+  {
+    "name": "Aggron (Mega)",
+    "key": "aggron-mega",
+    "cdn_file": "aggronmega"
+  },
+  {
+    "name": "Aipom",
+    "key": "aipom",
+    "cdn_file": "aipom"
+  },
+  {
+    "name": "Alakazam",
+    "key": "alakazam",
+    "cdn_file": "alakazam"
+  },
+  {
+    "name": "Alakazam (Mega)",
+    "key": "alakazam-mega",
+    "cdn_file": "alakazammega"
+  },
+  {
+    "name": "Alcremie",
+    "key": "alcremie",
+    "cdn_file": "alcremie"
+  },
+  {
+    "name": "Alcremie (Gmax)",
+    "key": "alcremie-gmax",
+    "cdn_file": "alcremiegmax"
+  },
+  {
+    "name": "Alomomola",
+    "key": "alomomola",
+    "cdn_file": "alomomola"
+  },
+  {
+    "name": "Altaria",
+    "key": "altaria",
+    "cdn_file": "altaria"
+  },
+  {
+    "name": "Altaria (Mega)",
+    "key": "altaria-mega",
+    "cdn_file": "altariamega"
+  },
+  {
+    "name": "Amaura",
+    "key": "amaura",
+    "cdn_file": "amaura"
+  },
+  {
+    "name": "Ambipom",
+    "key": "ambipom",
+    "cdn_file": "ambipom"
+  },
+  {
+    "name": "Amoonguss",
+    "key": "amoonguss",
+    "cdn_file": "amoonguss"
+  },
+  {
+    "name": "Ampharos",
+    "key": "ampharos",
+    "cdn_file": "ampharos"
+  },
+  {
+    "name": "Ampharos (Mega)",
+    "key": "ampharos-mega",
+    "cdn_file": "ampharosmega"
+  },
+  {
+    "name": "Annihilape",
+    "key": "annihilape",
+    "cdn_file": "annihilape"
+  },
+  {
+    "name": "Anorith",
+    "key": "anorith",
+    "cdn_file": "anorith"
+  },
+  {
+    "name": "Appletun",
+    "key": "appletun",
+    "cdn_file": "appletun"
+  },
+  {
+    "name": "Appletun (Gmax)",
+    "key": "appletun-gmax",
+    "cdn_file": "appletungmax"
+  },
+  {
+    "name": "Applin",
+    "key": "applin",
+    "cdn_file": "applin"
+  },
+  {
+    "name": "Araquanid",
+    "key": "araquanid",
+    "cdn_file": "araquanid"
+  },
+  {
+    "name": "Araquanid (Totem)",
+    "key": "araquanid-totem",
+    "cdn_file": "araquanidtotem"
+  },
+  {
+    "name": "Arbok",
+    "key": "arbok",
+    "cdn_file": "arbok"
+  },
+  {
+    "name": "Arboliva",
+    "key": "arboliva",
+    "cdn_file": "arboliva"
+  },
+  {
+    "name": "Arcanine",
+    "key": "arcanine",
+    "cdn_file": "arcanine"
+  },
+  {
+    "name": "Arcanine (Hisui)",
+    "key": "arcanine-hisui",
+    "cdn_file": "arcaninehisui"
+  },
+  {
+    "name": "Arceus",
+    "key": "arceus",
+    "cdn_file": "arceus"
+  },
+  {
+    "name": "Archaludon",
+    "key": "archaludon",
+    "cdn_file": "archaludon"
+  },
+  {
+    "name": "Archen",
+    "key": "archen",
+    "cdn_file": "archen"
+  },
+  {
+    "name": "Archeops",
+    "key": "archeops",
+    "cdn_file": "archeops"
+  },
+  {
+    "name": "Arctibax",
+    "key": "arctibax",
+    "cdn_file": "arctibax"
+  },
+  {
+    "name": "Arctovish",
+    "key": "arctovish",
+    "cdn_file": "arctovish"
+  },
+  {
+    "name": "Arctozolt",
+    "key": "arctozolt",
+    "cdn_file": "arctozolt"
+  },
+  {
+    "name": "Ariados",
+    "key": "ariados",
+    "cdn_file": "ariados"
+  },
+  {
+    "name": "Armaldo",
+    "key": "armaldo",
+    "cdn_file": "armaldo"
+  },
+  {
+    "name": "Armarouge",
+    "key": "armarouge",
+    "cdn_file": "armarouge"
+  },
+  {
+    "name": "Aromatisse",
+    "key": "aromatisse",
+    "cdn_file": "aromatisse"
+  },
+  {
+    "name": "Aron",
+    "key": "aron",
+    "cdn_file": "aron"
+  },
+  {
+    "name": "Arrokuda",
+    "key": "arrokuda",
+    "cdn_file": "arrokuda"
+  },
+  {
+    "name": "Articuno",
+    "key": "articuno",
+    "cdn_file": "articuno"
+  },
+  {
+    "name": "Articuno (Galar)",
+    "key": "articuno-galar",
+    "cdn_file": "articunogalar"
+  },
+  {
+    "name": "Audino",
+    "key": "audino",
+    "cdn_file": "audino"
+  },
+  {
+    "name": "Audino (Mega)",
+    "key": "audino-mega",
+    "cdn_file": "audinomega"
+  },
+  {
+    "name": "Aurorus",
+    "key": "aurorus",
+    "cdn_file": "aurorus"
+  },
+  {
+    "name": "Avalugg",
+    "key": "avalugg",
+    "cdn_file": "avalugg"
+  },
+  {
+    "name": "Avalugg (Hisui)",
+    "key": "avalugg-hisui",
+    "cdn_file": "avalugghisui"
+  },
+  {
+    "name": "Axew",
+    "key": "axew",
+    "cdn_file": "axew"
+  },
+  {
+    "name": "Azelf",
+    "key": "azelf",
+    "cdn_file": "azelf"
+  },
+  {
+    "name": "Azumarill",
+    "key": "azumarill",
+    "cdn_file": "azumarill"
+  },
+  {
+    "name": "Azurill",
+    "key": "azurill",
+    "cdn_file": "azurill"
+  },
+  {
+    "name": "Bagon",
+    "key": "bagon",
+    "cdn_file": "bagon"
+  },
+  {
+    "name": "Baltoy",
+    "key": "baltoy",
+    "cdn_file": "baltoy"
+  },
+  {
+    "name": "Banette",
+    "key": "banette",
+    "cdn_file": "banette"
+  },
+  {
+    "name": "Banette (Mega)",
+    "key": "banette-mega",
+    "cdn_file": "banettemega"
+  },
+  {
+    "name": "Barbaracle",
+    "key": "barbaracle",
+    "cdn_file": "barbaracle"
+  },
+  {
+    "name": "Barbaracle (Mega)",
+    "key": "barbaracle-mega",
+    "cdn_file": "barbaraclemega"
+  },
+  {
+    "name": "Barboach",
+    "key": "barboach",
+    "cdn_file": "barboach"
+  },
+  {
+    "name": "Barraskewda",
+    "key": "barraskewda",
+    "cdn_file": "barraskewda"
+  },
+  {
+    "name": "Basculegion (Female)",
+    "key": "basculegion-female",
+    "cdn_file": "basculegionfemale"
+  },
+  {
+    "name": "Basculegion (Male)",
+    "key": "basculegion-male",
+    "cdn_file": "basculegionmale"
+  },
+  {
+    "name": "Basculin (Blue Striped)",
+    "key": "basculin-blue-striped",
+    "cdn_file": "basculinbluestriped"
+  },
+  {
+    "name": "Basculin (Red Striped)",
+    "key": "basculin-red-striped",
+    "cdn_file": "basculinredstriped"
+  },
+  {
+    "name": "Basculin (White Striped)",
+    "key": "basculin-white-striped",
+    "cdn_file": "basculinwhitestriped"
+  },
+  {
+    "name": "Bastiodon",
+    "key": "bastiodon",
+    "cdn_file": "bastiodon"
+  },
+  {
+    "name": "Baxcalibur",
+    "key": "baxcalibur",
+    "cdn_file": "baxcalibur"
+  },
+  {
+    "name": "Baxcalibur (Mega)",
+    "key": "baxcalibur-mega",
+    "cdn_file": "baxcaliburmega"
+  },
+  {
+    "name": "Bayleef",
+    "key": "bayleef",
+    "cdn_file": "bayleef"
+  },
+  {
+    "name": "Beartic",
+    "key": "beartic",
+    "cdn_file": "beartic"
+  },
+  {
+    "name": "Beautifly",
+    "key": "beautifly",
+    "cdn_file": "beautifly"
+  },
+  {
+    "name": "Beedrill",
+    "key": "beedrill",
+    "cdn_file": "beedrill"
+  },
+  {
+    "name": "Beedrill (Mega)",
+    "key": "beedrill-mega",
+    "cdn_file": "beedrillmega"
+  },
+  {
+    "name": "Beheeyem",
+    "key": "beheeyem",
+    "cdn_file": "beheeyem"
+  },
+  {
+    "name": "Beldum",
+    "key": "beldum",
+    "cdn_file": "beldum"
+  },
+  {
+    "name": "Bellibolt",
+    "key": "bellibolt",
+    "cdn_file": "bellibolt"
+  },
+  {
+    "name": "Bellossom",
+    "key": "bellossom",
+    "cdn_file": "bellossom"
+  },
+  {
+    "name": "Bellsprout",
+    "key": "bellsprout",
+    "cdn_file": "bellsprout"
+  },
+  {
+    "name": "Bergmite",
+    "key": "bergmite",
+    "cdn_file": "bergmite"
+  },
+  {
+    "name": "Bewear",
+    "key": "bewear",
+    "cdn_file": "bewear"
+  },
+  {
+    "name": "Bibarel",
+    "key": "bibarel",
+    "cdn_file": "bibarel"
+  },
+  {
+    "name": "Bidoof",
+    "key": "bidoof",
+    "cdn_file": "bidoof"
+  },
+  {
+    "name": "Binacle",
+    "key": "binacle",
+    "cdn_file": "binacle"
+  },
+  {
+    "name": "Bisharp",
+    "key": "bisharp",
+    "cdn_file": "bisharp"
+  },
+  {
+    "name": "Blacephalon",
+    "key": "blacephalon",
+    "cdn_file": "blacephalon"
+  },
+  {
+    "name": "Blastoise",
+    "key": "blastoise",
+    "cdn_file": "blastoise"
+  },
+  {
+    "name": "Blastoise (Gmax)",
+    "key": "blastoise-gmax",
+    "cdn_file": "blastoisegmax"
+  },
+  {
+    "name": "Blastoise (Mega)",
+    "key": "blastoise-mega",
+    "cdn_file": "blastoisemega"
+  },
+  {
+    "name": "Blaziken",
+    "key": "blaziken",
+    "cdn_file": "blaziken"
+  },
+  {
+    "name": "Blaziken (Mega)",
+    "key": "blaziken-mega",
+    "cdn_file": "blazikenmega"
+  },
+  {
+    "name": "Blipbug",
+    "key": "blipbug",
+    "cdn_file": "blipbug"
+  },
+  {
+    "name": "Blissey",
+    "key": "blissey",
+    "cdn_file": "blissey"
+  },
+  {
+    "name": "Blitzle",
+    "key": "blitzle",
+    "cdn_file": "blitzle"
+  },
+  {
+    "name": "Boldore",
+    "key": "boldore",
+    "cdn_file": "boldore"
+  },
+  {
+    "name": "Boltund",
+    "key": "boltund",
+    "cdn_file": "boltund"
+  },
+  {
+    "name": "Bombirdier",
+    "key": "bombirdier",
+    "cdn_file": "bombirdier"
+  },
+  {
+    "name": "Bonsly",
+    "key": "bonsly",
+    "cdn_file": "bonsly"
+  },
+  {
+    "name": "Bouffalant",
+    "key": "bouffalant",
+    "cdn_file": "bouffalant"
+  },
+  {
+    "name": "Bounsweet",
+    "key": "bounsweet",
+    "cdn_file": "bounsweet"
+  },
+  {
+    "name": "Braixen",
+    "key": "braixen",
+    "cdn_file": "braixen"
+  },
+  {
+    "name": "Brambleghast",
+    "key": "brambleghast",
+    "cdn_file": "brambleghast"
+  },
+  {
+    "name": "Bramblin",
+    "key": "bramblin",
+    "cdn_file": "bramblin"
+  },
+  {
+    "name": "Braviary",
+    "key": "braviary",
+    "cdn_file": "braviary"
+  },
+  {
+    "name": "Braviary (Hisui)",
+    "key": "braviary-hisui",
+    "cdn_file": "braviaryhisui"
+  },
+  {
+    "name": "Breloom",
+    "key": "breloom",
+    "cdn_file": "breloom"
+  },
+  {
+    "name": "Brionne",
+    "key": "brionne",
+    "cdn_file": "brionne"
+  },
+  {
+    "name": "Bronzong",
+    "key": "bronzong",
+    "cdn_file": "bronzong"
+  },
+  {
+    "name": "Bronzor",
+    "key": "bronzor",
+    "cdn_file": "bronzor"
+  },
+  {
+    "name": "Brute Bonnet",
+    "key": "brute-bonnet",
+    "cdn_file": "brutebonnet"
+  },
+  {
+    "name": "Bruxish",
+    "key": "bruxish",
+    "cdn_file": "bruxish"
+  },
+  {
+    "name": "Budew",
+    "key": "budew",
+    "cdn_file": "budew"
+  },
+  {
+    "name": "Buizel",
+    "key": "buizel",
+    "cdn_file": "buizel"
+  },
+  {
     "name": "Bulbasaur",
     "key": "bulbasaur",
     "cdn_file": "bulbasaur"
+  },
+  {
+    "name": "Buneary",
+    "key": "buneary",
+    "cdn_file": "buneary"
+  },
+  {
+    "name": "Bunnelby",
+    "key": "bunnelby",
+    "cdn_file": "bunnelby"
+  },
+  {
+    "name": "Burmy",
+    "key": "burmy",
+    "cdn_file": "burmy"
+  },
+  {
+    "name": "Butterfree",
+    "key": "butterfree",
+    "cdn_file": "butterfree"
+  },
+  {
+    "name": "Butterfree (Gmax)",
+    "key": "butterfree-gmax",
+    "cdn_file": "butterfreegmax"
+  },
+  {
+    "name": "Buzzwole",
+    "key": "buzzwole",
+    "cdn_file": "buzzwole"
+  },
+  {
+    "name": "Cacnea",
+    "key": "cacnea",
+    "cdn_file": "cacnea"
+  },
+  {
+    "name": "Cacturne",
+    "key": "cacturne",
+    "cdn_file": "cacturne"
+  },
+  {
+    "name": "Calyrex",
+    "key": "calyrex",
+    "cdn_file": "calyrex"
+  },
+  {
+    "name": "Calyrex (Ice)",
+    "key": "calyrex-ice",
+    "cdn_file": "calyrexice"
+  },
+  {
+    "name": "Calyrex (Shadow)",
+    "key": "calyrex-shadow",
+    "cdn_file": "calyrexshadow"
+  },
+  {
+    "name": "Camerupt",
+    "key": "camerupt",
+    "cdn_file": "camerupt"
+  },
+  {
+    "name": "Camerupt (Mega)",
+    "key": "camerupt-mega",
+    "cdn_file": "cameruptmega"
+  },
+  {
+    "name": "Capsakid",
+    "key": "capsakid",
+    "cdn_file": "capsakid"
+  },
+  {
+    "name": "Carbink",
+    "key": "carbink",
+    "cdn_file": "carbink"
+  },
+  {
+    "name": "Carkol",
+    "key": "carkol",
+    "cdn_file": "carkol"
+  },
+  {
+    "name": "Carnivine",
+    "key": "carnivine",
+    "cdn_file": "carnivine"
+  },
+  {
+    "name": "Carracosta",
+    "key": "carracosta",
+    "cdn_file": "carracosta"
+  },
+  {
+    "name": "Carvanha",
+    "key": "carvanha",
+    "cdn_file": "carvanha"
+  },
+  {
+    "name": "Cascoon",
+    "key": "cascoon",
+    "cdn_file": "cascoon"
+  },
+  {
+    "name": "Castform",
+    "key": "castform",
+    "cdn_file": "castform"
+  },
+  {
+    "name": "Castform (Rainy)",
+    "key": "castform-rainy",
+    "cdn_file": "castformrainy"
+  },
+  {
+    "name": "Castform (Snowy)",
+    "key": "castform-snowy",
+    "cdn_file": "castformsnowy"
+  },
+  {
+    "name": "Castform (Sunny)",
+    "key": "castform-sunny",
+    "cdn_file": "castformsunny"
+  },
+  {
+    "name": "Caterpie",
+    "key": "caterpie",
+    "cdn_file": "caterpie"
+  },
+  {
+    "name": "Celebi",
+    "key": "celebi",
+    "cdn_file": "celebi"
+  },
+  {
+    "name": "Celesteela",
+    "key": "celesteela",
+    "cdn_file": "celesteela"
+  },
+  {
+    "name": "Centiskorch",
+    "key": "centiskorch",
+    "cdn_file": "centiskorch"
+  },
+  {
+    "name": "Centiskorch (Gmax)",
+    "key": "centiskorch-gmax",
+    "cdn_file": "centiskorchgmax"
+  },
+  {
+    "name": "Ceruledge",
+    "key": "ceruledge",
+    "cdn_file": "ceruledge"
+  },
+  {
+    "name": "Cetitan",
+    "key": "cetitan",
+    "cdn_file": "cetitan"
+  },
+  {
+    "name": "Cetoddle",
+    "key": "cetoddle",
+    "cdn_file": "cetoddle"
+  },
+  {
+    "name": "Chandelure",
+    "key": "chandelure",
+    "cdn_file": "chandelure"
+  },
+  {
+    "name": "Chandelure (Mega)",
+    "key": "chandelure-mega",
+    "cdn_file": "chandeluremega"
+  },
+  {
+    "name": "Chansey",
+    "key": "chansey",
+    "cdn_file": "chansey"
+  },
+  {
+    "name": "Charcadet",
+    "key": "charcadet",
+    "cdn_file": "charcadet"
   },
   {
     "name": "Charizard",
@@ -10,14 +795,1284 @@
     "cdn_file": "charizard"
   },
   {
-    "name": "Pikachu",
-    "key": "pikachu",
-    "cdn_file": "pikachu"
+    "name": "Charizard (Gmax)",
+    "key": "charizard-gmax",
+    "cdn_file": "charizardgmax"
   },
   {
-    "name": "Tapu Koko",
-    "key": "tapu-koko",
-    "cdn_file": "tapukoko"
+    "name": "Charizard (Mega X)",
+    "key": "charizard-mega-x",
+    "cdn_file": "charizardmegax"
+  },
+  {
+    "name": "Charizard (Mega Y)",
+    "key": "charizard-mega-y",
+    "cdn_file": "charizardmegay"
+  },
+  {
+    "name": "Charjabug",
+    "key": "charjabug",
+    "cdn_file": "charjabug"
+  },
+  {
+    "name": "Charmander",
+    "key": "charmander",
+    "cdn_file": "charmander"
+  },
+  {
+    "name": "Charmeleon",
+    "key": "charmeleon",
+    "cdn_file": "charmeleon"
+  },
+  {
+    "name": "Chatot",
+    "key": "chatot",
+    "cdn_file": "chatot"
+  },
+  {
+    "name": "Cherrim",
+    "key": "cherrim",
+    "cdn_file": "cherrim"
+  },
+  {
+    "name": "Cherubi",
+    "key": "cherubi",
+    "cdn_file": "cherubi"
+  },
+  {
+    "name": "Chesnaught",
+    "key": "chesnaught",
+    "cdn_file": "chesnaught"
+  },
+  {
+    "name": "Chesnaught (Mega)",
+    "key": "chesnaught-mega",
+    "cdn_file": "chesnaughtmega"
+  },
+  {
+    "name": "Chespin",
+    "key": "chespin",
+    "cdn_file": "chespin"
+  },
+  {
+    "name": "Chewtle",
+    "key": "chewtle",
+    "cdn_file": "chewtle"
+  },
+  {
+    "name": "Chi-Yu",
+    "key": "chi-yu",
+    "cdn_file": "chiyu"
+  },
+  {
+    "name": "Chien-Pao",
+    "key": "chien-pao",
+    "cdn_file": "chienpao"
+  },
+  {
+    "name": "Chikorita",
+    "key": "chikorita",
+    "cdn_file": "chikorita"
+  },
+  {
+    "name": "Chimchar",
+    "key": "chimchar",
+    "cdn_file": "chimchar"
+  },
+  {
+    "name": "Chimecho",
+    "key": "chimecho",
+    "cdn_file": "chimecho"
+  },
+  {
+    "name": "Chimecho (Mega)",
+    "key": "chimecho-mega",
+    "cdn_file": "chimechomega"
+  },
+  {
+    "name": "Chinchou",
+    "key": "chinchou",
+    "cdn_file": "chinchou"
+  },
+  {
+    "name": "Chingling",
+    "key": "chingling",
+    "cdn_file": "chingling"
+  },
+  {
+    "name": "Cinccino",
+    "key": "cinccino",
+    "cdn_file": "cinccino"
+  },
+  {
+    "name": "Cinderace",
+    "key": "cinderace",
+    "cdn_file": "cinderace"
+  },
+  {
+    "name": "Cinderace (Gmax)",
+    "key": "cinderace-gmax",
+    "cdn_file": "cinderacegmax"
+  },
+  {
+    "name": "Clamperl",
+    "key": "clamperl",
+    "cdn_file": "clamperl"
+  },
+  {
+    "name": "Clauncher",
+    "key": "clauncher",
+    "cdn_file": "clauncher"
+  },
+  {
+    "name": "Clawitzer",
+    "key": "clawitzer",
+    "cdn_file": "clawitzer"
+  },
+  {
+    "name": "Claydol",
+    "key": "claydol",
+    "cdn_file": "claydol"
+  },
+  {
+    "name": "Clefable",
+    "key": "clefable",
+    "cdn_file": "clefable"
+  },
+  {
+    "name": "Clefable (Mega)",
+    "key": "clefable-mega",
+    "cdn_file": "clefablemega"
+  },
+  {
+    "name": "Clefairy",
+    "key": "clefairy",
+    "cdn_file": "clefairy"
+  },
+  {
+    "name": "Cleffa",
+    "key": "cleffa",
+    "cdn_file": "cleffa"
+  },
+  {
+    "name": "Clobbopus",
+    "key": "clobbopus",
+    "cdn_file": "clobbopus"
+  },
+  {
+    "name": "Clodsire",
+    "key": "clodsire",
+    "cdn_file": "clodsire"
+  },
+  {
+    "name": "Cloyster",
+    "key": "cloyster",
+    "cdn_file": "cloyster"
+  },
+  {
+    "name": "Coalossal",
+    "key": "coalossal",
+    "cdn_file": "coalossal"
+  },
+  {
+    "name": "Coalossal (Gmax)",
+    "key": "coalossal-gmax",
+    "cdn_file": "coalossalgmax"
+  },
+  {
+    "name": "Cobalion",
+    "key": "cobalion",
+    "cdn_file": "cobalion"
+  },
+  {
+    "name": "Cofagrigus",
+    "key": "cofagrigus",
+    "cdn_file": "cofagrigus"
+  },
+  {
+    "name": "Combee",
+    "key": "combee",
+    "cdn_file": "combee"
+  },
+  {
+    "name": "Combusken",
+    "key": "combusken",
+    "cdn_file": "combusken"
+  },
+  {
+    "name": "Comfey",
+    "key": "comfey",
+    "cdn_file": "comfey"
+  },
+  {
+    "name": "Conkeldurr",
+    "key": "conkeldurr",
+    "cdn_file": "conkeldurr"
+  },
+  {
+    "name": "Copperajah",
+    "key": "copperajah",
+    "cdn_file": "copperajah"
+  },
+  {
+    "name": "Copperajah (Gmax)",
+    "key": "copperajah-gmax",
+    "cdn_file": "copperajahgmax"
+  },
+  {
+    "name": "Corphish",
+    "key": "corphish",
+    "cdn_file": "corphish"
+  },
+  {
+    "name": "Corsola",
+    "key": "corsola",
+    "cdn_file": "corsola"
+  },
+  {
+    "name": "Corsola (Galar)",
+    "key": "corsola-galar",
+    "cdn_file": "corsolagalar"
+  },
+  {
+    "name": "Corviknight",
+    "key": "corviknight",
+    "cdn_file": "corviknight"
+  },
+  {
+    "name": "Corviknight (Gmax)",
+    "key": "corviknight-gmax",
+    "cdn_file": "corviknightgmax"
+  },
+  {
+    "name": "Corvisquire",
+    "key": "corvisquire",
+    "cdn_file": "corvisquire"
+  },
+  {
+    "name": "Cosmoem",
+    "key": "cosmoem",
+    "cdn_file": "cosmoem"
+  },
+  {
+    "name": "Cosmog",
+    "key": "cosmog",
+    "cdn_file": "cosmog"
+  },
+  {
+    "name": "Cottonee",
+    "key": "cottonee",
+    "cdn_file": "cottonee"
+  },
+  {
+    "name": "Crabominable",
+    "key": "crabominable",
+    "cdn_file": "crabominable"
+  },
+  {
+    "name": "Crabominable (Mega)",
+    "key": "crabominable-mega",
+    "cdn_file": "crabominablemega"
+  },
+  {
+    "name": "Crabrawler",
+    "key": "crabrawler",
+    "cdn_file": "crabrawler"
+  },
+  {
+    "name": "Cradily",
+    "key": "cradily",
+    "cdn_file": "cradily"
+  },
+  {
+    "name": "Cramorant",
+    "key": "cramorant",
+    "cdn_file": "cramorant"
+  },
+  {
+    "name": "Cramorant (Gorging)",
+    "key": "cramorant-gorging",
+    "cdn_file": "cramorantgorging"
+  },
+  {
+    "name": "Cramorant (Gulping)",
+    "key": "cramorant-gulping",
+    "cdn_file": "cramorantgulping"
+  },
+  {
+    "name": "Cranidos",
+    "key": "cranidos",
+    "cdn_file": "cranidos"
+  },
+  {
+    "name": "Crawdaunt",
+    "key": "crawdaunt",
+    "cdn_file": "crawdaunt"
+  },
+  {
+    "name": "Cresselia",
+    "key": "cresselia",
+    "cdn_file": "cresselia"
+  },
+  {
+    "name": "Croagunk",
+    "key": "croagunk",
+    "cdn_file": "croagunk"
+  },
+  {
+    "name": "Crobat",
+    "key": "crobat",
+    "cdn_file": "crobat"
+  },
+  {
+    "name": "Crocalor",
+    "key": "crocalor",
+    "cdn_file": "crocalor"
+  },
+  {
+    "name": "Croconaw",
+    "key": "croconaw",
+    "cdn_file": "croconaw"
+  },
+  {
+    "name": "Crustle",
+    "key": "crustle",
+    "cdn_file": "crustle"
+  },
+  {
+    "name": "Cryogonal",
+    "key": "cryogonal",
+    "cdn_file": "cryogonal"
+  },
+  {
+    "name": "Cubchoo",
+    "key": "cubchoo",
+    "cdn_file": "cubchoo"
+  },
+  {
+    "name": "Cubone",
+    "key": "cubone",
+    "cdn_file": "cubone"
+  },
+  {
+    "name": "Cufant",
+    "key": "cufant",
+    "cdn_file": "cufant"
+  },
+  {
+    "name": "Cursola",
+    "key": "cursola",
+    "cdn_file": "cursola"
+  },
+  {
+    "name": "Cutiefly",
+    "key": "cutiefly",
+    "cdn_file": "cutiefly"
+  },
+  {
+    "name": "Cyclizar",
+    "key": "cyclizar",
+    "cdn_file": "cyclizar"
+  },
+  {
+    "name": "Cyndaquil",
+    "key": "cyndaquil",
+    "cdn_file": "cyndaquil"
+  },
+  {
+    "name": "Dachsbun",
+    "key": "dachsbun",
+    "cdn_file": "dachsbun"
+  },
+  {
+    "name": "Darkrai",
+    "key": "darkrai",
+    "cdn_file": "darkrai"
+  },
+  {
+    "name": "Darkrai (Mega)",
+    "key": "darkrai-mega",
+    "cdn_file": "darkraimega"
+  },
+  {
+    "name": "Darmanitan (Galar Standard)",
+    "key": "darmanitan-galar-standard",
+    "cdn_file": "darmanitangalarstandard"
+  },
+  {
+    "name": "Darmanitan (Galar Zen)",
+    "key": "darmanitan-galar-zen",
+    "cdn_file": "darmanitangalarzen"
+  },
+  {
+    "name": "Darmanitan (Standard)",
+    "key": "darmanitan-standard",
+    "cdn_file": "darmanitanstandard"
+  },
+  {
+    "name": "Darmanitan (Zen)",
+    "key": "darmanitan-zen",
+    "cdn_file": "darmanitanzen"
+  },
+  {
+    "name": "Dartrix",
+    "key": "dartrix",
+    "cdn_file": "dartrix"
+  },
+  {
+    "name": "Darumaka",
+    "key": "darumaka",
+    "cdn_file": "darumaka"
+  },
+  {
+    "name": "Darumaka (Galar)",
+    "key": "darumaka-galar",
+    "cdn_file": "darumakagalar"
+  },
+  {
+    "name": "Decidueye",
+    "key": "decidueye",
+    "cdn_file": "decidueye"
+  },
+  {
+    "name": "Decidueye (Hisui)",
+    "key": "decidueye-hisui",
+    "cdn_file": "decidueyehisui"
+  },
+  {
+    "name": "Dedenne",
+    "key": "dedenne",
+    "cdn_file": "dedenne"
+  },
+  {
+    "name": "Deerling",
+    "key": "deerling",
+    "cdn_file": "deerling"
+  },
+  {
+    "name": "Deino",
+    "key": "deino",
+    "cdn_file": "deino"
+  },
+  {
+    "name": "Delcatty",
+    "key": "delcatty",
+    "cdn_file": "delcatty"
+  },
+  {
+    "name": "Delibird",
+    "key": "delibird",
+    "cdn_file": "delibird"
+  },
+  {
+    "name": "Delphox",
+    "key": "delphox",
+    "cdn_file": "delphox"
+  },
+  {
+    "name": "Delphox (Mega)",
+    "key": "delphox-mega",
+    "cdn_file": "delphoxmega"
+  },
+  {
+    "name": "Deoxys (Attack)",
+    "key": "deoxys-attack",
+    "cdn_file": "deoxysattack"
+  },
+  {
+    "name": "Deoxys (Defense)",
+    "key": "deoxys-defense",
+    "cdn_file": "deoxysdefense"
+  },
+  {
+    "name": "Deoxys (Normal)",
+    "key": "deoxys-normal",
+    "cdn_file": "deoxysnormal"
+  },
+  {
+    "name": "Deoxys (Speed)",
+    "key": "deoxys-speed",
+    "cdn_file": "deoxysspeed"
+  },
+  {
+    "name": "Dewgong",
+    "key": "dewgong",
+    "cdn_file": "dewgong"
+  },
+  {
+    "name": "Dewott",
+    "key": "dewott",
+    "cdn_file": "dewott"
+  },
+  {
+    "name": "Dewpider",
+    "key": "dewpider",
+    "cdn_file": "dewpider"
+  },
+  {
+    "name": "Dhelmise",
+    "key": "dhelmise",
+    "cdn_file": "dhelmise"
+  },
+  {
+    "name": "Dialga",
+    "key": "dialga",
+    "cdn_file": "dialga"
+  },
+  {
+    "name": "Dialga (Origin)",
+    "key": "dialga-origin",
+    "cdn_file": "dialgaorigin"
+  },
+  {
+    "name": "Diancie",
+    "key": "diancie",
+    "cdn_file": "diancie"
+  },
+  {
+    "name": "Diancie (Mega)",
+    "key": "diancie-mega",
+    "cdn_file": "dianciemega"
+  },
+  {
+    "name": "Diggersby",
+    "key": "diggersby",
+    "cdn_file": "diggersby"
+  },
+  {
+    "name": "Diglett",
+    "key": "diglett",
+    "cdn_file": "diglett"
+  },
+  {
+    "name": "Diglett (Alola)",
+    "key": "diglett-alola",
+    "cdn_file": "diglettalola"
+  },
+  {
+    "name": "Dipplin",
+    "key": "dipplin",
+    "cdn_file": "dipplin"
+  },
+  {
+    "name": "Ditto",
+    "key": "ditto",
+    "cdn_file": "ditto"
+  },
+  {
+    "name": "Dodrio",
+    "key": "dodrio",
+    "cdn_file": "dodrio"
+  },
+  {
+    "name": "Doduo",
+    "key": "doduo",
+    "cdn_file": "doduo"
+  },
+  {
+    "name": "Dolliv",
+    "key": "dolliv",
+    "cdn_file": "dolliv"
+  },
+  {
+    "name": "Dondozo",
+    "key": "dondozo",
+    "cdn_file": "dondozo"
+  },
+  {
+    "name": "Donphan",
+    "key": "donphan",
+    "cdn_file": "donphan"
+  },
+  {
+    "name": "Dottler",
+    "key": "dottler",
+    "cdn_file": "dottler"
+  },
+  {
+    "name": "Doublade",
+    "key": "doublade",
+    "cdn_file": "doublade"
+  },
+  {
+    "name": "Dracovish",
+    "key": "dracovish",
+    "cdn_file": "dracovish"
+  },
+  {
+    "name": "Dracozolt",
+    "key": "dracozolt",
+    "cdn_file": "dracozolt"
+  },
+  {
+    "name": "Dragalge",
+    "key": "dragalge",
+    "cdn_file": "dragalge"
+  },
+  {
+    "name": "Dragalge (Mega)",
+    "key": "dragalge-mega",
+    "cdn_file": "dragalgemega"
+  },
+  {
+    "name": "Dragapult",
+    "key": "dragapult",
+    "cdn_file": "dragapult"
+  },
+  {
+    "name": "Dragonair",
+    "key": "dragonair",
+    "cdn_file": "dragonair"
+  },
+  {
+    "name": "Dragonite",
+    "key": "dragonite",
+    "cdn_file": "dragonite"
+  },
+  {
+    "name": "Dragonite (Mega)",
+    "key": "dragonite-mega",
+    "cdn_file": "dragonitemega"
+  },
+  {
+    "name": "Drakloak",
+    "key": "drakloak",
+    "cdn_file": "drakloak"
+  },
+  {
+    "name": "Drampa",
+    "key": "drampa",
+    "cdn_file": "drampa"
+  },
+  {
+    "name": "Drampa (Mega)",
+    "key": "drampa-mega",
+    "cdn_file": "drampamega"
+  },
+  {
+    "name": "Drapion",
+    "key": "drapion",
+    "cdn_file": "drapion"
+  },
+  {
+    "name": "Dratini",
+    "key": "dratini",
+    "cdn_file": "dratini"
+  },
+  {
+    "name": "Drednaw",
+    "key": "drednaw",
+    "cdn_file": "drednaw"
+  },
+  {
+    "name": "Drednaw (Gmax)",
+    "key": "drednaw-gmax",
+    "cdn_file": "drednawgmax"
+  },
+  {
+    "name": "Dreepy",
+    "key": "dreepy",
+    "cdn_file": "dreepy"
+  },
+  {
+    "name": "Drifblim",
+    "key": "drifblim",
+    "cdn_file": "drifblim"
+  },
+  {
+    "name": "Drifloon",
+    "key": "drifloon",
+    "cdn_file": "drifloon"
+  },
+  {
+    "name": "Drilbur",
+    "key": "drilbur",
+    "cdn_file": "drilbur"
+  },
+  {
+    "name": "Drizzile",
+    "key": "drizzile",
+    "cdn_file": "drizzile"
+  },
+  {
+    "name": "Drowzee",
+    "key": "drowzee",
+    "cdn_file": "drowzee"
+  },
+  {
+    "name": "Druddigon",
+    "key": "druddigon",
+    "cdn_file": "druddigon"
+  },
+  {
+    "name": "Dubwool",
+    "key": "dubwool",
+    "cdn_file": "dubwool"
+  },
+  {
+    "name": "Ducklett",
+    "key": "ducklett",
+    "cdn_file": "ducklett"
+  },
+  {
+    "name": "Dudunsparce (Three Segment)",
+    "key": "dudunsparce-three-segment",
+    "cdn_file": "dudunsparcethreesegment"
+  },
+  {
+    "name": "Dudunsparce (Two Segment)",
+    "key": "dudunsparce-two-segment",
+    "cdn_file": "dudunsparcetwosegment"
+  },
+  {
+    "name": "Dugtrio",
+    "key": "dugtrio",
+    "cdn_file": "dugtrio"
+  },
+  {
+    "name": "Dugtrio (Alola)",
+    "key": "dugtrio-alola",
+    "cdn_file": "dugtrioalola"
+  },
+  {
+    "name": "Dunsparce",
+    "key": "dunsparce",
+    "cdn_file": "dunsparce"
+  },
+  {
+    "name": "Duosion",
+    "key": "duosion",
+    "cdn_file": "duosion"
+  },
+  {
+    "name": "Duraludon",
+    "key": "duraludon",
+    "cdn_file": "duraludon"
+  },
+  {
+    "name": "Duraludon (Gmax)",
+    "key": "duraludon-gmax",
+    "cdn_file": "duraludongmax"
+  },
+  {
+    "name": "Durant",
+    "key": "durant",
+    "cdn_file": "durant"
+  },
+  {
+    "name": "Dusclops",
+    "key": "dusclops",
+    "cdn_file": "dusclops"
+  },
+  {
+    "name": "Dusknoir",
+    "key": "dusknoir",
+    "cdn_file": "dusknoir"
+  },
+  {
+    "name": "Duskull",
+    "key": "duskull",
+    "cdn_file": "duskull"
+  },
+  {
+    "name": "Dustox",
+    "key": "dustox",
+    "cdn_file": "dustox"
+  },
+  {
+    "name": "Dwebble",
+    "key": "dwebble",
+    "cdn_file": "dwebble"
+  },
+  {
+    "name": "Eelektrik",
+    "key": "eelektrik",
+    "cdn_file": "eelektrik"
+  },
+  {
+    "name": "Eelektross",
+    "key": "eelektross",
+    "cdn_file": "eelektross"
+  },
+  {
+    "name": "Eelektross (Mega)",
+    "key": "eelektross-mega",
+    "cdn_file": "eelektrossmega"
+  },
+  {
+    "name": "Eevee",
+    "key": "eevee",
+    "cdn_file": "eevee"
+  },
+  {
+    "name": "Eevee (Gmax)",
+    "key": "eevee-gmax",
+    "cdn_file": "eeveegmax"
+  },
+  {
+    "name": "Eevee (Starter)",
+    "key": "eevee-starter",
+    "cdn_file": "eeveestarter"
+  },
+  {
+    "name": "Eiscue (Ice)",
+    "key": "eiscue-ice",
+    "cdn_file": "eiscueice"
+  },
+  {
+    "name": "Eiscue (Noice)",
+    "key": "eiscue-noice",
+    "cdn_file": "eiscuenoice"
+  },
+  {
+    "name": "Ekans",
+    "key": "ekans",
+    "cdn_file": "ekans"
+  },
+  {
+    "name": "Eldegoss",
+    "key": "eldegoss",
+    "cdn_file": "eldegoss"
+  },
+  {
+    "name": "Electabuzz",
+    "key": "electabuzz",
+    "cdn_file": "electabuzz"
+  },
+  {
+    "name": "Electivire",
+    "key": "electivire",
+    "cdn_file": "electivire"
+  },
+  {
+    "name": "Electrike",
+    "key": "electrike",
+    "cdn_file": "electrike"
+  },
+  {
+    "name": "Electrode",
+    "key": "electrode",
+    "cdn_file": "electrode"
+  },
+  {
+    "name": "Electrode (Hisui)",
+    "key": "electrode-hisui",
+    "cdn_file": "electrodehisui"
+  },
+  {
+    "name": "Elekid",
+    "key": "elekid",
+    "cdn_file": "elekid"
+  },
+  {
+    "name": "Elgyem",
+    "key": "elgyem",
+    "cdn_file": "elgyem"
+  },
+  {
+    "name": "Emboar",
+    "key": "emboar",
+    "cdn_file": "emboar"
+  },
+  {
+    "name": "Emboar (Mega)",
+    "key": "emboar-mega",
+    "cdn_file": "emboarmega"
+  },
+  {
+    "name": "Emolga",
+    "key": "emolga",
+    "cdn_file": "emolga"
+  },
+  {
+    "name": "Empoleon",
+    "key": "empoleon",
+    "cdn_file": "empoleon"
+  },
+  {
+    "name": "Enamorus (Incarnate)",
+    "key": "enamorus-incarnate",
+    "cdn_file": "enamorusincarnate"
+  },
+  {
+    "name": "Enamorus (Therian)",
+    "key": "enamorus-therian",
+    "cdn_file": "enamorustherian"
+  },
+  {
+    "name": "Entei",
+    "key": "entei",
+    "cdn_file": "entei"
+  },
+  {
+    "name": "Escavalier",
+    "key": "escavalier",
+    "cdn_file": "escavalier"
+  },
+  {
+    "name": "Espathra",
+    "key": "espathra",
+    "cdn_file": "espathra"
+  },
+  {
+    "name": "Espeon",
+    "key": "espeon",
+    "cdn_file": "espeon"
+  },
+  {
+    "name": "Espurr",
+    "key": "espurr",
+    "cdn_file": "espurr"
+  },
+  {
+    "name": "Eternatus",
+    "key": "eternatus",
+    "cdn_file": "eternatus"
+  },
+  {
+    "name": "Eternatus (Eternamax)",
+    "key": "eternatus-eternamax",
+    "cdn_file": "eternatuseternamax"
+  },
+  {
+    "name": "Excadrill",
+    "key": "excadrill",
+    "cdn_file": "excadrill"
+  },
+  {
+    "name": "Excadrill (Mega)",
+    "key": "excadrill-mega",
+    "cdn_file": "excadrillmega"
+  },
+  {
+    "name": "Exeggcute",
+    "key": "exeggcute",
+    "cdn_file": "exeggcute"
+  },
+  {
+    "name": "Exeggutor",
+    "key": "exeggutor",
+    "cdn_file": "exeggutor"
+  },
+  {
+    "name": "Exeggutor (Alola)",
+    "key": "exeggutor-alola",
+    "cdn_file": "exeggutoralola"
+  },
+  {
+    "name": "Exploud",
+    "key": "exploud",
+    "cdn_file": "exploud"
+  },
+  {
+    "name": "Falinks",
+    "key": "falinks",
+    "cdn_file": "falinks"
+  },
+  {
+    "name": "Falinks (Mega)",
+    "key": "falinks-mega",
+    "cdn_file": "falinksmega"
+  },
+  {
+    "name": "Farfetch'd",
+    "key": "farfetchd",
+    "cdn_file": "farfetchd"
+  },
+  {
+    "name": "Farfetchd (Galar)",
+    "key": "farfetchd-galar",
+    "cdn_file": "farfetchdgalar"
+  },
+  {
+    "name": "Farigiraf",
+    "key": "farigiraf",
+    "cdn_file": "farigiraf"
+  },
+  {
+    "name": "Fearow",
+    "key": "fearow",
+    "cdn_file": "fearow"
+  },
+  {
+    "name": "Feebas",
+    "key": "feebas",
+    "cdn_file": "feebas"
+  },
+  {
+    "name": "Fennekin",
+    "key": "fennekin",
+    "cdn_file": "fennekin"
+  },
+  {
+    "name": "Feraligatr",
+    "key": "feraligatr",
+    "cdn_file": "feraligatr"
+  },
+  {
+    "name": "Feraligatr (Mega)",
+    "key": "feraligatr-mega",
+    "cdn_file": "feraligatrmega"
+  },
+  {
+    "name": "Ferroseed",
+    "key": "ferroseed",
+    "cdn_file": "ferroseed"
+  },
+  {
+    "name": "Ferrothorn",
+    "key": "ferrothorn",
+    "cdn_file": "ferrothorn"
+  },
+  {
+    "name": "Fezandipiti",
+    "key": "fezandipiti",
+    "cdn_file": "fezandipiti"
+  },
+  {
+    "name": "Fidough",
+    "key": "fidough",
+    "cdn_file": "fidough"
+  },
+  {
+    "name": "Finizen",
+    "key": "finizen",
+    "cdn_file": "finizen"
+  },
+  {
+    "name": "Finneon",
+    "key": "finneon",
+    "cdn_file": "finneon"
+  },
+  {
+    "name": "Flaaffy",
+    "key": "flaaffy",
+    "cdn_file": "flaaffy"
+  },
+  {
+    "name": "Flabébé",
+    "key": "flabebe",
+    "cdn_file": "flabebe"
+  },
+  {
+    "name": "Flamigo",
+    "key": "flamigo",
+    "cdn_file": "flamigo"
+  },
+  {
+    "name": "Flapple",
+    "key": "flapple",
+    "cdn_file": "flapple"
+  },
+  {
+    "name": "Flapple (Gmax)",
+    "key": "flapple-gmax",
+    "cdn_file": "flapplegmax"
+  },
+  {
+    "name": "Flareon",
+    "key": "flareon",
+    "cdn_file": "flareon"
+  },
+  {
+    "name": "Fletchinder",
+    "key": "fletchinder",
+    "cdn_file": "fletchinder"
+  },
+  {
+    "name": "Fletchling",
+    "key": "fletchling",
+    "cdn_file": "fletchling"
+  },
+  {
+    "name": "Flittle",
+    "key": "flittle",
+    "cdn_file": "flittle"
+  },
+  {
+    "name": "Floatzel",
+    "key": "floatzel",
+    "cdn_file": "floatzel"
+  },
+  {
+    "name": "Floette",
+    "key": "floette",
+    "cdn_file": "floette"
+  },
+  {
+    "name": "Floette (Eternal)",
+    "key": "floette-eternal",
+    "cdn_file": "floetteeternal"
+  },
+  {
+    "name": "Floette (Mega)",
+    "key": "floette-mega",
+    "cdn_file": "floettemega"
+  },
+  {
+    "name": "Floragato",
+    "key": "floragato",
+    "cdn_file": "floragato"
+  },
+  {
+    "name": "Florges",
+    "key": "florges",
+    "cdn_file": "florges"
+  },
+  {
+    "name": "Flutter Mane",
+    "key": "flutter-mane",
+    "cdn_file": "fluttermane"
+  },
+  {
+    "name": "Flygon",
+    "key": "flygon",
+    "cdn_file": "flygon"
+  },
+  {
+    "name": "Fomantis",
+    "key": "fomantis",
+    "cdn_file": "fomantis"
+  },
+  {
+    "name": "Foongus",
+    "key": "foongus",
+    "cdn_file": "foongus"
+  },
+  {
+    "name": "Forretress",
+    "key": "forretress",
+    "cdn_file": "forretress"
+  },
+  {
+    "name": "Fraxure",
+    "key": "fraxure",
+    "cdn_file": "fraxure"
+  },
+  {
+    "name": "Frigibax",
+    "key": "frigibax",
+    "cdn_file": "frigibax"
+  },
+  {
+    "name": "Frillish (Male)",
+    "key": "frillish-male",
+    "cdn_file": "frillishmale"
+  },
+  {
+    "name": "Froakie",
+    "key": "froakie",
+    "cdn_file": "froakie"
+  },
+  {
+    "name": "Frogadier",
+    "key": "frogadier",
+    "cdn_file": "frogadier"
+  },
+  {
+    "name": "Froslass",
+    "key": "froslass",
+    "cdn_file": "froslass"
+  },
+  {
+    "name": "Froslass (Mega)",
+    "key": "froslass-mega",
+    "cdn_file": "froslassmega"
+  },
+  {
+    "name": "Frosmoth",
+    "key": "frosmoth",
+    "cdn_file": "frosmoth"
+  },
+  {
+    "name": "Fuecoco",
+    "key": "fuecoco",
+    "cdn_file": "fuecoco"
+  },
+  {
+    "name": "Furfrou",
+    "key": "furfrou",
+    "cdn_file": "furfrou"
+  },
+  {
+    "name": "Furret",
+    "key": "furret",
+    "cdn_file": "furret"
+  },
+  {
+    "name": "Gabite",
+    "key": "gabite",
+    "cdn_file": "gabite"
+  },
+  {
+    "name": "Gallade",
+    "key": "gallade",
+    "cdn_file": "gallade"
+  },
+  {
+    "name": "Gallade (Mega)",
+    "key": "gallade-mega",
+    "cdn_file": "gallademega"
+  },
+  {
+    "name": "Galvantula",
+    "key": "galvantula",
+    "cdn_file": "galvantula"
+  },
+  {
+    "name": "Garbodor",
+    "key": "garbodor",
+    "cdn_file": "garbodor"
+  },
+  {
+    "name": "Garbodor (Gmax)",
+    "key": "garbodor-gmax",
+    "cdn_file": "garbodorgmax"
+  },
+  {
+    "name": "Garchomp",
+    "key": "garchomp",
+    "cdn_file": "garchomp"
+  },
+  {
+    "name": "Garchomp (Mega)",
+    "key": "garchomp-mega",
+    "cdn_file": "garchompmega"
+  },
+  {
+    "name": "Garchomp (Mega Z)",
+    "key": "garchomp-mega-z",
+    "cdn_file": "garchompmegaz"
+  },
+  {
+    "name": "Gardevoir",
+    "key": "gardevoir",
+    "cdn_file": "gardevoir"
+  },
+  {
+    "name": "Gardevoir (Mega)",
+    "key": "gardevoir-mega",
+    "cdn_file": "gardevoirmega"
+  },
+  {
+    "name": "Garganacl",
+    "key": "garganacl",
+    "cdn_file": "garganacl"
+  },
+  {
+    "name": "Gastly",
+    "key": "gastly",
+    "cdn_file": "gastly"
+  },
+  {
+    "name": "Gastrodon",
+    "key": "gastrodon",
+    "cdn_file": "gastrodon"
+  },
+  {
+    "name": "Genesect",
+    "key": "genesect",
+    "cdn_file": "genesect"
   },
   {
     "name": "Gengar",
@@ -25,8 +2080,4673 @@
     "cdn_file": "gengar"
   },
   {
+    "name": "Gengar (Gmax)",
+    "key": "gengar-gmax",
+    "cdn_file": "gengargmax"
+  },
+  {
+    "name": "Gengar (Mega)",
+    "key": "gengar-mega",
+    "cdn_file": "gengarmega"
+  },
+  {
+    "name": "Geodude",
+    "key": "geodude",
+    "cdn_file": "geodude"
+  },
+  {
+    "name": "Geodude (Alola)",
+    "key": "geodude-alola",
+    "cdn_file": "geodudealola"
+  },
+  {
+    "name": "Gholdengo",
+    "key": "gholdengo",
+    "cdn_file": "gholdengo"
+  },
+  {
+    "name": "Gible",
+    "key": "gible",
+    "cdn_file": "gible"
+  },
+  {
+    "name": "Gigalith",
+    "key": "gigalith",
+    "cdn_file": "gigalith"
+  },
+  {
+    "name": "Gimmighoul",
+    "key": "gimmighoul",
+    "cdn_file": "gimmighoul"
+  },
+  {
+    "name": "Gimmighoul (Roaming)",
+    "key": "gimmighoul-roaming",
+    "cdn_file": "gimmighoulroaming"
+  },
+  {
+    "name": "Girafarig",
+    "key": "girafarig",
+    "cdn_file": "girafarig"
+  },
+  {
+    "name": "Giratina (Altered)",
+    "key": "giratina-altered",
+    "cdn_file": "giratinaaltered"
+  },
+  {
+    "name": "Giratina (Origin)",
+    "key": "giratina-origin",
+    "cdn_file": "giratinaorigin"
+  },
+  {
+    "name": "Glaceon",
+    "key": "glaceon",
+    "cdn_file": "glaceon"
+  },
+  {
+    "name": "Glalie",
+    "key": "glalie",
+    "cdn_file": "glalie"
+  },
+  {
+    "name": "Glalie (Mega)",
+    "key": "glalie-mega",
+    "cdn_file": "glaliemega"
+  },
+  {
+    "name": "Glameow",
+    "key": "glameow",
+    "cdn_file": "glameow"
+  },
+  {
+    "name": "Glastrier",
+    "key": "glastrier",
+    "cdn_file": "glastrier"
+  },
+  {
+    "name": "Gligar",
+    "key": "gligar",
+    "cdn_file": "gligar"
+  },
+  {
+    "name": "Glimmet",
+    "key": "glimmet",
+    "cdn_file": "glimmet"
+  },
+  {
+    "name": "Glimmora",
+    "key": "glimmora",
+    "cdn_file": "glimmora"
+  },
+  {
+    "name": "Glimmora (Mega)",
+    "key": "glimmora-mega",
+    "cdn_file": "glimmoramega"
+  },
+  {
+    "name": "Gliscor",
+    "key": "gliscor",
+    "cdn_file": "gliscor"
+  },
+  {
+    "name": "Gloom",
+    "key": "gloom",
+    "cdn_file": "gloom"
+  },
+  {
+    "name": "Gogoat",
+    "key": "gogoat",
+    "cdn_file": "gogoat"
+  },
+  {
+    "name": "Golbat",
+    "key": "golbat",
+    "cdn_file": "golbat"
+  },
+  {
+    "name": "Goldeen",
+    "key": "goldeen",
+    "cdn_file": "goldeen"
+  },
+  {
+    "name": "Golduck",
+    "key": "golduck",
+    "cdn_file": "golduck"
+  },
+  {
+    "name": "Golem",
+    "key": "golem",
+    "cdn_file": "golem"
+  },
+  {
+    "name": "Golem (Alola)",
+    "key": "golem-alola",
+    "cdn_file": "golemalola"
+  },
+  {
+    "name": "Golett",
+    "key": "golett",
+    "cdn_file": "golett"
+  },
+  {
+    "name": "Golisopod",
+    "key": "golisopod",
+    "cdn_file": "golisopod"
+  },
+  {
+    "name": "Golisopod (Mega)",
+    "key": "golisopod-mega",
+    "cdn_file": "golisopodmega"
+  },
+  {
+    "name": "Golurk",
+    "key": "golurk",
+    "cdn_file": "golurk"
+  },
+  {
+    "name": "Golurk (Mega)",
+    "key": "golurk-mega",
+    "cdn_file": "golurkmega"
+  },
+  {
+    "name": "Goodra",
+    "key": "goodra",
+    "cdn_file": "goodra"
+  },
+  {
+    "name": "Goodra (Hisui)",
+    "key": "goodra-hisui",
+    "cdn_file": "goodrahisui"
+  },
+  {
+    "name": "Goomy",
+    "key": "goomy",
+    "cdn_file": "goomy"
+  },
+  {
+    "name": "Gorebyss",
+    "key": "gorebyss",
+    "cdn_file": "gorebyss"
+  },
+  {
+    "name": "Gossifleur",
+    "key": "gossifleur",
+    "cdn_file": "gossifleur"
+  },
+  {
+    "name": "Gothita",
+    "key": "gothita",
+    "cdn_file": "gothita"
+  },
+  {
+    "name": "Gothitelle",
+    "key": "gothitelle",
+    "cdn_file": "gothitelle"
+  },
+  {
+    "name": "Gothorita",
+    "key": "gothorita",
+    "cdn_file": "gothorita"
+  },
+  {
+    "name": "Gouging Fire",
+    "key": "gouging-fire",
+    "cdn_file": "gougingfire"
+  },
+  {
+    "name": "Gourgeist (Average)",
+    "key": "gourgeist-average",
+    "cdn_file": "gourgeistaverage"
+  },
+  {
+    "name": "Gourgeist (Large)",
+    "key": "gourgeist-large",
+    "cdn_file": "gourgeistlarge"
+  },
+  {
+    "name": "Gourgeist (Small)",
+    "key": "gourgeist-small",
+    "cdn_file": "gourgeistsmall"
+  },
+  {
+    "name": "Gourgeist (Super)",
+    "key": "gourgeist-super",
+    "cdn_file": "gourgeistsuper"
+  },
+  {
+    "name": "Grafaiai",
+    "key": "grafaiai",
+    "cdn_file": "grafaiai"
+  },
+  {
+    "name": "Granbull",
+    "key": "granbull",
+    "cdn_file": "granbull"
+  },
+  {
+    "name": "Grapploct",
+    "key": "grapploct",
+    "cdn_file": "grapploct"
+  },
+  {
+    "name": "Graveler",
+    "key": "graveler",
+    "cdn_file": "graveler"
+  },
+  {
+    "name": "Graveler (Alola)",
+    "key": "graveler-alola",
+    "cdn_file": "graveleralola"
+  },
+  {
+    "name": "Great Tusk",
+    "key": "great-tusk",
+    "cdn_file": "greattusk"
+  },
+  {
+    "name": "Greavard",
+    "key": "greavard",
+    "cdn_file": "greavard"
+  },
+  {
+    "name": "Greedent",
+    "key": "greedent",
+    "cdn_file": "greedent"
+  },
+  {
+    "name": "Greninja",
+    "key": "greninja",
+    "cdn_file": "greninja"
+  },
+  {
+    "name": "Greninja (Ash)",
+    "key": "greninja-ash",
+    "cdn_file": "greninjaash"
+  },
+  {
+    "name": "Greninja (Battle Bond)",
+    "key": "greninja-battle-bond",
+    "cdn_file": "greninjabattlebond"
+  },
+  {
+    "name": "Greninja (Mega)",
+    "key": "greninja-mega",
+    "cdn_file": "greninjamega"
+  },
+  {
+    "name": "Grimer",
+    "key": "grimer",
+    "cdn_file": "grimer"
+  },
+  {
+    "name": "Grimer (Alola)",
+    "key": "grimer-alola",
+    "cdn_file": "grimeralola"
+  },
+  {
+    "name": "Grimmsnarl",
+    "key": "grimmsnarl",
+    "cdn_file": "grimmsnarl"
+  },
+  {
+    "name": "Grimmsnarl (Gmax)",
+    "key": "grimmsnarl-gmax",
+    "cdn_file": "grimmsnarlgmax"
+  },
+  {
+    "name": "Grookey",
+    "key": "grookey",
+    "cdn_file": "grookey"
+  },
+  {
+    "name": "Grotle",
+    "key": "grotle",
+    "cdn_file": "grotle"
+  },
+  {
+    "name": "Groudon",
+    "key": "groudon",
+    "cdn_file": "groudon"
+  },
+  {
+    "name": "Groudon (Primal)",
+    "key": "groudon-primal",
+    "cdn_file": "groudonprimal"
+  },
+  {
+    "name": "Grovyle",
+    "key": "grovyle",
+    "cdn_file": "grovyle"
+  },
+  {
+    "name": "Growlithe",
+    "key": "growlithe",
+    "cdn_file": "growlithe"
+  },
+  {
+    "name": "Growlithe (Hisui)",
+    "key": "growlithe-hisui",
+    "cdn_file": "growlithehisui"
+  },
+  {
+    "name": "Grubbin",
+    "key": "grubbin",
+    "cdn_file": "grubbin"
+  },
+  {
+    "name": "Grumpig",
+    "key": "grumpig",
+    "cdn_file": "grumpig"
+  },
+  {
+    "name": "Gulpin",
+    "key": "gulpin",
+    "cdn_file": "gulpin"
+  },
+  {
+    "name": "Gumshoos",
+    "key": "gumshoos",
+    "cdn_file": "gumshoos"
+  },
+  {
+    "name": "Gumshoos (Totem)",
+    "key": "gumshoos-totem",
+    "cdn_file": "gumshoostotem"
+  },
+  {
+    "name": "Gurdurr",
+    "key": "gurdurr",
+    "cdn_file": "gurdurr"
+  },
+  {
+    "name": "Guzzlord",
+    "key": "guzzlord",
+    "cdn_file": "guzzlord"
+  },
+  {
+    "name": "Gyarados",
+    "key": "gyarados",
+    "cdn_file": "gyarados"
+  },
+  {
+    "name": "Gyarados (Mega)",
+    "key": "gyarados-mega",
+    "cdn_file": "gyaradosmega"
+  },
+  {
+    "name": "Hakamo-o",
+    "key": "hakamo-o",
+    "cdn_file": "hakamoo"
+  },
+  {
+    "name": "Happiny",
+    "key": "happiny",
+    "cdn_file": "happiny"
+  },
+  {
+    "name": "Hariyama",
+    "key": "hariyama",
+    "cdn_file": "hariyama"
+  },
+  {
+    "name": "Hatenna",
+    "key": "hatenna",
+    "cdn_file": "hatenna"
+  },
+  {
+    "name": "Hatterene",
+    "key": "hatterene",
+    "cdn_file": "hatterene"
+  },
+  {
+    "name": "Hatterene (Gmax)",
+    "key": "hatterene-gmax",
+    "cdn_file": "hatterenegmax"
+  },
+  {
+    "name": "Hattrem",
+    "key": "hattrem",
+    "cdn_file": "hattrem"
+  },
+  {
+    "name": "Haunter",
+    "key": "haunter",
+    "cdn_file": "haunter"
+  },
+  {
+    "name": "Hawlucha",
+    "key": "hawlucha",
+    "cdn_file": "hawlucha"
+  },
+  {
+    "name": "Hawlucha (Mega)",
+    "key": "hawlucha-mega",
+    "cdn_file": "hawluchamega"
+  },
+  {
+    "name": "Haxorus",
+    "key": "haxorus",
+    "cdn_file": "haxorus"
+  },
+  {
+    "name": "Heatmor",
+    "key": "heatmor",
+    "cdn_file": "heatmor"
+  },
+  {
+    "name": "Heatran",
+    "key": "heatran",
+    "cdn_file": "heatran"
+  },
+  {
+    "name": "Heatran (Mega)",
+    "key": "heatran-mega",
+    "cdn_file": "heatranmega"
+  },
+  {
+    "name": "Heliolisk",
+    "key": "heliolisk",
+    "cdn_file": "heliolisk"
+  },
+  {
+    "name": "Helioptile",
+    "key": "helioptile",
+    "cdn_file": "helioptile"
+  },
+  {
+    "name": "Heracross",
+    "key": "heracross",
+    "cdn_file": "heracross"
+  },
+  {
+    "name": "Heracross (Mega)",
+    "key": "heracross-mega",
+    "cdn_file": "heracrossmega"
+  },
+  {
+    "name": "Herdier",
+    "key": "herdier",
+    "cdn_file": "herdier"
+  },
+  {
+    "name": "Hippopotas",
+    "key": "hippopotas",
+    "cdn_file": "hippopotas"
+  },
+  {
+    "name": "Hippowdon",
+    "key": "hippowdon",
+    "cdn_file": "hippowdon"
+  },
+  {
+    "name": "Hitmonchan",
+    "key": "hitmonchan",
+    "cdn_file": "hitmonchan"
+  },
+  {
+    "name": "Hitmonlee",
+    "key": "hitmonlee",
+    "cdn_file": "hitmonlee"
+  },
+  {
+    "name": "Hitmontop",
+    "key": "hitmontop",
+    "cdn_file": "hitmontop"
+  },
+  {
+    "name": "Ho-Oh",
+    "key": "ho-oh",
+    "cdn_file": "hooh"
+  },
+  {
+    "name": "Honchkrow",
+    "key": "honchkrow",
+    "cdn_file": "honchkrow"
+  },
+  {
+    "name": "Honedge",
+    "key": "honedge",
+    "cdn_file": "honedge"
+  },
+  {
+    "name": "Hoopa",
+    "key": "hoopa",
+    "cdn_file": "hoopa"
+  },
+  {
+    "name": "Hoopa (Unbound)",
+    "key": "hoopa-unbound",
+    "cdn_file": "hoopaunbound"
+  },
+  {
+    "name": "Hoothoot",
+    "key": "hoothoot",
+    "cdn_file": "hoothoot"
+  },
+  {
+    "name": "Hoppip",
+    "key": "hoppip",
+    "cdn_file": "hoppip"
+  },
+  {
+    "name": "Horsea",
+    "key": "horsea",
+    "cdn_file": "horsea"
+  },
+  {
+    "name": "Houndoom",
+    "key": "houndoom",
+    "cdn_file": "houndoom"
+  },
+  {
+    "name": "Houndoom (Mega)",
+    "key": "houndoom-mega",
+    "cdn_file": "houndoommega"
+  },
+  {
+    "name": "Houndour",
+    "key": "houndour",
+    "cdn_file": "houndour"
+  },
+  {
+    "name": "Houndstone",
+    "key": "houndstone",
+    "cdn_file": "houndstone"
+  },
+  {
+    "name": "Huntail",
+    "key": "huntail",
+    "cdn_file": "huntail"
+  },
+  {
+    "name": "Hydrapple",
+    "key": "hydrapple",
+    "cdn_file": "hydrapple"
+  },
+  {
+    "name": "Hydreigon",
+    "key": "hydreigon",
+    "cdn_file": "hydreigon"
+  },
+  {
+    "name": "Hypno",
+    "key": "hypno",
+    "cdn_file": "hypno"
+  },
+  {
+    "name": "Igglybuff",
+    "key": "igglybuff",
+    "cdn_file": "igglybuff"
+  },
+  {
+    "name": "Illumise",
+    "key": "illumise",
+    "cdn_file": "illumise"
+  },
+  {
+    "name": "Impidimp",
+    "key": "impidimp",
+    "cdn_file": "impidimp"
+  },
+  {
+    "name": "Incineroar",
+    "key": "incineroar",
+    "cdn_file": "incineroar"
+  },
+  {
+    "name": "Indeedee (Female)",
+    "key": "indeedee-female",
+    "cdn_file": "indeedeefemale"
+  },
+  {
+    "name": "Indeedee (Male)",
+    "key": "indeedee-male",
+    "cdn_file": "indeedeemale"
+  },
+  {
+    "name": "Infernape",
+    "key": "infernape",
+    "cdn_file": "infernape"
+  },
+  {
+    "name": "Inkay",
+    "key": "inkay",
+    "cdn_file": "inkay"
+  },
+  {
+    "name": "Inteleon",
+    "key": "inteleon",
+    "cdn_file": "inteleon"
+  },
+  {
+    "name": "Inteleon (Gmax)",
+    "key": "inteleon-gmax",
+    "cdn_file": "inteleongmax"
+  },
+  {
+    "name": "Iron Boulder",
+    "key": "iron-boulder",
+    "cdn_file": "ironboulder"
+  },
+  {
+    "name": "Iron Bundle",
+    "key": "iron-bundle",
+    "cdn_file": "ironbundle"
+  },
+  {
+    "name": "Iron Crown",
+    "key": "iron-crown",
+    "cdn_file": "ironcrown"
+  },
+  {
+    "name": "Iron Hands",
+    "key": "iron-hands",
+    "cdn_file": "ironhands"
+  },
+  {
+    "name": "Iron Jugulis",
+    "key": "iron-jugulis",
+    "cdn_file": "ironjugulis"
+  },
+  {
+    "name": "Iron Leaves",
+    "key": "iron-leaves",
+    "cdn_file": "ironleaves"
+  },
+  {
+    "name": "Iron Moth",
+    "key": "iron-moth",
+    "cdn_file": "ironmoth"
+  },
+  {
+    "name": "Iron Thorns",
+    "key": "iron-thorns",
+    "cdn_file": "ironthorns"
+  },
+  {
+    "name": "Iron Treads",
+    "key": "iron-treads",
+    "cdn_file": "irontreads"
+  },
+  {
+    "name": "Iron Valiant",
+    "key": "iron-valiant",
+    "cdn_file": "ironvaliant"
+  },
+  {
+    "name": "Ivysaur",
+    "key": "ivysaur",
+    "cdn_file": "ivysaur"
+  },
+  {
+    "name": "Jangmo-o",
+    "key": "jangmo-o",
+    "cdn_file": "jangmoo"
+  },
+  {
+    "name": "Jellicent (Male)",
+    "key": "jellicent-male",
+    "cdn_file": "jellicentmale"
+  },
+  {
+    "name": "Jigglypuff",
+    "key": "jigglypuff",
+    "cdn_file": "jigglypuff"
+  },
+  {
+    "name": "Jirachi",
+    "key": "jirachi",
+    "cdn_file": "jirachi"
+  },
+  {
+    "name": "Jolteon",
+    "key": "jolteon",
+    "cdn_file": "jolteon"
+  },
+  {
+    "name": "Joltik",
+    "key": "joltik",
+    "cdn_file": "joltik"
+  },
+  {
+    "name": "Jumpluff",
+    "key": "jumpluff",
+    "cdn_file": "jumpluff"
+  },
+  {
+    "name": "Jynx",
+    "key": "jynx",
+    "cdn_file": "jynx"
+  },
+  {
+    "name": "Kabuto",
+    "key": "kabuto",
+    "cdn_file": "kabuto"
+  },
+  {
+    "name": "Kabutops",
+    "key": "kabutops",
+    "cdn_file": "kabutops"
+  },
+  {
+    "name": "Kadabra",
+    "key": "kadabra",
+    "cdn_file": "kadabra"
+  },
+  {
+    "name": "Kakuna",
+    "key": "kakuna",
+    "cdn_file": "kakuna"
+  },
+  {
+    "name": "Kangaskhan",
+    "key": "kangaskhan",
+    "cdn_file": "kangaskhan"
+  },
+  {
+    "name": "Kangaskhan (Mega)",
+    "key": "kangaskhan-mega",
+    "cdn_file": "kangaskhanmega"
+  },
+  {
+    "name": "Karrablast",
+    "key": "karrablast",
+    "cdn_file": "karrablast"
+  },
+  {
+    "name": "Kartana",
+    "key": "kartana",
+    "cdn_file": "kartana"
+  },
+  {
+    "name": "Kecleon",
+    "key": "kecleon",
+    "cdn_file": "kecleon"
+  },
+  {
+    "name": "Keldeo (Ordinary)",
+    "key": "keldeo-ordinary",
+    "cdn_file": "keldeoordinary"
+  },
+  {
+    "name": "Keldeo (Resolute)",
+    "key": "keldeo-resolute",
+    "cdn_file": "keldeoresolute"
+  },
+  {
+    "name": "Kilowattrel",
+    "key": "kilowattrel",
+    "cdn_file": "kilowattrel"
+  },
+  {
+    "name": "Kingambit",
+    "key": "kingambit",
+    "cdn_file": "kingambit"
+  },
+  {
+    "name": "Kingdra",
+    "key": "kingdra",
+    "cdn_file": "kingdra"
+  },
+  {
+    "name": "Kingler",
+    "key": "kingler",
+    "cdn_file": "kingler"
+  },
+  {
+    "name": "Kingler (Gmax)",
+    "key": "kingler-gmax",
+    "cdn_file": "kinglergmax"
+  },
+  {
+    "name": "Kirlia",
+    "key": "kirlia",
+    "cdn_file": "kirlia"
+  },
+  {
+    "name": "Klang",
+    "key": "klang",
+    "cdn_file": "klang"
+  },
+  {
+    "name": "Klawf",
+    "key": "klawf",
+    "cdn_file": "klawf"
+  },
+  {
+    "name": "Kleavor",
+    "key": "kleavor",
+    "cdn_file": "kleavor"
+  },
+  {
+    "name": "Klefki",
+    "key": "klefki",
+    "cdn_file": "klefki"
+  },
+  {
+    "name": "Klink",
+    "key": "klink",
+    "cdn_file": "klink"
+  },
+  {
+    "name": "Klinklang",
+    "key": "klinklang",
+    "cdn_file": "klinklang"
+  },
+  {
+    "name": "Koffing",
+    "key": "koffing",
+    "cdn_file": "koffing"
+  },
+  {
+    "name": "Komala",
+    "key": "komala",
+    "cdn_file": "komala"
+  },
+  {
+    "name": "Kommo-o",
+    "key": "kommo-o",
+    "cdn_file": "kommoo"
+  },
+  {
+    "name": "Kommo (O Totem)",
+    "key": "kommo-o-totem",
+    "cdn_file": "kommoototem"
+  },
+  {
+    "name": "Koraidon",
+    "key": "koraidon",
+    "cdn_file": "koraidon"
+  },
+  {
+    "name": "Koraidon (Gliding Build)",
+    "key": "koraidon-gliding-build",
+    "cdn_file": "koraidonglidingbuild"
+  },
+  {
+    "name": "Koraidon (Limited Build)",
+    "key": "koraidon-limited-build",
+    "cdn_file": "koraidonlimitedbuild"
+  },
+  {
+    "name": "Koraidon (Sprinting Build)",
+    "key": "koraidon-sprinting-build",
+    "cdn_file": "koraidonsprintingbuild"
+  },
+  {
+    "name": "Koraidon (Swimming Build)",
+    "key": "koraidon-swimming-build",
+    "cdn_file": "koraidonswimmingbuild"
+  },
+  {
+    "name": "Krabby",
+    "key": "krabby",
+    "cdn_file": "krabby"
+  },
+  {
+    "name": "Kricketot",
+    "key": "kricketot",
+    "cdn_file": "kricketot"
+  },
+  {
+    "name": "Kricketune",
+    "key": "kricketune",
+    "cdn_file": "kricketune"
+  },
+  {
+    "name": "Krokorok",
+    "key": "krokorok",
+    "cdn_file": "krokorok"
+  },
+  {
+    "name": "Krookodile",
+    "key": "krookodile",
+    "cdn_file": "krookodile"
+  },
+  {
+    "name": "Kubfu",
+    "key": "kubfu",
+    "cdn_file": "kubfu"
+  },
+  {
+    "name": "Kyogre",
+    "key": "kyogre",
+    "cdn_file": "kyogre"
+  },
+  {
+    "name": "Kyogre (Primal)",
+    "key": "kyogre-primal",
+    "cdn_file": "kyogreprimal"
+  },
+  {
+    "name": "Kyurem",
+    "key": "kyurem",
+    "cdn_file": "kyurem"
+  },
+  {
+    "name": "Kyurem (Black)",
+    "key": "kyurem-black",
+    "cdn_file": "kyuremblack"
+  },
+  {
+    "name": "Kyurem (White)",
+    "key": "kyurem-white",
+    "cdn_file": "kyuremwhite"
+  },
+  {
+    "name": "Lairon",
+    "key": "lairon",
+    "cdn_file": "lairon"
+  },
+  {
+    "name": "Lampent",
+    "key": "lampent",
+    "cdn_file": "lampent"
+  },
+  {
+    "name": "Landorus (Incarnate)",
+    "key": "landorus-incarnate",
+    "cdn_file": "landorusincarnate"
+  },
+  {
+    "name": "Landorus (Therian)",
+    "key": "landorus-therian",
+    "cdn_file": "landorustherian"
+  },
+  {
+    "name": "Lanturn",
+    "key": "lanturn",
+    "cdn_file": "lanturn"
+  },
+  {
+    "name": "Lapras",
+    "key": "lapras",
+    "cdn_file": "lapras"
+  },
+  {
+    "name": "Lapras (Gmax)",
+    "key": "lapras-gmax",
+    "cdn_file": "laprasgmax"
+  },
+  {
+    "name": "Larvesta",
+    "key": "larvesta",
+    "cdn_file": "larvesta"
+  },
+  {
+    "name": "Larvitar",
+    "key": "larvitar",
+    "cdn_file": "larvitar"
+  },
+  {
+    "name": "Latias",
+    "key": "latias",
+    "cdn_file": "latias"
+  },
+  {
+    "name": "Latias (Mega)",
+    "key": "latias-mega",
+    "cdn_file": "latiasmega"
+  },
+  {
+    "name": "Latios",
+    "key": "latios",
+    "cdn_file": "latios"
+  },
+  {
+    "name": "Latios (Mega)",
+    "key": "latios-mega",
+    "cdn_file": "latiosmega"
+  },
+  {
+    "name": "Leafeon",
+    "key": "leafeon",
+    "cdn_file": "leafeon"
+  },
+  {
+    "name": "Leavanny",
+    "key": "leavanny",
+    "cdn_file": "leavanny"
+  },
+  {
+    "name": "Lechonk",
+    "key": "lechonk",
+    "cdn_file": "lechonk"
+  },
+  {
+    "name": "Ledian",
+    "key": "ledian",
+    "cdn_file": "ledian"
+  },
+  {
+    "name": "Ledyba",
+    "key": "ledyba",
+    "cdn_file": "ledyba"
+  },
+  {
+    "name": "Lickilicky",
+    "key": "lickilicky",
+    "cdn_file": "lickilicky"
+  },
+  {
+    "name": "Lickitung",
+    "key": "lickitung",
+    "cdn_file": "lickitung"
+  },
+  {
+    "name": "Liepard",
+    "key": "liepard",
+    "cdn_file": "liepard"
+  },
+  {
+    "name": "Lileep",
+    "key": "lileep",
+    "cdn_file": "lileep"
+  },
+  {
+    "name": "Lilligant",
+    "key": "lilligant",
+    "cdn_file": "lilligant"
+  },
+  {
+    "name": "Lilligant (Hisui)",
+    "key": "lilligant-hisui",
+    "cdn_file": "lilliganthisui"
+  },
+  {
+    "name": "Lillipup",
+    "key": "lillipup",
+    "cdn_file": "lillipup"
+  },
+  {
+    "name": "Linoone",
+    "key": "linoone",
+    "cdn_file": "linoone"
+  },
+  {
+    "name": "Linoone (Galar)",
+    "key": "linoone-galar",
+    "cdn_file": "linoonegalar"
+  },
+  {
+    "name": "Litleo",
+    "key": "litleo",
+    "cdn_file": "litleo"
+  },
+  {
+    "name": "Litten",
+    "key": "litten",
+    "cdn_file": "litten"
+  },
+  {
+    "name": "Litwick",
+    "key": "litwick",
+    "cdn_file": "litwick"
+  },
+  {
+    "name": "Lokix",
+    "key": "lokix",
+    "cdn_file": "lokix"
+  },
+  {
+    "name": "Lombre",
+    "key": "lombre",
+    "cdn_file": "lombre"
+  },
+  {
+    "name": "Lopunny",
+    "key": "lopunny",
+    "cdn_file": "lopunny"
+  },
+  {
+    "name": "Lopunny (Mega)",
+    "key": "lopunny-mega",
+    "cdn_file": "lopunnymega"
+  },
+  {
+    "name": "Lotad",
+    "key": "lotad",
+    "cdn_file": "lotad"
+  },
+  {
+    "name": "Loudred",
+    "key": "loudred",
+    "cdn_file": "loudred"
+  },
+  {
+    "name": "Lucario",
+    "key": "lucario",
+    "cdn_file": "lucario"
+  },
+  {
+    "name": "Lucario (Mega)",
+    "key": "lucario-mega",
+    "cdn_file": "lucariomega"
+  },
+  {
+    "name": "Lucario (Mega Z)",
+    "key": "lucario-mega-z",
+    "cdn_file": "lucariomegaz"
+  },
+  {
+    "name": "Ludicolo",
+    "key": "ludicolo",
+    "cdn_file": "ludicolo"
+  },
+  {
+    "name": "Lugia",
+    "key": "lugia",
+    "cdn_file": "lugia"
+  },
+  {
+    "name": "Lumineon",
+    "key": "lumineon",
+    "cdn_file": "lumineon"
+  },
+  {
+    "name": "Lunala",
+    "key": "lunala",
+    "cdn_file": "lunala"
+  },
+  {
+    "name": "Lunatone",
+    "key": "lunatone",
+    "cdn_file": "lunatone"
+  },
+  {
+    "name": "Lurantis",
+    "key": "lurantis",
+    "cdn_file": "lurantis"
+  },
+  {
+    "name": "Lurantis (Totem)",
+    "key": "lurantis-totem",
+    "cdn_file": "lurantistotem"
+  },
+  {
+    "name": "Luvdisc",
+    "key": "luvdisc",
+    "cdn_file": "luvdisc"
+  },
+  {
+    "name": "Luxio",
+    "key": "luxio",
+    "cdn_file": "luxio"
+  },
+  {
+    "name": "Luxray",
+    "key": "luxray",
+    "cdn_file": "luxray"
+  },
+  {
+    "name": "Lycanroc (Dusk)",
+    "key": "lycanroc-dusk",
+    "cdn_file": "lycanrocdusk"
+  },
+  {
+    "name": "Lycanroc (Midday)",
+    "key": "lycanroc-midday",
+    "cdn_file": "lycanrocmidday"
+  },
+  {
+    "name": "Lycanroc (Midnight)",
+    "key": "lycanroc-midnight",
+    "cdn_file": "lycanrocmidnight"
+  },
+  {
+    "name": "Mabosstiff",
+    "key": "mabosstiff",
+    "cdn_file": "mabosstiff"
+  },
+  {
+    "name": "Machamp",
+    "key": "machamp",
+    "cdn_file": "machamp"
+  },
+  {
+    "name": "Machamp (Gmax)",
+    "key": "machamp-gmax",
+    "cdn_file": "machampgmax"
+  },
+  {
+    "name": "Machoke",
+    "key": "machoke",
+    "cdn_file": "machoke"
+  },
+  {
+    "name": "Machop",
+    "key": "machop",
+    "cdn_file": "machop"
+  },
+  {
+    "name": "Magby",
+    "key": "magby",
+    "cdn_file": "magby"
+  },
+  {
+    "name": "Magcargo",
+    "key": "magcargo",
+    "cdn_file": "magcargo"
+  },
+  {
+    "name": "Magearna",
+    "key": "magearna",
+    "cdn_file": "magearna"
+  },
+  {
+    "name": "Magearna (Mega)",
+    "key": "magearna-mega",
+    "cdn_file": "magearnamega"
+  },
+  {
+    "name": "Magearna (Original)",
+    "key": "magearna-original",
+    "cdn_file": "magearnaoriginal"
+  },
+  {
+    "name": "Magearna (Original Mega)",
+    "key": "magearna-original-mega",
+    "cdn_file": "magearnaoriginalmega"
+  },
+  {
+    "name": "Magikarp",
+    "key": "magikarp",
+    "cdn_file": "magikarp"
+  },
+  {
+    "name": "Magmar",
+    "key": "magmar",
+    "cdn_file": "magmar"
+  },
+  {
+    "name": "Magmortar",
+    "key": "magmortar",
+    "cdn_file": "magmortar"
+  },
+  {
+    "name": "Magnemite",
+    "key": "magnemite",
+    "cdn_file": "magnemite"
+  },
+  {
+    "name": "Magneton",
+    "key": "magneton",
+    "cdn_file": "magneton"
+  },
+  {
+    "name": "Magnezone",
+    "key": "magnezone",
+    "cdn_file": "magnezone"
+  },
+  {
+    "name": "Makuhita",
+    "key": "makuhita",
+    "cdn_file": "makuhita"
+  },
+  {
+    "name": "Malamar",
+    "key": "malamar",
+    "cdn_file": "malamar"
+  },
+  {
+    "name": "Malamar (Mega)",
+    "key": "malamar-mega",
+    "cdn_file": "malamarmega"
+  },
+  {
+    "name": "Mamoswine",
+    "key": "mamoswine",
+    "cdn_file": "mamoswine"
+  },
+  {
+    "name": "Manaphy",
+    "key": "manaphy",
+    "cdn_file": "manaphy"
+  },
+  {
+    "name": "Mandibuzz",
+    "key": "mandibuzz",
+    "cdn_file": "mandibuzz"
+  },
+  {
+    "name": "Manectric",
+    "key": "manectric",
+    "cdn_file": "manectric"
+  },
+  {
+    "name": "Manectric (Mega)",
+    "key": "manectric-mega",
+    "cdn_file": "manectricmega"
+  },
+  {
+    "name": "Mankey",
+    "key": "mankey",
+    "cdn_file": "mankey"
+  },
+  {
+    "name": "Mantine",
+    "key": "mantine",
+    "cdn_file": "mantine"
+  },
+  {
+    "name": "Mantyke",
+    "key": "mantyke",
+    "cdn_file": "mantyke"
+  },
+  {
+    "name": "Maractus",
+    "key": "maractus",
+    "cdn_file": "maractus"
+  },
+  {
+    "name": "Mareanie",
+    "key": "mareanie",
+    "cdn_file": "mareanie"
+  },
+  {
+    "name": "Mareep",
+    "key": "mareep",
+    "cdn_file": "mareep"
+  },
+  {
+    "name": "Marill",
+    "key": "marill",
+    "cdn_file": "marill"
+  },
+  {
+    "name": "Marowak",
+    "key": "marowak",
+    "cdn_file": "marowak"
+  },
+  {
+    "name": "Marowak (Alola)",
+    "key": "marowak-alola",
+    "cdn_file": "marowakalola"
+  },
+  {
+    "name": "Marowak (Totem)",
+    "key": "marowak-totem",
+    "cdn_file": "marowaktotem"
+  },
+  {
+    "name": "Marshadow",
+    "key": "marshadow",
+    "cdn_file": "marshadow"
+  },
+  {
+    "name": "Marshtomp",
+    "key": "marshtomp",
+    "cdn_file": "marshtomp"
+  },
+  {
+    "name": "Maschiff",
+    "key": "maschiff",
+    "cdn_file": "maschiff"
+  },
+  {
+    "name": "Masquerain",
+    "key": "masquerain",
+    "cdn_file": "masquerain"
+  },
+  {
+    "name": "Maushold (Family Of Four)",
+    "key": "maushold-family-of-four",
+    "cdn_file": "mausholdfamilyoffour"
+  },
+  {
+    "name": "Maushold (Family Of Three)",
+    "key": "maushold-family-of-three",
+    "cdn_file": "mausholdfamilyofthree"
+  },
+  {
+    "name": "Mawile",
+    "key": "mawile",
+    "cdn_file": "mawile"
+  },
+  {
+    "name": "Mawile (Mega)",
+    "key": "mawile-mega",
+    "cdn_file": "mawilemega"
+  },
+  {
+    "name": "Medicham",
+    "key": "medicham",
+    "cdn_file": "medicham"
+  },
+  {
+    "name": "Medicham (Mega)",
+    "key": "medicham-mega",
+    "cdn_file": "medichammega"
+  },
+  {
+    "name": "Meditite",
+    "key": "meditite",
+    "cdn_file": "meditite"
+  },
+  {
+    "name": "Meganium",
+    "key": "meganium",
+    "cdn_file": "meganium"
+  },
+  {
+    "name": "Meganium (Mega)",
+    "key": "meganium-mega",
+    "cdn_file": "meganiummega"
+  },
+  {
+    "name": "Melmetal",
+    "key": "melmetal",
+    "cdn_file": "melmetal"
+  },
+  {
+    "name": "Melmetal (Gmax)",
+    "key": "melmetal-gmax",
+    "cdn_file": "melmetalgmax"
+  },
+  {
+    "name": "Meloetta (Aria)",
+    "key": "meloetta-aria",
+    "cdn_file": "meloettaaria"
+  },
+  {
+    "name": "Meloetta (Pirouette)",
+    "key": "meloetta-pirouette",
+    "cdn_file": "meloettapirouette"
+  },
+  {
+    "name": "Meltan",
+    "key": "meltan",
+    "cdn_file": "meltan"
+  },
+  {
+    "name": "Meowscarada",
+    "key": "meowscarada",
+    "cdn_file": "meowscarada"
+  },
+  {
+    "name": "Meowstic (Female)",
+    "key": "meowstic-female",
+    "cdn_file": "meowsticfemale"
+  },
+  {
+    "name": "Meowstic (Male)",
+    "key": "meowstic-male",
+    "cdn_file": "meowsticmale"
+  },
+  {
+    "name": "Meowstic (Mega)",
+    "key": "meowstic-mega",
+    "cdn_file": "meowsticmega"
+  },
+  {
+    "name": "Meowth",
+    "key": "meowth",
+    "cdn_file": "meowth"
+  },
+  {
+    "name": "Meowth (Alola)",
+    "key": "meowth-alola",
+    "cdn_file": "meowthalola"
+  },
+  {
+    "name": "Meowth (Galar)",
+    "key": "meowth-galar",
+    "cdn_file": "meowthgalar"
+  },
+  {
+    "name": "Meowth (Gmax)",
+    "key": "meowth-gmax",
+    "cdn_file": "meowthgmax"
+  },
+  {
+    "name": "Mesprit",
+    "key": "mesprit",
+    "cdn_file": "mesprit"
+  },
+  {
+    "name": "Metagross",
+    "key": "metagross",
+    "cdn_file": "metagross"
+  },
+  {
+    "name": "Metagross (Mega)",
+    "key": "metagross-mega",
+    "cdn_file": "metagrossmega"
+  },
+  {
+    "name": "Metang",
+    "key": "metang",
+    "cdn_file": "metang"
+  },
+  {
+    "name": "Metapod",
+    "key": "metapod",
+    "cdn_file": "metapod"
+  },
+  {
+    "name": "Mew",
+    "key": "mew",
+    "cdn_file": "mew"
+  },
+  {
+    "name": "Mewtwo",
+    "key": "mewtwo",
+    "cdn_file": "mewtwo"
+  },
+  {
+    "name": "Mewtwo (Mega X)",
+    "key": "mewtwo-mega-x",
+    "cdn_file": "mewtwomegax"
+  },
+  {
+    "name": "Mewtwo (Mega Y)",
+    "key": "mewtwo-mega-y",
+    "cdn_file": "mewtwomegay"
+  },
+  {
+    "name": "Mienfoo",
+    "key": "mienfoo",
+    "cdn_file": "mienfoo"
+  },
+  {
+    "name": "Mienshao",
+    "key": "mienshao",
+    "cdn_file": "mienshao"
+  },
+  {
+    "name": "Mightyena",
+    "key": "mightyena",
+    "cdn_file": "mightyena"
+  },
+  {
+    "name": "Milcery",
+    "key": "milcery",
+    "cdn_file": "milcery"
+  },
+  {
+    "name": "Milotic",
+    "key": "milotic",
+    "cdn_file": "milotic"
+  },
+  {
+    "name": "Miltank",
+    "key": "miltank",
+    "cdn_file": "miltank"
+  },
+  {
+    "name": "Mime Jr.",
+    "key": "mime-jr",
+    "cdn_file": "mimejr"
+  },
+  {
+    "name": "Mimikyu (Busted)",
+    "key": "mimikyu-busted",
+    "cdn_file": "mimikyubusted"
+  },
+  {
+    "name": "Mimikyu (Disguised)",
+    "key": "mimikyu-disguised",
+    "cdn_file": "mimikyudisguised"
+  },
+  {
+    "name": "Mimikyu (Totem Busted)",
+    "key": "mimikyu-totem-busted",
+    "cdn_file": "mimikyutotembusted"
+  },
+  {
+    "name": "Mimikyu (Totem Disguised)",
+    "key": "mimikyu-totem-disguised",
+    "cdn_file": "mimikyutotemdisguised"
+  },
+  {
+    "name": "Minccino",
+    "key": "minccino",
+    "cdn_file": "minccino"
+  },
+  {
+    "name": "Minior (Blue)",
+    "key": "minior-blue",
+    "cdn_file": "miniorblue"
+  },
+  {
+    "name": "Minior (Blue Meteor)",
+    "key": "minior-blue-meteor",
+    "cdn_file": "miniorbluemeteor"
+  },
+  {
+    "name": "Minior (Green)",
+    "key": "minior-green",
+    "cdn_file": "miniorgreen"
+  },
+  {
+    "name": "Minior (Green Meteor)",
+    "key": "minior-green-meteor",
+    "cdn_file": "miniorgreenmeteor"
+  },
+  {
+    "name": "Minior (Indigo)",
+    "key": "minior-indigo",
+    "cdn_file": "miniorindigo"
+  },
+  {
+    "name": "Minior (Indigo Meteor)",
+    "key": "minior-indigo-meteor",
+    "cdn_file": "miniorindigometeor"
+  },
+  {
+    "name": "Minior (Orange)",
+    "key": "minior-orange",
+    "cdn_file": "miniororange"
+  },
+  {
+    "name": "Minior (Orange Meteor)",
+    "key": "minior-orange-meteor",
+    "cdn_file": "miniororangemeteor"
+  },
+  {
+    "name": "Minior (Red)",
+    "key": "minior-red",
+    "cdn_file": "miniorred"
+  },
+  {
+    "name": "Minior (Red Meteor)",
+    "key": "minior-red-meteor",
+    "cdn_file": "miniorredmeteor"
+  },
+  {
+    "name": "Minior (Violet)",
+    "key": "minior-violet",
+    "cdn_file": "miniorviolet"
+  },
+  {
+    "name": "Minior (Violet Meteor)",
+    "key": "minior-violet-meteor",
+    "cdn_file": "miniorvioletmeteor"
+  },
+  {
+    "name": "Minior (Yellow)",
+    "key": "minior-yellow",
+    "cdn_file": "minioryellow"
+  },
+  {
+    "name": "Minior (Yellow Meteor)",
+    "key": "minior-yellow-meteor",
+    "cdn_file": "minioryellowmeteor"
+  },
+  {
+    "name": "Minun",
+    "key": "minun",
+    "cdn_file": "minun"
+  },
+  {
+    "name": "Miraidon",
+    "key": "miraidon",
+    "cdn_file": "miraidon"
+  },
+  {
+    "name": "Miraidon (Aquatic Mode)",
+    "key": "miraidon-aquatic-mode",
+    "cdn_file": "miraidonaquaticmode"
+  },
+  {
+    "name": "Miraidon (Drive Mode)",
+    "key": "miraidon-drive-mode",
+    "cdn_file": "miraidondrivemode"
+  },
+  {
+    "name": "Miraidon (Glide Mode)",
+    "key": "miraidon-glide-mode",
+    "cdn_file": "miraidonglidemode"
+  },
+  {
+    "name": "Miraidon (Low Power Mode)",
+    "key": "miraidon-low-power-mode",
+    "cdn_file": "miraidonlowpowermode"
+  },
+  {
+    "name": "Misdreavus",
+    "key": "misdreavus",
+    "cdn_file": "misdreavus"
+  },
+  {
+    "name": "Mismagius",
+    "key": "mismagius",
+    "cdn_file": "mismagius"
+  },
+  {
+    "name": "Moltres",
+    "key": "moltres",
+    "cdn_file": "moltres"
+  },
+  {
+    "name": "Moltres (Galar)",
+    "key": "moltres-galar",
+    "cdn_file": "moltresgalar"
+  },
+  {
+    "name": "Monferno",
+    "key": "monferno",
+    "cdn_file": "monferno"
+  },
+  {
+    "name": "Morelull",
+    "key": "morelull",
+    "cdn_file": "morelull"
+  },
+  {
+    "name": "Morgrem",
+    "key": "morgrem",
+    "cdn_file": "morgrem"
+  },
+  {
+    "name": "Morpeko (Full Belly)",
+    "key": "morpeko-full-belly",
+    "cdn_file": "morpekofullbelly"
+  },
+  {
+    "name": "Morpeko (Hangry)",
+    "key": "morpeko-hangry",
+    "cdn_file": "morpekohangry"
+  },
+  {
+    "name": "Mothim",
+    "key": "mothim",
+    "cdn_file": "mothim"
+  },
+  {
+    "name": "Mr. Mime",
+    "key": "mr-mime",
+    "cdn_file": "mrmime"
+  },
+  {
+    "name": "Mr (Mime Galar)",
+    "key": "mr-mime-galar",
+    "cdn_file": "mrmimegalar"
+  },
+  {
+    "name": "Mr. Rime",
+    "key": "mr-rime",
+    "cdn_file": "mrrime"
+  },
+  {
+    "name": "Mudbray",
+    "key": "mudbray",
+    "cdn_file": "mudbray"
+  },
+  {
+    "name": "Mudkip",
+    "key": "mudkip",
+    "cdn_file": "mudkip"
+  },
+  {
+    "name": "Mudsdale",
+    "key": "mudsdale",
+    "cdn_file": "mudsdale"
+  },
+  {
+    "name": "Muk",
+    "key": "muk",
+    "cdn_file": "muk"
+  },
+  {
+    "name": "Muk (Alola)",
+    "key": "muk-alola",
+    "cdn_file": "mukalola"
+  },
+  {
+    "name": "Munchlax",
+    "key": "munchlax",
+    "cdn_file": "munchlax"
+  },
+  {
+    "name": "Munkidori",
+    "key": "munkidori",
+    "cdn_file": "munkidori"
+  },
+  {
+    "name": "Munna",
+    "key": "munna",
+    "cdn_file": "munna"
+  },
+  {
+    "name": "Murkrow",
+    "key": "murkrow",
+    "cdn_file": "murkrow"
+  },
+  {
+    "name": "Musharna",
+    "key": "musharna",
+    "cdn_file": "musharna"
+  },
+  {
+    "name": "Nacli",
+    "key": "nacli",
+    "cdn_file": "nacli"
+  },
+  {
+    "name": "Naclstack",
+    "key": "naclstack",
+    "cdn_file": "naclstack"
+  },
+  {
+    "name": "Naganadel",
+    "key": "naganadel",
+    "cdn_file": "naganadel"
+  },
+  {
+    "name": "Natu",
+    "key": "natu",
+    "cdn_file": "natu"
+  },
+  {
+    "name": "Necrozma",
+    "key": "necrozma",
+    "cdn_file": "necrozma"
+  },
+  {
+    "name": "Necrozma (Dawn)",
+    "key": "necrozma-dawn",
+    "cdn_file": "necrozmadawn"
+  },
+  {
+    "name": "Necrozma (Dusk)",
+    "key": "necrozma-dusk",
+    "cdn_file": "necrozmadusk"
+  },
+  {
+    "name": "Necrozma (Ultra)",
+    "key": "necrozma-ultra",
+    "cdn_file": "necrozmaultra"
+  },
+  {
+    "name": "Nickit",
+    "key": "nickit",
+    "cdn_file": "nickit"
+  },
+  {
+    "name": "Nidoking",
+    "key": "nidoking",
+    "cdn_file": "nidoking"
+  },
+  {
+    "name": "Nidoqueen",
+    "key": "nidoqueen",
+    "cdn_file": "nidoqueen"
+  },
+  {
+    "name": "Nidoran♀",
+    "key": "nidoran-f",
+    "cdn_file": "nidoranf"
+  },
+  {
+    "name": "Nidoran♂",
+    "key": "nidoran-m",
+    "cdn_file": "nidoranm"
+  },
+  {
+    "name": "Nidorina",
+    "key": "nidorina",
+    "cdn_file": "nidorina"
+  },
+  {
+    "name": "Nidorino",
+    "key": "nidorino",
+    "cdn_file": "nidorino"
+  },
+  {
+    "name": "Nihilego",
+    "key": "nihilego",
+    "cdn_file": "nihilego"
+  },
+  {
+    "name": "Nincada",
+    "key": "nincada",
+    "cdn_file": "nincada"
+  },
+  {
+    "name": "Ninetales",
+    "key": "ninetales",
+    "cdn_file": "ninetales"
+  },
+  {
+    "name": "Ninetales (Alola)",
+    "key": "ninetales-alola",
+    "cdn_file": "ninetalesalola"
+  },
+  {
+    "name": "Ninjask",
+    "key": "ninjask",
+    "cdn_file": "ninjask"
+  },
+  {
+    "name": "Noctowl",
+    "key": "noctowl",
+    "cdn_file": "noctowl"
+  },
+  {
+    "name": "Noibat",
+    "key": "noibat",
+    "cdn_file": "noibat"
+  },
+  {
+    "name": "Noivern",
+    "key": "noivern",
+    "cdn_file": "noivern"
+  },
+  {
+    "name": "Nosepass",
+    "key": "nosepass",
+    "cdn_file": "nosepass"
+  },
+  {
+    "name": "Numel",
+    "key": "numel",
+    "cdn_file": "numel"
+  },
+  {
+    "name": "Nuzleaf",
+    "key": "nuzleaf",
+    "cdn_file": "nuzleaf"
+  },
+  {
+    "name": "Nymble",
+    "key": "nymble",
+    "cdn_file": "nymble"
+  },
+  {
+    "name": "Obstagoon",
+    "key": "obstagoon",
+    "cdn_file": "obstagoon"
+  },
+  {
+    "name": "Octillery",
+    "key": "octillery",
+    "cdn_file": "octillery"
+  },
+  {
+    "name": "Oddish",
+    "key": "oddish",
+    "cdn_file": "oddish"
+  },
+  {
+    "name": "Ogerpon",
+    "key": "ogerpon",
+    "cdn_file": "ogerpon"
+  },
+  {
+    "name": "Ogerpon (Cornerstone Mask)",
+    "key": "ogerpon-cornerstone-mask",
+    "cdn_file": "ogerponcornerstonemask"
+  },
+  {
+    "name": "Ogerpon (Hearthflame Mask)",
+    "key": "ogerpon-hearthflame-mask",
+    "cdn_file": "ogerponhearthflamemask"
+  },
+  {
+    "name": "Ogerpon (Wellspring Mask)",
+    "key": "ogerpon-wellspring-mask",
+    "cdn_file": "ogerponwellspringmask"
+  },
+  {
+    "name": "Oinkologne (Female)",
+    "key": "oinkologne-female",
+    "cdn_file": "oinkolognefemale"
+  },
+  {
+    "name": "Oinkologne (Male)",
+    "key": "oinkologne-male",
+    "cdn_file": "oinkolognemale"
+  },
+  {
+    "name": "Okidogi",
+    "key": "okidogi",
+    "cdn_file": "okidogi"
+  },
+  {
+    "name": "Omanyte",
+    "key": "omanyte",
+    "cdn_file": "omanyte"
+  },
+  {
+    "name": "Omastar",
+    "key": "omastar",
+    "cdn_file": "omastar"
+  },
+  {
+    "name": "Onix",
+    "key": "onix",
+    "cdn_file": "onix"
+  },
+  {
+    "name": "Oranguru",
+    "key": "oranguru",
+    "cdn_file": "oranguru"
+  },
+  {
+    "name": "Orbeetle",
+    "key": "orbeetle",
+    "cdn_file": "orbeetle"
+  },
+  {
+    "name": "Orbeetle (Gmax)",
+    "key": "orbeetle-gmax",
+    "cdn_file": "orbeetlegmax"
+  },
+  {
+    "name": "Oricorio (Baile)",
+    "key": "oricorio-baile",
+    "cdn_file": "oricoriobaile"
+  },
+  {
+    "name": "Oricorio (Pau)",
+    "key": "oricorio-pau",
+    "cdn_file": "oricoriopau"
+  },
+  {
+    "name": "Oricorio (Pom Pom)",
+    "key": "oricorio-pom-pom",
+    "cdn_file": "oricoriopompom"
+  },
+  {
+    "name": "Oricorio (Sensu)",
+    "key": "oricorio-sensu",
+    "cdn_file": "oricoriosensu"
+  },
+  {
+    "name": "Orthworm",
+    "key": "orthworm",
+    "cdn_file": "orthworm"
+  },
+  {
+    "name": "Oshawott",
+    "key": "oshawott",
+    "cdn_file": "oshawott"
+  },
+  {
+    "name": "Overqwil",
+    "key": "overqwil",
+    "cdn_file": "overqwil"
+  },
+  {
+    "name": "Pachirisu",
+    "key": "pachirisu",
+    "cdn_file": "pachirisu"
+  },
+  {
+    "name": "Palafin (Hero)",
+    "key": "palafin-hero",
+    "cdn_file": "palafinhero"
+  },
+  {
+    "name": "Palafin (Zero)",
+    "key": "palafin-zero",
+    "cdn_file": "palafinzero"
+  },
+  {
+    "name": "Palkia",
+    "key": "palkia",
+    "cdn_file": "palkia"
+  },
+  {
+    "name": "Palkia (Origin)",
+    "key": "palkia-origin",
+    "cdn_file": "palkiaorigin"
+  },
+  {
+    "name": "Palossand",
+    "key": "palossand",
+    "cdn_file": "palossand"
+  },
+  {
+    "name": "Palpitoad",
+    "key": "palpitoad",
+    "cdn_file": "palpitoad"
+  },
+  {
+    "name": "Pancham",
+    "key": "pancham",
+    "cdn_file": "pancham"
+  },
+  {
+    "name": "Pangoro",
+    "key": "pangoro",
+    "cdn_file": "pangoro"
+  },
+  {
+    "name": "Panpour",
+    "key": "panpour",
+    "cdn_file": "panpour"
+  },
+  {
+    "name": "Pansage",
+    "key": "pansage",
+    "cdn_file": "pansage"
+  },
+  {
+    "name": "Pansear",
+    "key": "pansear",
+    "cdn_file": "pansear"
+  },
+  {
+    "name": "Paras",
+    "key": "paras",
+    "cdn_file": "paras"
+  },
+  {
+    "name": "Parasect",
+    "key": "parasect",
+    "cdn_file": "parasect"
+  },
+  {
+    "name": "Passimian",
+    "key": "passimian",
+    "cdn_file": "passimian"
+  },
+  {
+    "name": "Patrat",
+    "key": "patrat",
+    "cdn_file": "patrat"
+  },
+  {
+    "name": "Pawmi",
+    "key": "pawmi",
+    "cdn_file": "pawmi"
+  },
+  {
+    "name": "Pawmo",
+    "key": "pawmo",
+    "cdn_file": "pawmo"
+  },
+  {
+    "name": "Pawmot",
+    "key": "pawmot",
+    "cdn_file": "pawmot"
+  },
+  {
+    "name": "Pawniard",
+    "key": "pawniard",
+    "cdn_file": "pawniard"
+  },
+  {
+    "name": "Pecharunt",
+    "key": "pecharunt",
+    "cdn_file": "pecharunt"
+  },
+  {
+    "name": "Pelipper",
+    "key": "pelipper",
+    "cdn_file": "pelipper"
+  },
+  {
+    "name": "Perrserker",
+    "key": "perrserker",
+    "cdn_file": "perrserker"
+  },
+  {
+    "name": "Persian",
+    "key": "persian",
+    "cdn_file": "persian"
+  },
+  {
+    "name": "Persian (Alola)",
+    "key": "persian-alola",
+    "cdn_file": "persianalola"
+  },
+  {
+    "name": "Petilil",
+    "key": "petilil",
+    "cdn_file": "petilil"
+  },
+  {
+    "name": "Phanpy",
+    "key": "phanpy",
+    "cdn_file": "phanpy"
+  },
+  {
+    "name": "Phantump",
+    "key": "phantump",
+    "cdn_file": "phantump"
+  },
+  {
+    "name": "Pheromosa",
+    "key": "pheromosa",
+    "cdn_file": "pheromosa"
+  },
+  {
+    "name": "Phione",
+    "key": "phione",
+    "cdn_file": "phione"
+  },
+  {
+    "name": "Pichu",
+    "key": "pichu",
+    "cdn_file": "pichu"
+  },
+  {
+    "name": "Pidgeot",
+    "key": "pidgeot",
+    "cdn_file": "pidgeot"
+  },
+  {
+    "name": "Pidgeot (Mega)",
+    "key": "pidgeot-mega",
+    "cdn_file": "pidgeotmega"
+  },
+  {
+    "name": "Pidgeotto",
+    "key": "pidgeotto",
+    "cdn_file": "pidgeotto"
+  },
+  {
+    "name": "Pidgey",
+    "key": "pidgey",
+    "cdn_file": "pidgey"
+  },
+  {
+    "name": "Pidove",
+    "key": "pidove",
+    "cdn_file": "pidove"
+  },
+  {
+    "name": "Pignite",
+    "key": "pignite",
+    "cdn_file": "pignite"
+  },
+  {
+    "name": "Pikachu",
+    "key": "pikachu",
+    "cdn_file": "pikachu"
+  },
+  {
+    "name": "Pikachu (Alola Cap)",
+    "key": "pikachu-alola-cap",
+    "cdn_file": "pikachualolacap"
+  },
+  {
+    "name": "Pikachu (Belle)",
+    "key": "pikachu-belle",
+    "cdn_file": "pikachubelle"
+  },
+  {
+    "name": "Pikachu (Cosplay)",
+    "key": "pikachu-cosplay",
+    "cdn_file": "pikachucosplay"
+  },
+  {
+    "name": "Pikachu (Gmax)",
+    "key": "pikachu-gmax",
+    "cdn_file": "pikachugmax"
+  },
+  {
+    "name": "Pikachu (Hoenn Cap)",
+    "key": "pikachu-hoenn-cap",
+    "cdn_file": "pikachuhoenncap"
+  },
+  {
+    "name": "Pikachu (Kalos Cap)",
+    "key": "pikachu-kalos-cap",
+    "cdn_file": "pikachukaloscap"
+  },
+  {
+    "name": "Pikachu (Libre)",
+    "key": "pikachu-libre",
+    "cdn_file": "pikachulibre"
+  },
+  {
+    "name": "Pikachu (Original Cap)",
+    "key": "pikachu-original-cap",
+    "cdn_file": "pikachuoriginalcap"
+  },
+  {
+    "name": "Pikachu (Partner Cap)",
+    "key": "pikachu-partner-cap",
+    "cdn_file": "pikachupartnercap"
+  },
+  {
+    "name": "Pikachu (Phd)",
+    "key": "pikachu-phd",
+    "cdn_file": "pikachuphd"
+  },
+  {
+    "name": "Pikachu (Pop Star)",
+    "key": "pikachu-pop-star",
+    "cdn_file": "pikachupopstar"
+  },
+  {
+    "name": "Pikachu (Rock Star)",
+    "key": "pikachu-rock-star",
+    "cdn_file": "pikachurockstar"
+  },
+  {
+    "name": "Pikachu (Sinnoh Cap)",
+    "key": "pikachu-sinnoh-cap",
+    "cdn_file": "pikachusinnohcap"
+  },
+  {
+    "name": "Pikachu (Starter)",
+    "key": "pikachu-starter",
+    "cdn_file": "pikachustarter"
+  },
+  {
+    "name": "Pikachu (Unova Cap)",
+    "key": "pikachu-unova-cap",
+    "cdn_file": "pikachuunovacap"
+  },
+  {
+    "name": "Pikachu (World Cap)",
+    "key": "pikachu-world-cap",
+    "cdn_file": "pikachuworldcap"
+  },
+  {
+    "name": "Pikipek",
+    "key": "pikipek",
+    "cdn_file": "pikipek"
+  },
+  {
+    "name": "Piloswine",
+    "key": "piloswine",
+    "cdn_file": "piloswine"
+  },
+  {
+    "name": "Pincurchin",
+    "key": "pincurchin",
+    "cdn_file": "pincurchin"
+  },
+  {
+    "name": "Pineco",
+    "key": "pineco",
+    "cdn_file": "pineco"
+  },
+  {
+    "name": "Pinsir",
+    "key": "pinsir",
+    "cdn_file": "pinsir"
+  },
+  {
+    "name": "Pinsir (Mega)",
+    "key": "pinsir-mega",
+    "cdn_file": "pinsirmega"
+  },
+  {
+    "name": "Piplup",
+    "key": "piplup",
+    "cdn_file": "piplup"
+  },
+  {
+    "name": "Plusle",
+    "key": "plusle",
+    "cdn_file": "plusle"
+  },
+  {
+    "name": "Poipole",
+    "key": "poipole",
+    "cdn_file": "poipole"
+  },
+  {
+    "name": "Politoed",
+    "key": "politoed",
+    "cdn_file": "politoed"
+  },
+  {
+    "name": "Poliwag",
+    "key": "poliwag",
+    "cdn_file": "poliwag"
+  },
+  {
+    "name": "Poliwhirl",
+    "key": "poliwhirl",
+    "cdn_file": "poliwhirl"
+  },
+  {
+    "name": "Poliwrath",
+    "key": "poliwrath",
+    "cdn_file": "poliwrath"
+  },
+  {
+    "name": "Poltchageist",
+    "key": "poltchageist",
+    "cdn_file": "poltchageist"
+  },
+  {
+    "name": "Polteageist",
+    "key": "polteageist",
+    "cdn_file": "polteageist"
+  },
+  {
+    "name": "Ponyta",
+    "key": "ponyta",
+    "cdn_file": "ponyta"
+  },
+  {
+    "name": "Ponyta (Galar)",
+    "key": "ponyta-galar",
+    "cdn_file": "ponytagalar"
+  },
+  {
+    "name": "Poochyena",
+    "key": "poochyena",
+    "cdn_file": "poochyena"
+  },
+  {
+    "name": "Popplio",
+    "key": "popplio",
+    "cdn_file": "popplio"
+  },
+  {
+    "name": "Porygon",
+    "key": "porygon",
+    "cdn_file": "porygon"
+  },
+  {
+    "name": "Porygon-Z",
+    "key": "porygon-z",
+    "cdn_file": "porygonz"
+  },
+  {
+    "name": "Porygon2",
+    "key": "porygon2",
+    "cdn_file": "porygon2"
+  },
+  {
+    "name": "Primarina",
+    "key": "primarina",
+    "cdn_file": "primarina"
+  },
+  {
+    "name": "Primeape",
+    "key": "primeape",
+    "cdn_file": "primeape"
+  },
+  {
+    "name": "Prinplup",
+    "key": "prinplup",
+    "cdn_file": "prinplup"
+  },
+  {
+    "name": "Probopass",
+    "key": "probopass",
+    "cdn_file": "probopass"
+  },
+  {
+    "name": "Psyduck",
+    "key": "psyduck",
+    "cdn_file": "psyduck"
+  },
+  {
+    "name": "Pumpkaboo (Average)",
+    "key": "pumpkaboo-average",
+    "cdn_file": "pumpkabooaverage"
+  },
+  {
+    "name": "Pumpkaboo (Large)",
+    "key": "pumpkaboo-large",
+    "cdn_file": "pumpkaboolarge"
+  },
+  {
+    "name": "Pumpkaboo (Small)",
+    "key": "pumpkaboo-small",
+    "cdn_file": "pumpkaboosmall"
+  },
+  {
+    "name": "Pumpkaboo (Super)",
+    "key": "pumpkaboo-super",
+    "cdn_file": "pumpkaboosuper"
+  },
+  {
+    "name": "Pupitar",
+    "key": "pupitar",
+    "cdn_file": "pupitar"
+  },
+  {
+    "name": "Purrloin",
+    "key": "purrloin",
+    "cdn_file": "purrloin"
+  },
+  {
+    "name": "Purugly",
+    "key": "purugly",
+    "cdn_file": "purugly"
+  },
+  {
+    "name": "Pyroar (Male)",
+    "key": "pyroar-male",
+    "cdn_file": "pyroarmale"
+  },
+  {
+    "name": "Pyroar (Mega)",
+    "key": "pyroar-mega",
+    "cdn_file": "pyroarmega"
+  },
+  {
+    "name": "Pyukumuku",
+    "key": "pyukumuku",
+    "cdn_file": "pyukumuku"
+  },
+  {
+    "name": "Quagsire",
+    "key": "quagsire",
+    "cdn_file": "quagsire"
+  },
+  {
+    "name": "Quaquaval",
+    "key": "quaquaval",
+    "cdn_file": "quaquaval"
+  },
+  {
+    "name": "Quaxly",
+    "key": "quaxly",
+    "cdn_file": "quaxly"
+  },
+  {
+    "name": "Quaxwell",
+    "key": "quaxwell",
+    "cdn_file": "quaxwell"
+  },
+  {
+    "name": "Quilava",
+    "key": "quilava",
+    "cdn_file": "quilava"
+  },
+  {
+    "name": "Quilladin",
+    "key": "quilladin",
+    "cdn_file": "quilladin"
+  },
+  {
+    "name": "Qwilfish",
+    "key": "qwilfish",
+    "cdn_file": "qwilfish"
+  },
+  {
+    "name": "Qwilfish (Hisui)",
+    "key": "qwilfish-hisui",
+    "cdn_file": "qwilfishhisui"
+  },
+  {
+    "name": "Raboot",
+    "key": "raboot",
+    "cdn_file": "raboot"
+  },
+  {
+    "name": "Rabsca",
+    "key": "rabsca",
+    "cdn_file": "rabsca"
+  },
+  {
+    "name": "Raging Bolt",
+    "key": "raging-bolt",
+    "cdn_file": "ragingbolt"
+  },
+  {
+    "name": "Raichu",
+    "key": "raichu",
+    "cdn_file": "raichu"
+  },
+  {
+    "name": "Raichu (Alola)",
+    "key": "raichu-alola",
+    "cdn_file": "raichualola"
+  },
+  {
+    "name": "Raichu (Mega X)",
+    "key": "raichu-mega-x",
+    "cdn_file": "raichumegax"
+  },
+  {
+    "name": "Raichu (Mega Y)",
+    "key": "raichu-mega-y",
+    "cdn_file": "raichumegay"
+  },
+  {
+    "name": "Raikou",
+    "key": "raikou",
+    "cdn_file": "raikou"
+  },
+  {
+    "name": "Ralts",
+    "key": "ralts",
+    "cdn_file": "ralts"
+  },
+  {
+    "name": "Rampardos",
+    "key": "rampardos",
+    "cdn_file": "rampardos"
+  },
+  {
+    "name": "Rapidash",
+    "key": "rapidash",
+    "cdn_file": "rapidash"
+  },
+  {
+    "name": "Rapidash (Galar)",
+    "key": "rapidash-galar",
+    "cdn_file": "rapidashgalar"
+  },
+  {
+    "name": "Raticate",
+    "key": "raticate",
+    "cdn_file": "raticate"
+  },
+  {
+    "name": "Raticate (Alola)",
+    "key": "raticate-alola",
+    "cdn_file": "raticatealola"
+  },
+  {
+    "name": "Raticate (Totem Alola)",
+    "key": "raticate-totem-alola",
+    "cdn_file": "raticatetotemalola"
+  },
+  {
+    "name": "Rattata",
+    "key": "rattata",
+    "cdn_file": "rattata"
+  },
+  {
+    "name": "Rattata (Alola)",
+    "key": "rattata-alola",
+    "cdn_file": "rattataalola"
+  },
+  {
     "name": "Rayquaza",
     "key": "rayquaza",
     "cdn_file": "rayquaza"
+  },
+  {
+    "name": "Rayquaza (Mega)",
+    "key": "rayquaza-mega",
+    "cdn_file": "rayquazamega"
+  },
+  {
+    "name": "Regice",
+    "key": "regice",
+    "cdn_file": "regice"
+  },
+  {
+    "name": "Regidrago",
+    "key": "regidrago",
+    "cdn_file": "regidrago"
+  },
+  {
+    "name": "Regieleki",
+    "key": "regieleki",
+    "cdn_file": "regieleki"
+  },
+  {
+    "name": "Regigigas",
+    "key": "regigigas",
+    "cdn_file": "regigigas"
+  },
+  {
+    "name": "Regirock",
+    "key": "regirock",
+    "cdn_file": "regirock"
+  },
+  {
+    "name": "Registeel",
+    "key": "registeel",
+    "cdn_file": "registeel"
+  },
+  {
+    "name": "Relicanth",
+    "key": "relicanth",
+    "cdn_file": "relicanth"
+  },
+  {
+    "name": "Rellor",
+    "key": "rellor",
+    "cdn_file": "rellor"
+  },
+  {
+    "name": "Remoraid",
+    "key": "remoraid",
+    "cdn_file": "remoraid"
+  },
+  {
+    "name": "Reshiram",
+    "key": "reshiram",
+    "cdn_file": "reshiram"
+  },
+  {
+    "name": "Reuniclus",
+    "key": "reuniclus",
+    "cdn_file": "reuniclus"
+  },
+  {
+    "name": "Revavroom",
+    "key": "revavroom",
+    "cdn_file": "revavroom"
+  },
+  {
+    "name": "Rhydon",
+    "key": "rhydon",
+    "cdn_file": "rhydon"
+  },
+  {
+    "name": "Rhyhorn",
+    "key": "rhyhorn",
+    "cdn_file": "rhyhorn"
+  },
+  {
+    "name": "Rhyperior",
+    "key": "rhyperior",
+    "cdn_file": "rhyperior"
+  },
+  {
+    "name": "Ribombee",
+    "key": "ribombee",
+    "cdn_file": "ribombee"
+  },
+  {
+    "name": "Ribombee (Totem)",
+    "key": "ribombee-totem",
+    "cdn_file": "ribombeetotem"
+  },
+  {
+    "name": "Rillaboom",
+    "key": "rillaboom",
+    "cdn_file": "rillaboom"
+  },
+  {
+    "name": "Rillaboom (Gmax)",
+    "key": "rillaboom-gmax",
+    "cdn_file": "rillaboomgmax"
+  },
+  {
+    "name": "Riolu",
+    "key": "riolu",
+    "cdn_file": "riolu"
+  },
+  {
+    "name": "Roaring Moon",
+    "key": "roaring-moon",
+    "cdn_file": "roaringmoon"
+  },
+  {
+    "name": "Rockruff",
+    "key": "rockruff",
+    "cdn_file": "rockruff"
+  },
+  {
+    "name": "Rockruff (Own Tempo)",
+    "key": "rockruff-own-tempo",
+    "cdn_file": "rockruffowntempo"
+  },
+  {
+    "name": "Roggenrola",
+    "key": "roggenrola",
+    "cdn_file": "roggenrola"
+  },
+  {
+    "name": "Rolycoly",
+    "key": "rolycoly",
+    "cdn_file": "rolycoly"
+  },
+  {
+    "name": "Rookidee",
+    "key": "rookidee",
+    "cdn_file": "rookidee"
+  },
+  {
+    "name": "Roselia",
+    "key": "roselia",
+    "cdn_file": "roselia"
+  },
+  {
+    "name": "Roserade",
+    "key": "roserade",
+    "cdn_file": "roserade"
+  },
+  {
+    "name": "Rotom",
+    "key": "rotom",
+    "cdn_file": "rotom"
+  },
+  {
+    "name": "Rotom (Fan)",
+    "key": "rotom-fan",
+    "cdn_file": "rotomfan"
+  },
+  {
+    "name": "Rotom (Frost)",
+    "key": "rotom-frost",
+    "cdn_file": "rotomfrost"
+  },
+  {
+    "name": "Rotom (Heat)",
+    "key": "rotom-heat",
+    "cdn_file": "rotomheat"
+  },
+  {
+    "name": "Rotom (Mow)",
+    "key": "rotom-mow",
+    "cdn_file": "rotommow"
+  },
+  {
+    "name": "Rotom (Wash)",
+    "key": "rotom-wash",
+    "cdn_file": "rotomwash"
+  },
+  {
+    "name": "Rowlet",
+    "key": "rowlet",
+    "cdn_file": "rowlet"
+  },
+  {
+    "name": "Rufflet",
+    "key": "rufflet",
+    "cdn_file": "rufflet"
+  },
+  {
+    "name": "Runerigus",
+    "key": "runerigus",
+    "cdn_file": "runerigus"
+  },
+  {
+    "name": "Sableye",
+    "key": "sableye",
+    "cdn_file": "sableye"
+  },
+  {
+    "name": "Sableye (Mega)",
+    "key": "sableye-mega",
+    "cdn_file": "sableyemega"
+  },
+  {
+    "name": "Salamence",
+    "key": "salamence",
+    "cdn_file": "salamence"
+  },
+  {
+    "name": "Salamence (Mega)",
+    "key": "salamence-mega",
+    "cdn_file": "salamencemega"
+  },
+  {
+    "name": "Salandit",
+    "key": "salandit",
+    "cdn_file": "salandit"
+  },
+  {
+    "name": "Salazzle",
+    "key": "salazzle",
+    "cdn_file": "salazzle"
+  },
+  {
+    "name": "Salazzle (Totem)",
+    "key": "salazzle-totem",
+    "cdn_file": "salazzletotem"
+  },
+  {
+    "name": "Samurott",
+    "key": "samurott",
+    "cdn_file": "samurott"
+  },
+  {
+    "name": "Samurott (Hisui)",
+    "key": "samurott-hisui",
+    "cdn_file": "samurotthisui"
+  },
+  {
+    "name": "Sandaconda",
+    "key": "sandaconda",
+    "cdn_file": "sandaconda"
+  },
+  {
+    "name": "Sandaconda (Gmax)",
+    "key": "sandaconda-gmax",
+    "cdn_file": "sandacondagmax"
+  },
+  {
+    "name": "Sandile",
+    "key": "sandile",
+    "cdn_file": "sandile"
+  },
+  {
+    "name": "Sandshrew",
+    "key": "sandshrew",
+    "cdn_file": "sandshrew"
+  },
+  {
+    "name": "Sandshrew (Alola)",
+    "key": "sandshrew-alola",
+    "cdn_file": "sandshrewalola"
+  },
+  {
+    "name": "Sandslash",
+    "key": "sandslash",
+    "cdn_file": "sandslash"
+  },
+  {
+    "name": "Sandslash (Alola)",
+    "key": "sandslash-alola",
+    "cdn_file": "sandslashalola"
+  },
+  {
+    "name": "Sandy Shocks",
+    "key": "sandy-shocks",
+    "cdn_file": "sandyshocks"
+  },
+  {
+    "name": "Sandygast",
+    "key": "sandygast",
+    "cdn_file": "sandygast"
+  },
+  {
+    "name": "Sawk",
+    "key": "sawk",
+    "cdn_file": "sawk"
+  },
+  {
+    "name": "Sawsbuck",
+    "key": "sawsbuck",
+    "cdn_file": "sawsbuck"
+  },
+  {
+    "name": "Scatterbug",
+    "key": "scatterbug",
+    "cdn_file": "scatterbug"
+  },
+  {
+    "name": "Sceptile",
+    "key": "sceptile",
+    "cdn_file": "sceptile"
+  },
+  {
+    "name": "Sceptile (Mega)",
+    "key": "sceptile-mega",
+    "cdn_file": "sceptilemega"
+  },
+  {
+    "name": "Scizor",
+    "key": "scizor",
+    "cdn_file": "scizor"
+  },
+  {
+    "name": "Scizor (Mega)",
+    "key": "scizor-mega",
+    "cdn_file": "scizormega"
+  },
+  {
+    "name": "Scolipede",
+    "key": "scolipede",
+    "cdn_file": "scolipede"
+  },
+  {
+    "name": "Scolipede (Mega)",
+    "key": "scolipede-mega",
+    "cdn_file": "scolipedemega"
+  },
+  {
+    "name": "Scorbunny",
+    "key": "scorbunny",
+    "cdn_file": "scorbunny"
+  },
+  {
+    "name": "Scovillain",
+    "key": "scovillain",
+    "cdn_file": "scovillain"
+  },
+  {
+    "name": "Scovillain (Mega)",
+    "key": "scovillain-mega",
+    "cdn_file": "scovillainmega"
+  },
+  {
+    "name": "Scrafty",
+    "key": "scrafty",
+    "cdn_file": "scrafty"
+  },
+  {
+    "name": "Scrafty (Mega)",
+    "key": "scrafty-mega",
+    "cdn_file": "scraftymega"
+  },
+  {
+    "name": "Scraggy",
+    "key": "scraggy",
+    "cdn_file": "scraggy"
+  },
+  {
+    "name": "Scream Tail",
+    "key": "scream-tail",
+    "cdn_file": "screamtail"
+  },
+  {
+    "name": "Scyther",
+    "key": "scyther",
+    "cdn_file": "scyther"
+  },
+  {
+    "name": "Seadra",
+    "key": "seadra",
+    "cdn_file": "seadra"
+  },
+  {
+    "name": "Seaking",
+    "key": "seaking",
+    "cdn_file": "seaking"
+  },
+  {
+    "name": "Sealeo",
+    "key": "sealeo",
+    "cdn_file": "sealeo"
+  },
+  {
+    "name": "Seedot",
+    "key": "seedot",
+    "cdn_file": "seedot"
+  },
+  {
+    "name": "Seel",
+    "key": "seel",
+    "cdn_file": "seel"
+  },
+  {
+    "name": "Seismitoad",
+    "key": "seismitoad",
+    "cdn_file": "seismitoad"
+  },
+  {
+    "name": "Sentret",
+    "key": "sentret",
+    "cdn_file": "sentret"
+  },
+  {
+    "name": "Serperior",
+    "key": "serperior",
+    "cdn_file": "serperior"
+  },
+  {
+    "name": "Servine",
+    "key": "servine",
+    "cdn_file": "servine"
+  },
+  {
+    "name": "Seviper",
+    "key": "seviper",
+    "cdn_file": "seviper"
+  },
+  {
+    "name": "Sewaddle",
+    "key": "sewaddle",
+    "cdn_file": "sewaddle"
+  },
+  {
+    "name": "Sharpedo",
+    "key": "sharpedo",
+    "cdn_file": "sharpedo"
+  },
+  {
+    "name": "Sharpedo (Mega)",
+    "key": "sharpedo-mega",
+    "cdn_file": "sharpedomega"
+  },
+  {
+    "name": "Shaymin (Land)",
+    "key": "shaymin-land",
+    "cdn_file": "shayminland"
+  },
+  {
+    "name": "Shaymin (Sky)",
+    "key": "shaymin-sky",
+    "cdn_file": "shayminsky"
+  },
+  {
+    "name": "Shedinja",
+    "key": "shedinja",
+    "cdn_file": "shedinja"
+  },
+  {
+    "name": "Shelgon",
+    "key": "shelgon",
+    "cdn_file": "shelgon"
+  },
+  {
+    "name": "Shellder",
+    "key": "shellder",
+    "cdn_file": "shellder"
+  },
+  {
+    "name": "Shellos",
+    "key": "shellos",
+    "cdn_file": "shellos"
+  },
+  {
+    "name": "Shelmet",
+    "key": "shelmet",
+    "cdn_file": "shelmet"
+  },
+  {
+    "name": "Shieldon",
+    "key": "shieldon",
+    "cdn_file": "shieldon"
+  },
+  {
+    "name": "Shiftry",
+    "key": "shiftry",
+    "cdn_file": "shiftry"
+  },
+  {
+    "name": "Shiinotic",
+    "key": "shiinotic",
+    "cdn_file": "shiinotic"
+  },
+  {
+    "name": "Shinx",
+    "key": "shinx",
+    "cdn_file": "shinx"
+  },
+  {
+    "name": "Shroodle",
+    "key": "shroodle",
+    "cdn_file": "shroodle"
+  },
+  {
+    "name": "Shroomish",
+    "key": "shroomish",
+    "cdn_file": "shroomish"
+  },
+  {
+    "name": "Shuckle",
+    "key": "shuckle",
+    "cdn_file": "shuckle"
+  },
+  {
+    "name": "Shuppet",
+    "key": "shuppet",
+    "cdn_file": "shuppet"
+  },
+  {
+    "name": "Sigilyph",
+    "key": "sigilyph",
+    "cdn_file": "sigilyph"
+  },
+  {
+    "name": "Silcoon",
+    "key": "silcoon",
+    "cdn_file": "silcoon"
+  },
+  {
+    "name": "Silicobra",
+    "key": "silicobra",
+    "cdn_file": "silicobra"
+  },
+  {
+    "name": "Silvally",
+    "key": "silvally",
+    "cdn_file": "silvally"
+  },
+  {
+    "name": "Simipour",
+    "key": "simipour",
+    "cdn_file": "simipour"
+  },
+  {
+    "name": "Simisage",
+    "key": "simisage",
+    "cdn_file": "simisage"
+  },
+  {
+    "name": "Simisear",
+    "key": "simisear",
+    "cdn_file": "simisear"
+  },
+  {
+    "name": "Sinistcha",
+    "key": "sinistcha",
+    "cdn_file": "sinistcha"
+  },
+  {
+    "name": "Sinistea",
+    "key": "sinistea",
+    "cdn_file": "sinistea"
+  },
+  {
+    "name": "Sirfetch'd",
+    "key": "sirfetchd",
+    "cdn_file": "sirfetchd"
+  },
+  {
+    "name": "Sizzlipede",
+    "key": "sizzlipede",
+    "cdn_file": "sizzlipede"
+  },
+  {
+    "name": "Skarmory",
+    "key": "skarmory",
+    "cdn_file": "skarmory"
+  },
+  {
+    "name": "Skarmory (Mega)",
+    "key": "skarmory-mega",
+    "cdn_file": "skarmorymega"
+  },
+  {
+    "name": "Skeledirge",
+    "key": "skeledirge",
+    "cdn_file": "skeledirge"
+  },
+  {
+    "name": "Skiddo",
+    "key": "skiddo",
+    "cdn_file": "skiddo"
+  },
+  {
+    "name": "Skiploom",
+    "key": "skiploom",
+    "cdn_file": "skiploom"
+  },
+  {
+    "name": "Skitty",
+    "key": "skitty",
+    "cdn_file": "skitty"
+  },
+  {
+    "name": "Skorupi",
+    "key": "skorupi",
+    "cdn_file": "skorupi"
+  },
+  {
+    "name": "Skrelp",
+    "key": "skrelp",
+    "cdn_file": "skrelp"
+  },
+  {
+    "name": "Skuntank",
+    "key": "skuntank",
+    "cdn_file": "skuntank"
+  },
+  {
+    "name": "Skwovet",
+    "key": "skwovet",
+    "cdn_file": "skwovet"
+  },
+  {
+    "name": "Slaking",
+    "key": "slaking",
+    "cdn_file": "slaking"
+  },
+  {
+    "name": "Slakoth",
+    "key": "slakoth",
+    "cdn_file": "slakoth"
+  },
+  {
+    "name": "Sliggoo",
+    "key": "sliggoo",
+    "cdn_file": "sliggoo"
+  },
+  {
+    "name": "Sliggoo (Hisui)",
+    "key": "sliggoo-hisui",
+    "cdn_file": "sliggoohisui"
+  },
+  {
+    "name": "Slither Wing",
+    "key": "slither-wing",
+    "cdn_file": "slitherwing"
+  },
+  {
+    "name": "Slowbro",
+    "key": "slowbro",
+    "cdn_file": "slowbro"
+  },
+  {
+    "name": "Slowbro (Galar)",
+    "key": "slowbro-galar",
+    "cdn_file": "slowbrogalar"
+  },
+  {
+    "name": "Slowbro (Mega)",
+    "key": "slowbro-mega",
+    "cdn_file": "slowbromega"
+  },
+  {
+    "name": "Slowking",
+    "key": "slowking",
+    "cdn_file": "slowking"
+  },
+  {
+    "name": "Slowking (Galar)",
+    "key": "slowking-galar",
+    "cdn_file": "slowkinggalar"
+  },
+  {
+    "name": "Slowpoke",
+    "key": "slowpoke",
+    "cdn_file": "slowpoke"
+  },
+  {
+    "name": "Slowpoke (Galar)",
+    "key": "slowpoke-galar",
+    "cdn_file": "slowpokegalar"
+  },
+  {
+    "name": "Slugma",
+    "key": "slugma",
+    "cdn_file": "slugma"
+  },
+  {
+    "name": "Slurpuff",
+    "key": "slurpuff",
+    "cdn_file": "slurpuff"
+  },
+  {
+    "name": "Smeargle",
+    "key": "smeargle",
+    "cdn_file": "smeargle"
+  },
+  {
+    "name": "Smoliv",
+    "key": "smoliv",
+    "cdn_file": "smoliv"
+  },
+  {
+    "name": "Smoochum",
+    "key": "smoochum",
+    "cdn_file": "smoochum"
+  },
+  {
+    "name": "Sneasel",
+    "key": "sneasel",
+    "cdn_file": "sneasel"
+  },
+  {
+    "name": "Sneasel (Hisui)",
+    "key": "sneasel-hisui",
+    "cdn_file": "sneaselhisui"
+  },
+  {
+    "name": "Sneasler",
+    "key": "sneasler",
+    "cdn_file": "sneasler"
+  },
+  {
+    "name": "Snivy",
+    "key": "snivy",
+    "cdn_file": "snivy"
+  },
+  {
+    "name": "Snom",
+    "key": "snom",
+    "cdn_file": "snom"
+  },
+  {
+    "name": "Snorlax",
+    "key": "snorlax",
+    "cdn_file": "snorlax"
+  },
+  {
+    "name": "Snorlax (Gmax)",
+    "key": "snorlax-gmax",
+    "cdn_file": "snorlaxgmax"
+  },
+  {
+    "name": "Snorunt",
+    "key": "snorunt",
+    "cdn_file": "snorunt"
+  },
+  {
+    "name": "Snover",
+    "key": "snover",
+    "cdn_file": "snover"
+  },
+  {
+    "name": "Snubbull",
+    "key": "snubbull",
+    "cdn_file": "snubbull"
+  },
+  {
+    "name": "Sobble",
+    "key": "sobble",
+    "cdn_file": "sobble"
+  },
+  {
+    "name": "Solgaleo",
+    "key": "solgaleo",
+    "cdn_file": "solgaleo"
+  },
+  {
+    "name": "Solosis",
+    "key": "solosis",
+    "cdn_file": "solosis"
+  },
+  {
+    "name": "Solrock",
+    "key": "solrock",
+    "cdn_file": "solrock"
+  },
+  {
+    "name": "Spearow",
+    "key": "spearow",
+    "cdn_file": "spearow"
+  },
+  {
+    "name": "Spectrier",
+    "key": "spectrier",
+    "cdn_file": "spectrier"
+  },
+  {
+    "name": "Spewpa",
+    "key": "spewpa",
+    "cdn_file": "spewpa"
+  },
+  {
+    "name": "Spheal",
+    "key": "spheal",
+    "cdn_file": "spheal"
+  },
+  {
+    "name": "Spidops",
+    "key": "spidops",
+    "cdn_file": "spidops"
+  },
+  {
+    "name": "Spinarak",
+    "key": "spinarak",
+    "cdn_file": "spinarak"
+  },
+  {
+    "name": "Spinda",
+    "key": "spinda",
+    "cdn_file": "spinda"
+  },
+  {
+    "name": "Spiritomb",
+    "key": "spiritomb",
+    "cdn_file": "spiritomb"
+  },
+  {
+    "name": "Spoink",
+    "key": "spoink",
+    "cdn_file": "spoink"
+  },
+  {
+    "name": "Sprigatito",
+    "key": "sprigatito",
+    "cdn_file": "sprigatito"
+  },
+  {
+    "name": "Spritzee",
+    "key": "spritzee",
+    "cdn_file": "spritzee"
+  },
+  {
+    "name": "Squawkabilly (Blue Plumage)",
+    "key": "squawkabilly-blue-plumage",
+    "cdn_file": "squawkabillyblueplumage"
+  },
+  {
+    "name": "Squawkabilly (Green Plumage)",
+    "key": "squawkabilly-green-plumage",
+    "cdn_file": "squawkabillygreenplumage"
+  },
+  {
+    "name": "Squawkabilly (White Plumage)",
+    "key": "squawkabilly-white-plumage",
+    "cdn_file": "squawkabillywhiteplumage"
+  },
+  {
+    "name": "Squawkabilly (Yellow Plumage)",
+    "key": "squawkabilly-yellow-plumage",
+    "cdn_file": "squawkabillyyellowplumage"
+  },
+  {
+    "name": "Squirtle",
+    "key": "squirtle",
+    "cdn_file": "squirtle"
+  },
+  {
+    "name": "Stakataka",
+    "key": "stakataka",
+    "cdn_file": "stakataka"
+  },
+  {
+    "name": "Stantler",
+    "key": "stantler",
+    "cdn_file": "stantler"
+  },
+  {
+    "name": "Staraptor",
+    "key": "staraptor",
+    "cdn_file": "staraptor"
+  },
+  {
+    "name": "Staraptor (Mega)",
+    "key": "staraptor-mega",
+    "cdn_file": "staraptormega"
+  },
+  {
+    "name": "Staravia",
+    "key": "staravia",
+    "cdn_file": "staravia"
+  },
+  {
+    "name": "Starly",
+    "key": "starly",
+    "cdn_file": "starly"
+  },
+  {
+    "name": "Starmie",
+    "key": "starmie",
+    "cdn_file": "starmie"
+  },
+  {
+    "name": "Starmie (Mega)",
+    "key": "starmie-mega",
+    "cdn_file": "starmiemega"
+  },
+  {
+    "name": "Staryu",
+    "key": "staryu",
+    "cdn_file": "staryu"
+  },
+  {
+    "name": "Steelix",
+    "key": "steelix",
+    "cdn_file": "steelix"
+  },
+  {
+    "name": "Steelix (Mega)",
+    "key": "steelix-mega",
+    "cdn_file": "steelixmega"
+  },
+  {
+    "name": "Steenee",
+    "key": "steenee",
+    "cdn_file": "steenee"
+  },
+  {
+    "name": "Stonjourner",
+    "key": "stonjourner",
+    "cdn_file": "stonjourner"
+  },
+  {
+    "name": "Stoutland",
+    "key": "stoutland",
+    "cdn_file": "stoutland"
+  },
+  {
+    "name": "Stufful",
+    "key": "stufful",
+    "cdn_file": "stufful"
+  },
+  {
+    "name": "Stunfisk",
+    "key": "stunfisk",
+    "cdn_file": "stunfisk"
+  },
+  {
+    "name": "Stunfisk (Galar)",
+    "key": "stunfisk-galar",
+    "cdn_file": "stunfiskgalar"
+  },
+  {
+    "name": "Stunky",
+    "key": "stunky",
+    "cdn_file": "stunky"
+  },
+  {
+    "name": "Sudowoodo",
+    "key": "sudowoodo",
+    "cdn_file": "sudowoodo"
+  },
+  {
+    "name": "Suicune",
+    "key": "suicune",
+    "cdn_file": "suicune"
+  },
+  {
+    "name": "Sunflora",
+    "key": "sunflora",
+    "cdn_file": "sunflora"
+  },
+  {
+    "name": "Sunkern",
+    "key": "sunkern",
+    "cdn_file": "sunkern"
+  },
+  {
+    "name": "Surskit",
+    "key": "surskit",
+    "cdn_file": "surskit"
+  },
+  {
+    "name": "Swablu",
+    "key": "swablu",
+    "cdn_file": "swablu"
+  },
+  {
+    "name": "Swadloon",
+    "key": "swadloon",
+    "cdn_file": "swadloon"
+  },
+  {
+    "name": "Swalot",
+    "key": "swalot",
+    "cdn_file": "swalot"
+  },
+  {
+    "name": "Swampert",
+    "key": "swampert",
+    "cdn_file": "swampert"
+  },
+  {
+    "name": "Swampert (Mega)",
+    "key": "swampert-mega",
+    "cdn_file": "swampertmega"
+  },
+  {
+    "name": "Swanna",
+    "key": "swanna",
+    "cdn_file": "swanna"
+  },
+  {
+    "name": "Swellow",
+    "key": "swellow",
+    "cdn_file": "swellow"
+  },
+  {
+    "name": "Swinub",
+    "key": "swinub",
+    "cdn_file": "swinub"
+  },
+  {
+    "name": "Swirlix",
+    "key": "swirlix",
+    "cdn_file": "swirlix"
+  },
+  {
+    "name": "Swoobat",
+    "key": "swoobat",
+    "cdn_file": "swoobat"
+  },
+  {
+    "name": "Sylveon",
+    "key": "sylveon",
+    "cdn_file": "sylveon"
+  },
+  {
+    "name": "Tadbulb",
+    "key": "tadbulb",
+    "cdn_file": "tadbulb"
+  },
+  {
+    "name": "Taillow",
+    "key": "taillow",
+    "cdn_file": "taillow"
+  },
+  {
+    "name": "Talonflame",
+    "key": "talonflame",
+    "cdn_file": "talonflame"
+  },
+  {
+    "name": "Tandemaus",
+    "key": "tandemaus",
+    "cdn_file": "tandemaus"
+  },
+  {
+    "name": "Tangela",
+    "key": "tangela",
+    "cdn_file": "tangela"
+  },
+  {
+    "name": "Tangrowth",
+    "key": "tangrowth",
+    "cdn_file": "tangrowth"
+  },
+  {
+    "name": "Tapu Bulu",
+    "key": "tapu-bulu",
+    "cdn_file": "tapubulu"
+  },
+  {
+    "name": "Tapu Fini",
+    "key": "tapu-fini",
+    "cdn_file": "tapufini"
+  },
+  {
+    "name": "Tapu Koko",
+    "key": "tapu-koko",
+    "cdn_file": "tapukoko"
+  },
+  {
+    "name": "Tapu Lele",
+    "key": "tapu-lele",
+    "cdn_file": "tapulele"
+  },
+  {
+    "name": "Tarountula",
+    "key": "tarountula",
+    "cdn_file": "tarountula"
+  },
+  {
+    "name": "Tatsugiri (Curly)",
+    "key": "tatsugiri-curly",
+    "cdn_file": "tatsugiricurly"
+  },
+  {
+    "name": "Tatsugiri (Curly Mega)",
+    "key": "tatsugiri-curly-mega",
+    "cdn_file": "tatsugiricurlymega"
+  },
+  {
+    "name": "Tatsugiri (Droopy)",
+    "key": "tatsugiri-droopy",
+    "cdn_file": "tatsugiridroopy"
+  },
+  {
+    "name": "Tatsugiri (Droopy Mega)",
+    "key": "tatsugiri-droopy-mega",
+    "cdn_file": "tatsugiridroopymega"
+  },
+  {
+    "name": "Tatsugiri (Stretchy)",
+    "key": "tatsugiri-stretchy",
+    "cdn_file": "tatsugiristretchy"
+  },
+  {
+    "name": "Tatsugiri (Stretchy Mega)",
+    "key": "tatsugiri-stretchy-mega",
+    "cdn_file": "tatsugiristretchymega"
+  },
+  {
+    "name": "Tauros",
+    "key": "tauros",
+    "cdn_file": "tauros"
+  },
+  {
+    "name": "Tauros (Paldea Aqua Breed)",
+    "key": "tauros-paldea-aqua-breed",
+    "cdn_file": "taurospaldeaaquabreed"
+  },
+  {
+    "name": "Tauros (Paldea Blaze Breed)",
+    "key": "tauros-paldea-blaze-breed",
+    "cdn_file": "taurospaldeablazebreed"
+  },
+  {
+    "name": "Tauros (Paldea Combat Breed)",
+    "key": "tauros-paldea-combat-breed",
+    "cdn_file": "taurospaldeacombatbreed"
+  },
+  {
+    "name": "Teddiursa",
+    "key": "teddiursa",
+    "cdn_file": "teddiursa"
+  },
+  {
+    "name": "Tentacool",
+    "key": "tentacool",
+    "cdn_file": "tentacool"
+  },
+  {
+    "name": "Tentacruel",
+    "key": "tentacruel",
+    "cdn_file": "tentacruel"
+  },
+  {
+    "name": "Tepig",
+    "key": "tepig",
+    "cdn_file": "tepig"
+  },
+  {
+    "name": "Terapagos",
+    "key": "terapagos",
+    "cdn_file": "terapagos"
+  },
+  {
+    "name": "Terapagos (Stellar)",
+    "key": "terapagos-stellar",
+    "cdn_file": "terapagosstellar"
+  },
+  {
+    "name": "Terapagos (Terastal)",
+    "key": "terapagos-terastal",
+    "cdn_file": "terapagosterastal"
+  },
+  {
+    "name": "Terrakion",
+    "key": "terrakion",
+    "cdn_file": "terrakion"
+  },
+  {
+    "name": "Thievul",
+    "key": "thievul",
+    "cdn_file": "thievul"
+  },
+  {
+    "name": "Throh",
+    "key": "throh",
+    "cdn_file": "throh"
+  },
+  {
+    "name": "Thundurus (Incarnate)",
+    "key": "thundurus-incarnate",
+    "cdn_file": "thundurusincarnate"
+  },
+  {
+    "name": "Thundurus (Therian)",
+    "key": "thundurus-therian",
+    "cdn_file": "thundurustherian"
+  },
+  {
+    "name": "Thwackey",
+    "key": "thwackey",
+    "cdn_file": "thwackey"
+  },
+  {
+    "name": "Timburr",
+    "key": "timburr",
+    "cdn_file": "timburr"
+  },
+  {
+    "name": "Ting-Lu",
+    "key": "ting-lu",
+    "cdn_file": "tinglu"
+  },
+  {
+    "name": "Tinkatink",
+    "key": "tinkatink",
+    "cdn_file": "tinkatink"
+  },
+  {
+    "name": "Tinkaton",
+    "key": "tinkaton",
+    "cdn_file": "tinkaton"
+  },
+  {
+    "name": "Tinkatuff",
+    "key": "tinkatuff",
+    "cdn_file": "tinkatuff"
+  },
+  {
+    "name": "Tirtouga",
+    "key": "tirtouga",
+    "cdn_file": "tirtouga"
+  },
+  {
+    "name": "Toedscool",
+    "key": "toedscool",
+    "cdn_file": "toedscool"
+  },
+  {
+    "name": "Toedscruel",
+    "key": "toedscruel",
+    "cdn_file": "toedscruel"
+  },
+  {
+    "name": "Togedemaru",
+    "key": "togedemaru",
+    "cdn_file": "togedemaru"
+  },
+  {
+    "name": "Togedemaru (Totem)",
+    "key": "togedemaru-totem",
+    "cdn_file": "togedemarutotem"
+  },
+  {
+    "name": "Togekiss",
+    "key": "togekiss",
+    "cdn_file": "togekiss"
+  },
+  {
+    "name": "Togepi",
+    "key": "togepi",
+    "cdn_file": "togepi"
+  },
+  {
+    "name": "Togetic",
+    "key": "togetic",
+    "cdn_file": "togetic"
+  },
+  {
+    "name": "Torchic",
+    "key": "torchic",
+    "cdn_file": "torchic"
+  },
+  {
+    "name": "Torkoal",
+    "key": "torkoal",
+    "cdn_file": "torkoal"
+  },
+  {
+    "name": "Tornadus (Incarnate)",
+    "key": "tornadus-incarnate",
+    "cdn_file": "tornadusincarnate"
+  },
+  {
+    "name": "Tornadus (Therian)",
+    "key": "tornadus-therian",
+    "cdn_file": "tornadustherian"
+  },
+  {
+    "name": "Torracat",
+    "key": "torracat",
+    "cdn_file": "torracat"
+  },
+  {
+    "name": "Torterra",
+    "key": "torterra",
+    "cdn_file": "torterra"
+  },
+  {
+    "name": "Totodile",
+    "key": "totodile",
+    "cdn_file": "totodile"
+  },
+  {
+    "name": "Toucannon",
+    "key": "toucannon",
+    "cdn_file": "toucannon"
+  },
+  {
+    "name": "Toxapex",
+    "key": "toxapex",
+    "cdn_file": "toxapex"
+  },
+  {
+    "name": "Toxel",
+    "key": "toxel",
+    "cdn_file": "toxel"
+  },
+  {
+    "name": "Toxicroak",
+    "key": "toxicroak",
+    "cdn_file": "toxicroak"
+  },
+  {
+    "name": "Toxtricity (Amped)",
+    "key": "toxtricity-amped",
+    "cdn_file": "toxtricityamped"
+  },
+  {
+    "name": "Toxtricity (Amped Gmax)",
+    "key": "toxtricity-amped-gmax",
+    "cdn_file": "toxtricityampedgmax"
+  },
+  {
+    "name": "Toxtricity (Low Key)",
+    "key": "toxtricity-low-key",
+    "cdn_file": "toxtricitylowkey"
+  },
+  {
+    "name": "Toxtricity (Low Key Gmax)",
+    "key": "toxtricity-low-key-gmax",
+    "cdn_file": "toxtricitylowkeygmax"
+  },
+  {
+    "name": "Tranquill",
+    "key": "tranquill",
+    "cdn_file": "tranquill"
+  },
+  {
+    "name": "Trapinch",
+    "key": "trapinch",
+    "cdn_file": "trapinch"
+  },
+  {
+    "name": "Treecko",
+    "key": "treecko",
+    "cdn_file": "treecko"
+  },
+  {
+    "name": "Trevenant",
+    "key": "trevenant",
+    "cdn_file": "trevenant"
+  },
+  {
+    "name": "Tropius",
+    "key": "tropius",
+    "cdn_file": "tropius"
+  },
+  {
+    "name": "Trubbish",
+    "key": "trubbish",
+    "cdn_file": "trubbish"
+  },
+  {
+    "name": "Trumbeak",
+    "key": "trumbeak",
+    "cdn_file": "trumbeak"
+  },
+  {
+    "name": "Tsareena",
+    "key": "tsareena",
+    "cdn_file": "tsareena"
+  },
+  {
+    "name": "Turtonator",
+    "key": "turtonator",
+    "cdn_file": "turtonator"
+  },
+  {
+    "name": "Turtwig",
+    "key": "turtwig",
+    "cdn_file": "turtwig"
+  },
+  {
+    "name": "Tympole",
+    "key": "tympole",
+    "cdn_file": "tympole"
+  },
+  {
+    "name": "Tynamo",
+    "key": "tynamo",
+    "cdn_file": "tynamo"
+  },
+  {
+    "name": "Type: Null",
+    "key": "type-null",
+    "cdn_file": "typenull"
+  },
+  {
+    "name": "Typhlosion",
+    "key": "typhlosion",
+    "cdn_file": "typhlosion"
+  },
+  {
+    "name": "Typhlosion (Hisui)",
+    "key": "typhlosion-hisui",
+    "cdn_file": "typhlosionhisui"
+  },
+  {
+    "name": "Tyranitar",
+    "key": "tyranitar",
+    "cdn_file": "tyranitar"
+  },
+  {
+    "name": "Tyranitar (Mega)",
+    "key": "tyranitar-mega",
+    "cdn_file": "tyranitarmega"
+  },
+  {
+    "name": "Tyrantrum",
+    "key": "tyrantrum",
+    "cdn_file": "tyrantrum"
+  },
+  {
+    "name": "Tyrogue",
+    "key": "tyrogue",
+    "cdn_file": "tyrogue"
+  },
+  {
+    "name": "Tyrunt",
+    "key": "tyrunt",
+    "cdn_file": "tyrunt"
+  },
+  {
+    "name": "Umbreon",
+    "key": "umbreon",
+    "cdn_file": "umbreon"
+  },
+  {
+    "name": "Unfezant",
+    "key": "unfezant",
+    "cdn_file": "unfezant"
+  },
+  {
+    "name": "Unown",
+    "key": "unown",
+    "cdn_file": "unown"
+  },
+  {
+    "name": "Ursaluna",
+    "key": "ursaluna",
+    "cdn_file": "ursaluna"
+  },
+  {
+    "name": "Ursaluna (Bloodmoon)",
+    "key": "ursaluna-bloodmoon",
+    "cdn_file": "ursalunabloodmoon"
+  },
+  {
+    "name": "Ursaring",
+    "key": "ursaring",
+    "cdn_file": "ursaring"
+  },
+  {
+    "name": "Urshifu (Rapid Strike)",
+    "key": "urshifu-rapid-strike",
+    "cdn_file": "urshifurapidstrike"
+  },
+  {
+    "name": "Urshifu (Rapid Strike Gmax)",
+    "key": "urshifu-rapid-strike-gmax",
+    "cdn_file": "urshifurapidstrikegmax"
+  },
+  {
+    "name": "Urshifu (Single Strike)",
+    "key": "urshifu-single-strike",
+    "cdn_file": "urshifusinglestrike"
+  },
+  {
+    "name": "Urshifu (Single Strike Gmax)",
+    "key": "urshifu-single-strike-gmax",
+    "cdn_file": "urshifusinglestrikegmax"
+  },
+  {
+    "name": "Uxie",
+    "key": "uxie",
+    "cdn_file": "uxie"
+  },
+  {
+    "name": "Vanillish",
+    "key": "vanillish",
+    "cdn_file": "vanillish"
+  },
+  {
+    "name": "Vanillite",
+    "key": "vanillite",
+    "cdn_file": "vanillite"
+  },
+  {
+    "name": "Vanilluxe",
+    "key": "vanilluxe",
+    "cdn_file": "vanilluxe"
+  },
+  {
+    "name": "Vaporeon",
+    "key": "vaporeon",
+    "cdn_file": "vaporeon"
+  },
+  {
+    "name": "Varoom",
+    "key": "varoom",
+    "cdn_file": "varoom"
+  },
+  {
+    "name": "Veluza",
+    "key": "veluza",
+    "cdn_file": "veluza"
+  },
+  {
+    "name": "Venipede",
+    "key": "venipede",
+    "cdn_file": "venipede"
+  },
+  {
+    "name": "Venomoth",
+    "key": "venomoth",
+    "cdn_file": "venomoth"
+  },
+  {
+    "name": "Venonat",
+    "key": "venonat",
+    "cdn_file": "venonat"
+  },
+  {
+    "name": "Venusaur",
+    "key": "venusaur",
+    "cdn_file": "venusaur"
+  },
+  {
+    "name": "Venusaur (Gmax)",
+    "key": "venusaur-gmax",
+    "cdn_file": "venusaurgmax"
+  },
+  {
+    "name": "Venusaur (Mega)",
+    "key": "venusaur-mega",
+    "cdn_file": "venusaurmega"
+  },
+  {
+    "name": "Vespiquen",
+    "key": "vespiquen",
+    "cdn_file": "vespiquen"
+  },
+  {
+    "name": "Vibrava",
+    "key": "vibrava",
+    "cdn_file": "vibrava"
+  },
+  {
+    "name": "Victini",
+    "key": "victini",
+    "cdn_file": "victini"
+  },
+  {
+    "name": "Victreebel",
+    "key": "victreebel",
+    "cdn_file": "victreebel"
+  },
+  {
+    "name": "Victreebel (Mega)",
+    "key": "victreebel-mega",
+    "cdn_file": "victreebelmega"
+  },
+  {
+    "name": "Vigoroth",
+    "key": "vigoroth",
+    "cdn_file": "vigoroth"
+  },
+  {
+    "name": "Vikavolt",
+    "key": "vikavolt",
+    "cdn_file": "vikavolt"
+  },
+  {
+    "name": "Vikavolt (Totem)",
+    "key": "vikavolt-totem",
+    "cdn_file": "vikavolttotem"
+  },
+  {
+    "name": "Vileplume",
+    "key": "vileplume",
+    "cdn_file": "vileplume"
+  },
+  {
+    "name": "Virizion",
+    "key": "virizion",
+    "cdn_file": "virizion"
+  },
+  {
+    "name": "Vivillon",
+    "key": "vivillon",
+    "cdn_file": "vivillon"
+  },
+  {
+    "name": "Volbeat",
+    "key": "volbeat",
+    "cdn_file": "volbeat"
+  },
+  {
+    "name": "Volcanion",
+    "key": "volcanion",
+    "cdn_file": "volcanion"
+  },
+  {
+    "name": "Volcarona",
+    "key": "volcarona",
+    "cdn_file": "volcarona"
+  },
+  {
+    "name": "Voltorb",
+    "key": "voltorb",
+    "cdn_file": "voltorb"
+  },
+  {
+    "name": "Voltorb (Hisui)",
+    "key": "voltorb-hisui",
+    "cdn_file": "voltorbhisui"
+  },
+  {
+    "name": "Vullaby",
+    "key": "vullaby",
+    "cdn_file": "vullaby"
+  },
+  {
+    "name": "Vulpix",
+    "key": "vulpix",
+    "cdn_file": "vulpix"
+  },
+  {
+    "name": "Vulpix (Alola)",
+    "key": "vulpix-alola",
+    "cdn_file": "vulpixalola"
+  },
+  {
+    "name": "Wailmer",
+    "key": "wailmer",
+    "cdn_file": "wailmer"
+  },
+  {
+    "name": "Wailord",
+    "key": "wailord",
+    "cdn_file": "wailord"
+  },
+  {
+    "name": "Walking Wake",
+    "key": "walking-wake",
+    "cdn_file": "walkingwake"
+  },
+  {
+    "name": "Walrein",
+    "key": "walrein",
+    "cdn_file": "walrein"
+  },
+  {
+    "name": "Wartortle",
+    "key": "wartortle",
+    "cdn_file": "wartortle"
+  },
+  {
+    "name": "Watchog",
+    "key": "watchog",
+    "cdn_file": "watchog"
+  },
+  {
+    "name": "Wattrel",
+    "key": "wattrel",
+    "cdn_file": "wattrel"
+  },
+  {
+    "name": "Weavile",
+    "key": "weavile",
+    "cdn_file": "weavile"
+  },
+  {
+    "name": "Weedle",
+    "key": "weedle",
+    "cdn_file": "weedle"
+  },
+  {
+    "name": "Weepinbell",
+    "key": "weepinbell",
+    "cdn_file": "weepinbell"
+  },
+  {
+    "name": "Weezing",
+    "key": "weezing",
+    "cdn_file": "weezing"
+  },
+  {
+    "name": "Weezing (Galar)",
+    "key": "weezing-galar",
+    "cdn_file": "weezinggalar"
+  },
+  {
+    "name": "Whimsicott",
+    "key": "whimsicott",
+    "cdn_file": "whimsicott"
+  },
+  {
+    "name": "Whirlipede",
+    "key": "whirlipede",
+    "cdn_file": "whirlipede"
+  },
+  {
+    "name": "Whiscash",
+    "key": "whiscash",
+    "cdn_file": "whiscash"
+  },
+  {
+    "name": "Whismur",
+    "key": "whismur",
+    "cdn_file": "whismur"
+  },
+  {
+    "name": "Wigglytuff",
+    "key": "wigglytuff",
+    "cdn_file": "wigglytuff"
+  },
+  {
+    "name": "Wiglett",
+    "key": "wiglett",
+    "cdn_file": "wiglett"
+  },
+  {
+    "name": "Wimpod",
+    "key": "wimpod",
+    "cdn_file": "wimpod"
+  },
+  {
+    "name": "Wingull",
+    "key": "wingull",
+    "cdn_file": "wingull"
+  },
+  {
+    "name": "Wishiwashi (School)",
+    "key": "wishiwashi-school",
+    "cdn_file": "wishiwashischool"
+  },
+  {
+    "name": "Wishiwashi (Solo)",
+    "key": "wishiwashi-solo",
+    "cdn_file": "wishiwashisolo"
+  },
+  {
+    "name": "Wo-Chien",
+    "key": "wo-chien",
+    "cdn_file": "wochien"
+  },
+  {
+    "name": "Wobbuffet",
+    "key": "wobbuffet",
+    "cdn_file": "wobbuffet"
+  },
+  {
+    "name": "Woobat",
+    "key": "woobat",
+    "cdn_file": "woobat"
+  },
+  {
+    "name": "Wooloo",
+    "key": "wooloo",
+    "cdn_file": "wooloo"
+  },
+  {
+    "name": "Wooper",
+    "key": "wooper",
+    "cdn_file": "wooper"
+  },
+  {
+    "name": "Wooper (Paldea)",
+    "key": "wooper-paldea",
+    "cdn_file": "wooperpaldea"
+  },
+  {
+    "name": "Wormadam (Plant)",
+    "key": "wormadam-plant",
+    "cdn_file": "wormadamplant"
+  },
+  {
+    "name": "Wormadam (Sandy)",
+    "key": "wormadam-sandy",
+    "cdn_file": "wormadamsandy"
+  },
+  {
+    "name": "Wormadam (Trash)",
+    "key": "wormadam-trash",
+    "cdn_file": "wormadamtrash"
+  },
+  {
+    "name": "Wugtrio",
+    "key": "wugtrio",
+    "cdn_file": "wugtrio"
+  },
+  {
+    "name": "Wurmple",
+    "key": "wurmple",
+    "cdn_file": "wurmple"
+  },
+  {
+    "name": "Wynaut",
+    "key": "wynaut",
+    "cdn_file": "wynaut"
+  },
+  {
+    "name": "Wyrdeer",
+    "key": "wyrdeer",
+    "cdn_file": "wyrdeer"
+  },
+  {
+    "name": "Xatu",
+    "key": "xatu",
+    "cdn_file": "xatu"
+  },
+  {
+    "name": "Xerneas",
+    "key": "xerneas",
+    "cdn_file": "xerneas"
+  },
+  {
+    "name": "Xurkitree",
+    "key": "xurkitree",
+    "cdn_file": "xurkitree"
+  },
+  {
+    "name": "Yamask",
+    "key": "yamask",
+    "cdn_file": "yamask"
+  },
+  {
+    "name": "Yamask (Galar)",
+    "key": "yamask-galar",
+    "cdn_file": "yamaskgalar"
+  },
+  {
+    "name": "Yamper",
+    "key": "yamper",
+    "cdn_file": "yamper"
+  },
+  {
+    "name": "Yanma",
+    "key": "yanma",
+    "cdn_file": "yanma"
+  },
+  {
+    "name": "Yanmega",
+    "key": "yanmega",
+    "cdn_file": "yanmega"
+  },
+  {
+    "name": "Yungoos",
+    "key": "yungoos",
+    "cdn_file": "yungoos"
+  },
+  {
+    "name": "Yveltal",
+    "key": "yveltal",
+    "cdn_file": "yveltal"
+  },
+  {
+    "name": "Zacian",
+    "key": "zacian",
+    "cdn_file": "zacian"
+  },
+  {
+    "name": "Zacian (Crowned)",
+    "key": "zacian-crowned",
+    "cdn_file": "zaciancrowned"
+  },
+  {
+    "name": "Zamazenta",
+    "key": "zamazenta",
+    "cdn_file": "zamazenta"
+  },
+  {
+    "name": "Zamazenta (Crowned)",
+    "key": "zamazenta-crowned",
+    "cdn_file": "zamazentacrowned"
+  },
+  {
+    "name": "Zangoose",
+    "key": "zangoose",
+    "cdn_file": "zangoose"
+  },
+  {
+    "name": "Zapdos",
+    "key": "zapdos",
+    "cdn_file": "zapdos"
+  },
+  {
+    "name": "Zapdos (Galar)",
+    "key": "zapdos-galar",
+    "cdn_file": "zapdosgalar"
+  },
+  {
+    "name": "Zarude",
+    "key": "zarude",
+    "cdn_file": "zarude"
+  },
+  {
+    "name": "Zarude (Dada)",
+    "key": "zarude-dada",
+    "cdn_file": "zarudedada"
+  },
+  {
+    "name": "Zebstrika",
+    "key": "zebstrika",
+    "cdn_file": "zebstrika"
+  },
+  {
+    "name": "Zekrom",
+    "key": "zekrom",
+    "cdn_file": "zekrom"
+  },
+  {
+    "name": "Zeraora",
+    "key": "zeraora",
+    "cdn_file": "zeraora"
+  },
+  {
+    "name": "Zeraora (Mega)",
+    "key": "zeraora-mega",
+    "cdn_file": "zeraoramega"
+  },
+  {
+    "name": "Zigzagoon",
+    "key": "zigzagoon",
+    "cdn_file": "zigzagoon"
+  },
+  {
+    "name": "Zigzagoon (Galar)",
+    "key": "zigzagoon-galar",
+    "cdn_file": "zigzagoongalar"
+  },
+  {
+    "name": "Zoroark",
+    "key": "zoroark",
+    "cdn_file": "zoroark"
+  },
+  {
+    "name": "Zoroark (Hisui)",
+    "key": "zoroark-hisui",
+    "cdn_file": "zoroarkhisui"
+  },
+  {
+    "name": "Zorua",
+    "key": "zorua",
+    "cdn_file": "zorua"
+  },
+  {
+    "name": "Zorua (Hisui)",
+    "key": "zorua-hisui",
+    "cdn_file": "zoruahisui"
+  },
+  {
+    "name": "Zubat",
+    "key": "zubat",
+    "cdn_file": "zubat"
+  },
+  {
+    "name": "Zweilous",
+    "key": "zweilous",
+    "cdn_file": "zweilous"
+  },
+  {
+    "name": "Zygarde (10)",
+    "key": "zygarde-10",
+    "cdn_file": "zygarde10"
+  },
+  {
+    "name": "Zygarde (10 Power Construct)",
+    "key": "zygarde-10-power-construct",
+    "cdn_file": "zygarde10powerconstruct"
+  },
+  {
+    "name": "Zygarde (50)",
+    "key": "zygarde-50",
+    "cdn_file": "zygarde50"
+  },
+  {
+    "name": "Zygarde (50 Power Construct)",
+    "key": "zygarde-50-power-construct",
+    "cdn_file": "zygarde50powerconstruct"
+  },
+  {
+    "name": "Zygarde (Complete)",
+    "key": "zygarde-complete",
+    "cdn_file": "zygardecomplete"
+  },
+  {
+    "name": "Zygarde (Mega)",
+    "key": "zygarde-mega",
+    "cdn_file": "zygardemega"
   }
 ]
