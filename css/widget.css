@@ -52,7 +52,7 @@
   background: var(--slot-bg, rgba(0,0,0,0.3));
   box-shadow: var(--slot-shadow, none);
   clip-path: var(--slot-clip, none);
-  transition: opacity 300ms ease, transform 150ms ease;
+  transition: opacity var(--transition-normal), transform var(--transition-fast);
   opacity: 1;
 }
 
@@ -75,10 +75,6 @@
 
 /* Loading state skeleton */
 .pokemon-slot.slot-loading {
-  opacity: 0.3;
-}
-
-.pokemon-slot.slot-loading .sprite {
   filter: blur(4px) grayscale(1);
   animation: pulse 1.5s ease-in-out infinite;
 }
@@ -114,7 +110,6 @@
 /* Cyber border clipping */
 .pokemon-slot.border-cyber {
   clip-path: var(--slot-clip);
-  position: relative;
 }
 
 .pokemon-slot.border-cyber::before {
