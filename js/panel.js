@@ -21,6 +21,7 @@ let config = {
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
+const loadingView = $("#loadingView");
 const authView = $("#authView");
 const panelView = $("#panelView");
 const loginForm = $("#loginForm");
@@ -47,17 +48,20 @@ export async function initPanel() {
   }
 }
 
+function showView(activeView) {
+  [loadingView, authView, panelView].forEach(v => v.classList.remove("active"));
+  activeView.classList.add("active");
+}
+
 function handleAuthChange(user) {
   currentUser = user;
   if (user) {
     channelName = user.email.split('@')[0];
-    authView.classList.remove("active");
-    panelView.classList.add("active");
+    showView(panelView);
     channelDisplay.textContent = channelName;
     loadExistingConfig();
   } else {
-    authView.classList.add("active");
-    panelView.classList.remove("active");
+    showView(authView);
     channelName = "";
   }
 }

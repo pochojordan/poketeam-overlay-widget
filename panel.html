@@ -7,8 +7,16 @@
   <link rel="stylesheet" href="css/panel.css">
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div id="loadingView" class="auth-view active" style="display:flex;align-items:center;justify-content:center;min-height:100vh;">
+    <div style="text-align:center;">
+      <div style="width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.6s linear infinite;margin:0 auto 16px;"></div>
+      <p style="color:var(--text-muted);font-size:0.875rem;">Loading...</p>
+    </div>
+  </div>
+
   <!-- Auth View -->
-  <div id="authView" class="auth-view active">
+  <div id="authView" class="auth-view">
     <div class="auth-container">
       <h1>Pokémon Champions</h1>
       <p>Live Widget Management Panel</p>
