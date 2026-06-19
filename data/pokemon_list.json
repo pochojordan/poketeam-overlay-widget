@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Bulbasaur",
+    "key": "bulbasaur",
+    "cdn_file": "bulbasaur"
+  },
+  {
+    "name": "Charizard",
+    "key": "charizard",
+    "cdn_file": "charizard"
+  },
+  {
+    "name": "Pikachu",
+    "key": "pikachu",
+    "cdn_file": "pikachu"
+  },
+  {
+    "name": "Tapu Koko",
+    "key": "tapu-koko",
+    "cdn_file": "tapukoko"
+  },
+  {
+    "name": "Gengar",
+    "key": "gengar",
+    "cdn_file": "gengar"
+  },
+  {
+    "name": "Rayquaza",
+    "key": "rayquaza",
+    "cdn_file": "rayquaza"
+  }
+]
