@@ -83,46 +83,79 @@ body {
   gap: 8px;
   padding: 10px 20px;
   border: none;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background var(--transition-fast), opacity var(--transition-fast);
+  transition: background var(--transition-fast), color var(--transition-fast),
+    border-color var(--transition-fast), box-shadow var(--transition-fast),
+    transform var(--transition-fast), filter var(--transition-fast);
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent);
 }
 
 .btn:disabled {
-  opacity: 0.6;
+  opacity: 0.45;
+  filter: grayscale(0.3);
   cursor: not-allowed;
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: linear-gradient(135deg, #9466ff, #6b46c1);
   color: #fff;
+  box-shadow: 0 4px 12px rgba(130, 87, 229, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: var(--accent-hover);
+  background: linear-gradient(135deg, #a577ff, #7a51d8);
+  box-shadow: 0 6px 18px rgba(130, 87, 229, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
 }
 
 .btn-success {
-  background: var(--success);
+  background: linear-gradient(135deg, #3dbf6c, #20863e);
   color: #fff;
+  box-shadow: 0 4px 12px rgba(46, 164, 79, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.btn-success:hover:not(:disabled) {
+  background: linear-gradient(135deg, #4acb77, #259749);
+  box-shadow: 0 6px 18px rgba(46, 164, 79, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
 }
 
 .btn-danger {
-  background: var(--danger);
+  background: linear-gradient(135deg, #e04848, #b33535);
   color: #fff;
+  box-shadow: 0 4px 12px rgba(224, 72, 72, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ec5555, #c23b3b);
+  box-shadow: 0 6px 18px rgba(224, 72, 72, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
 }
 
 .btn-outline {
-  background: transparent;
+  background: color-mix(in srgb, var(--bg-secondary) 45%, transparent);
   border: 1px solid var(--border);
   color: var(--text-primary);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
-.btn-outline:hover {
+.btn-outline:hover:not(:disabled) {
   border-color: var(--accent);
   color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  box-shadow: 0 0 0 1px var(--accent), 0 4px 12px rgba(130, 87, 229, 0.3);
+  transform: translateY(-1px);
 }
 
 .btn-full {
@@ -715,62 +748,60 @@ body {
   margin: 0;
 }
 
-.saved-teams-list {
+.saved-teams-row {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 
-.saved-teams-empty {
-  color: var(--text-muted);
-  font-size: 0.875rem;
-  padding: 8px 0;
-}
-
-.saved-team-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 10px 12px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-}
-
-.saved-team-info {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.saved-teams-combobox {
+  flex: 1;
   min-width: 0;
 }
 
-.saved-team-name {
-  font-weight: 600;
-  font-size: 0.875rem;
+.saved-teams-combobox input {
+  cursor: pointer;
+  background-image: linear-gradient(45deg, transparent 50%, var(--text-muted) 50%),
+    linear-gradient(135deg, var(--text-muted) 50%, transparent 50%);
+  background-position: calc(100% - 14px) 50%, calc(100% - 10px) 50%;
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 28px;
 }
 
-.saved-team-sprites {
+.saved-teams-dropdown .combobox-item {
   display: flex;
-  gap: 4px;
+  align-items: center;
+  gap: 10px;
 }
 
-.saved-team-sprite {
-  width: 28px;
-  height: 28px;
+.saved-teams-dropdown .combobox-item.selected {
+  background: var(--accent-dim);
+  color: #fff;
+}
+
+.saved-team-option-sprites {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.saved-team-option-sprite {
+  width: 18px;
+  height: 18px;
   object-fit: contain;
   image-rendering: pixelated;
 }
 
-.saved-team-sprite-empty {
+.saved-team-option-sprite.saved-team-sprite-empty {
   background: var(--bg-tertiary);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
-.saved-team-actions {
-  display: flex;
-  gap: 8px;
-  flex-shrink: 0;
+.saved-team-option-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .btn-sm {

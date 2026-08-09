@@ -23,6 +23,7 @@ let config = {
 };
 let savedTeams = [];
 let overwritePending = false;
+let selectedTeamId = null;
 
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
@@ -43,7 +44,9 @@ const saveBtn = $("#saveBtn");
 const saveFeedback = $("#saveFeedback");
 const channelDisplay = $("#channelDisplay");
 const saveTeamBtn = $("#saveTeamBtn");
-const savedTeamsList = $("#savedTeamsList");
+const savedTeamSelect = $("#savedTeamSelect");
+const savedTeamDropdown = $("#savedTeamDropdown");
+const savedTeamDelete = $("#savedTeamDelete");
 const saveTeamModal = $("#saveTeamModal");
 const saveTeamHint = $("#saveTeamHint");
 const saveTeamName = $("#saveTeamName");
@@ -219,6 +222,10 @@ function bindPanelEvents() {
   });
 
   saveTeamBtn.addEventListener("click", openSaveTeamModal);
+  savedTeamSelect.addEventListener("click", () => savedTeamDropdown.classList.toggle("open"));
+  savedTeamDelete.addEventListener("click", () => {
+    if (selectedTeamId) deleteTeam(selectedTeamId);
+  });
   saveTeamCancel.addEventListener("click", closeSaveTeamModal);
   saveTeamAsNew.addEventListener("click", handleSaveTeamAsNew);
   saveTeamConfirm.addEventListener("click", handleSaveTeamConfirm);
@@ -511,29 +518,23 @@ function loadSavedTeamsForChannel() {
 }
 
 function renderSavedTeams() {
-  savedTeamsList.innerHTML = "";
+  savedTeamDropdown.innerHTML = "";
+  const selected = savedTeams.find(t => t.id === selectedTeamId) || null;
+  savedTeamSelect.value = selected ? selected.name : "";
+  savedTeamDelete.disabled = !selectedTeamId;
   if (savedTeams.length === 0) {
-    savedTeamsList.innerHTML = '<div class="saved-teams-empty">No saved teams yet.</div>';
+    savedTeamDropdown.innerHTML = '<div class="combobox-empty">No saved teams yet.</div>';
     return;
   }
   savedTeams.forEach(team => {
-    const card = document.createElement("div");
-    card.className = "saved-team-card";
-    card.innerHTML = `
-      <div class="saved-team-info">
-        <span class="saved-team-name"></span>
-        <div class="saved-team-sprites"></div>
-      </div>
-      <div class="saved-team-actions">
-        <button class="btn btn-outline btn-sm saved-team-load" data-id="${team.id}">Load</button>
-        <button class="btn btn-danger btn-sm saved-team-delete" data-id="${team.id}">Delete</button>
-      </div>
-    `;
-    card.querySelector(".saved-team-name").textContent = team.name;
-    const sprites = card.querySelector(".saved-team-sprites");
+    const option = document.createElement("div");
+    option.className = "combobox-item saved-team-option";
+    if (team.id === selectedTeamId) option.classList.add("selected");
+    const sprites = document.createElement("span");
+    sprites.className = "saved-team-option-sprites";
     for (const slot of (team.slots || [])) {
       const img = document.createElement("img");
-      img.className = "saved-team-sprite";
+      img.className = "saved-team-option-sprite";
       img.alt = "";
       if (slot.pokemonKey) {
         img.src = `https://play.pokemonshowdown.com/sprites/home-centered/${getSpriteId(slot.pokemonKey)}.png`;
@@ -542,18 +543,25 @@ function renderSavedTeams() {
       }
       sprites.appendChild(img);
     }
-    card.querySelector(".saved-team-load").addEventListener("click", () => loadTeam(team.id));
-    card.querySelector(".saved-team-delete").addEventListener("click", () => deleteTeam(team.id));
-    savedTeamsList.appendChild(card);
+    option.appendChild(sprites);
+    const name = document.createElement("span");
+    name.className = "saved-team-option-name";
+    name.textContent = team.name;
+    option.appendChild(name);
+    option.addEventListener("click", () => loadTeam(team.id));
+    savedTeamDropdown.appendChild(option);
   });
 }
 
 function loadTeam(id) {
   const team = savedTeams.find(t => t.id === id);
   if (!team) return;
+  selectedTeamId = id;
   teamSlots = (team.slots || []).map(s => ({ ...s }));
   renderSlots();
   updatePreview();
+  renderSavedTeams();
+  savedTeamDropdown.classList.remove("open");
   showSaveFeedback(`Loaded "${team.name}". Press Save to publish.`, false);
 }
 
@@ -569,6 +577,18 @@ function deleteTeam(id) {
     return;
   }
   savedTeams = teams;
+  if (selectedTeamId === id) {
+    selectedTeamId = null;
+    teamSlots = Array(6).fill(null).map(() => ({
+      pokemonKey: null,
+      pokemonName: "",
+      itemKey: null,
+      itemName: "",
+      shiny: false
+    }));
+    renderSlots();
+    updatePreview();
+  }
   renderSavedTeams();
   showSaveFeedback("Team deleted.", false);
 }
