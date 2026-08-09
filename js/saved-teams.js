@@ -9,7 +9,9 @@ export function loadTeams(channelName) {
     const raw = localStorage.getItem(storageKey(channelName));
     if (!raw) return [];
     const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
+    return Array.isArray(parsed)
+      ? parsed.filter(t => t && typeof t === "object" && Array.isArray(t.slots))
+      : [];
   } catch (error) {
     console.warn("Failed to load saved teams:", error);
     return [];

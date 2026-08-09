@@ -22,6 +22,7 @@ let config = {
   itemPos: "right"
 };
 let savedTeams = [];
+let overwritePending = false;
 
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
@@ -221,6 +222,14 @@ function bindPanelEvents() {
   saveTeamCancel.addEventListener("click", closeSaveTeamModal);
   saveTeamAsNew.addEventListener("click", handleSaveTeamAsNew);
   saveTeamConfirm.addEventListener("click", handleSaveTeamConfirm);
+  saveTeamName.addEventListener("input", () => {
+    if (!overwritePending) return;
+    overwritePending = false;
+    saveTeamHint.textContent = "Enter a name for this team.";
+    saveTeamHint.classList.remove("error");
+    saveTeamAsNew.style.display = "none";
+    saveTeamConfirm.textContent = "Save";
+  });
   saveTeamModal.addEventListener("click", (e) => {
     if (e.target === saveTeamModal) closeSaveTeamModal();
   });
@@ -522,7 +531,7 @@ function renderSavedTeams() {
     `;
     card.querySelector(".saved-team-name").textContent = team.name;
     const sprites = card.querySelector(".saved-team-sprites");
-    for (const slot of team.slots) {
+    for (const slot of (team.slots || [])) {
       const img = document.createElement("img");
       img.className = "saved-team-sprite";
       img.alt = "";
@@ -542,7 +551,7 @@ function renderSavedTeams() {
 function loadTeam(id) {
   const team = savedTeams.find(t => t.id === id);
   if (!team) return;
-  teamSlots = team.slots.map(s => ({ ...s }));
+  teamSlots = (team.slots || []).map(s => ({ ...s }));
   renderSlots();
   updatePreview();
   showSaveFeedback(`Loaded "${team.name}". Press Save to publish.`, false);
@@ -585,6 +594,7 @@ function openSaveTeamModal() {
   saveTeamHint.classList.remove("error");
   saveTeamAsNew.style.display = "none";
   saveTeamConfirm.textContent = "Save";
+  overwritePending = false;
   saveTeamModal.classList.add("open");
   saveTeamName.focus();
 }
@@ -597,19 +607,18 @@ function handleSaveTeamConfirm() {
     return;
   }
   const existing = savedTeams.find(t => t.name === name);
-  if (existing && saveTeamConfirm.textContent !== "Overwrite") {
+  if (existing && !overwritePending) {
     saveTeamHint.textContent = `A team named "${name}" already exists.`;
     saveTeamHint.classList.add("error");
     saveTeamAsNew.style.display = "inline-flex";
     saveTeamConfirm.textContent = "Overwrite";
+    overwritePending = true;
     return;
   }
   const slots = teamSlots.map(s => ({ ...s }));
   let teams;
   if (existing) {
-    existing.slots = slots;
-    existing.updatedAt = Date.now();
-    teams = savedTeams;
+    teams = savedTeams.map(t => t.id === existing.id ? { ...t, slots, updatedAt: Date.now() } : t);
   } else {
     const newTeam = { id: makeTeamId(), name, slots, updatedAt: Date.now() };
     teams = [...savedTeams, newTeam];
@@ -620,6 +629,7 @@ function handleSaveTeamConfirm() {
     showSaveFeedback("Could not save team: storage error.", true);
     return;
   }
+  overwritePending = false;
   savedTeams = teams;
   closeSaveTeamModal();
   renderSavedTeams();
