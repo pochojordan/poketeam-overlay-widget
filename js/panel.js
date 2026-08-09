@@ -533,8 +533,35 @@ function renderSavedTeams() {
       }
       sprites.appendChild(img);
     }
+    card.querySelector(".saved-team-load").addEventListener("click", () => loadTeam(team.id));
+    card.querySelector(".saved-team-delete").addEventListener("click", () => deleteTeam(team.id));
     savedTeamsList.appendChild(card);
   });
+}
+
+function loadTeam(id) {
+  const team = savedTeams.find(t => t.id === id);
+  if (!team) return;
+  teamSlots = team.slots.map(s => ({ ...s }));
+  renderSlots();
+  updatePreview();
+  showSaveFeedback(`Loaded "${team.name}". Press Save to publish.`, false);
+}
+
+function deleteTeam(id) {
+  const team = savedTeams.find(t => t.id === id);
+  if (!team) return;
+  if (!confirm(`Delete team "${team.name}"?`)) return;
+  const teams = savedTeams.filter(t => t.id !== id);
+  try {
+    persistTeams(channelName, teams);
+  } catch (error) {
+    showSaveFeedback("Could not delete team: storage error.", true);
+    return;
+  }
+  savedTeams = teams;
+  renderSavedTeams();
+  showSaveFeedback("Team deleted.", false);
 }
 
 function showSaveFeedback(msg, isError) {
