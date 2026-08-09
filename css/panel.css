@@ -222,7 +222,7 @@ body {
 /* === TOASTS === */
 #toastContainer {
   position: fixed;
-  top: 16px;
+  bottom: 16px;
   right: 16px;
   display: flex;
   flex-direction: column;
