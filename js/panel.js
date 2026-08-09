@@ -219,6 +219,7 @@ function bindPanelEvents() {
 
   saveTeamBtn.addEventListener("click", openSaveTeamModal);
   saveTeamCancel.addEventListener("click", closeSaveTeamModal);
+  saveTeamAsNew.addEventListener("click", handleSaveTeamAsNew);
   saveTeamConfirm.addEventListener("click", handleSaveTeamConfirm);
   saveTeamModal.addEventListener("click", (e) => {
     if (e.target === saveTeamModal) closeSaveTeamModal();
@@ -586,6 +587,24 @@ function handleSaveTeamConfirm() {
     const newTeam = { id: makeTeamId(), name, slots, updatedAt: Date.now() };
     teams = [...savedTeams, newTeam];
   }
+  try {
+    persistTeams(channelName, teams);
+  } catch (error) {
+    showSaveFeedback("Could not save team: storage error.", true);
+    return;
+  }
+  savedTeams = teams;
+  closeSaveTeamModal();
+  renderSavedTeams();
+  showSaveFeedback("Team saved!", false);
+}
+
+function handleSaveTeamAsNew() {
+  const name = saveTeamName.value.trim();
+  if (!name) return;
+  const copyName = `${name} (copy)`;
+  const newTeam = { id: makeTeamId(), name: copyName, slots: teamSlots.map(s => ({ ...s })), updatedAt: Date.now() };
+  const teams = [...savedTeams, newTeam];
   try {
     persistTeams(channelName, teams);
   } catch (error) {
