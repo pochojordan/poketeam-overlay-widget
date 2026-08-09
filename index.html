@@ -83,6 +83,13 @@
           </div>
           <div class="preview-frame" id="previewFrame"></div>
         </div>
+        <section class="saved-teams-section">
+          <div class="saved-teams-header">
+            <h2>Saved Teams</h2>
+            <button id="saveTeamBtn" class="btn btn-outline btn-sm">💾 Save current team</button>
+          </div>
+          <div id="savedTeamsList" class="saved-teams-list"></div>
+        </section>
         <div id="slotsContainer"></div>
       </div>
 
@@ -155,6 +162,19 @@
         <button id="importerPaste" class="btn btn-outline">📋 Paste from clipboard</button>
         <button id="importerCancel" class="btn btn-outline">Cancel</button>
         <button id="importerApply" class="btn btn-primary">Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="saveTeamModal" class="modal-overlay">
+    <div class="modal-content">
+      <h2>Save Team</h2>
+      <p id="saveTeamHint" class="save-team-hint">Enter a name for this team.</p>
+      <input type="text" id="saveTeamName" placeholder="Team name" autocomplete="off">
+      <div class="modal-actions">
+        <button id="saveTeamCancel" class="btn btn-outline">Cancel</button>
+        <button id="saveTeamAsNew" class="btn btn-outline" style="display:none;">Save as new</button>
+        <button id="saveTeamConfirm" class="btn btn-primary">Save</button>
       </div>
     </div>
   </div>

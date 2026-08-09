@@ -1,6 +1,7 @@
 import { auth } from "./firebase-config.js";
 import { loginStreamer, logoutStreamer, registerStreamer, setupAuthObserver } from "./auth-service.js";
 import { saveTeamConfig, getTeamConfig } from "./db-service.js";
+import { loadTeams, persistTeams, makeTeamId } from "./saved-teams.js";
 import { loadDictionaries, searchPokemon, searchItems, parseShowdownTeam, getPokemonByKey, getItemByKey } from "./importer-service.js";
 
 let currentUser = null;
@@ -20,6 +21,7 @@ let config = {
   slotGap: 8,
   itemPos: "right"
 };
+let savedTeams = [];
 
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
@@ -39,6 +41,14 @@ const importerPaste = $("#importerPaste");
 const saveBtn = $("#saveBtn");
 const saveFeedback = $("#saveFeedback");
 const channelDisplay = $("#channelDisplay");
+const saveTeamBtn = $("#saveTeamBtn");
+const savedTeamsList = $("#savedTeamsList");
+const saveTeamModal = $("#saveTeamModal");
+const saveTeamHint = $("#saveTeamHint");
+const saveTeamName = $("#saveTeamName");
+const saveTeamCancel = $("#saveTeamCancel");
+const saveTeamAsNew = $("#saveTeamAsNew");
+const saveTeamConfirm = $("#saveTeamConfirm");
 
 export async function initPanel() {
   try {
@@ -91,6 +101,7 @@ function handleAuthChange(user) {
     showView(panelView);
     channelDisplay.textContent = channelName;
     loadExistingConfig();
+    loadSavedTeamsForChannel();
   } else {
     showView(authView);
     channelName = "";
@@ -475,6 +486,47 @@ function applyConfigToUI() {
   $("#slotGapValue").textContent = config.slotGap + "px";
   const posRadio = document.querySelector(`[name=itemPos][value="${config.itemPos}"]`);
   if (posRadio) posRadio.checked = true;
+}
+
+function loadSavedTeamsForChannel() {
+  savedTeams = loadTeams(channelName);
+  renderSavedTeams();
+}
+
+function renderSavedTeams() {
+  savedTeamsList.innerHTML = "";
+  if (savedTeams.length === 0) {
+    savedTeamsList.innerHTML = '<div class="saved-teams-empty">No saved teams yet.</div>';
+    return;
+  }
+  savedTeams.forEach(team => {
+    const card = document.createElement("div");
+    card.className = "saved-team-card";
+    card.innerHTML = `
+      <div class="saved-team-info">
+        <span class="saved-team-name"></span>
+        <div class="saved-team-sprites"></div>
+      </div>
+      <div class="saved-team-actions">
+        <button class="btn btn-outline btn-sm saved-team-load" data-id="${team.id}">Load</button>
+        <button class="btn btn-danger btn-sm saved-team-delete" data-id="${team.id}">Delete</button>
+      </div>
+    `;
+    card.querySelector(".saved-team-name").textContent = team.name;
+    const sprites = card.querySelector(".saved-team-sprites");
+    for (const slot of team.slots) {
+      const img = document.createElement("img");
+      img.className = "saved-team-sprite";
+      img.alt = "";
+      if (slot.pokemonKey) {
+        img.src = `https://play.pokemonshowdown.com/sprites/home-centered/${getSpriteId(slot.pokemonKey)}.png`;
+      } else {
+        img.classList.add("saved-team-sprite-empty");
+      }
+      sprites.appendChild(img);
+    }
+    savedTeamsList.appendChild(card);
+  });
 }
 
 document.addEventListener("DOMContentLoaded", initPanel);
