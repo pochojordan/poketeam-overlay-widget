@@ -304,6 +304,7 @@ function renderSlots() {
 
     container.appendChild(editor);
   }
+  updateActiveBadges();
 }
 
 function setupCombobox(input, dropdown, searchFn, onSelect) {
@@ -421,6 +422,7 @@ function updatePreview() {
   }
 
   frame.appendChild(container);
+  updateActiveBadges();
 }
 
 function handleImporterApply() {
@@ -517,6 +519,21 @@ function loadSavedTeamsForChannel() {
   renderSavedTeams();
 }
 
+function isTeamActive(team, slots) {
+  const teamSlots = team.slots || [];
+  let hasPokemon = false;
+  for (let i = 0; i < 6; i++) {
+    const a = teamSlots[i];
+    const b = slots[i];
+    if (!a || !b) return false;
+    if (a.pokemonKey) hasPokemon = true;
+    if (a.pokemonKey !== b.pokemonKey) return false;
+    if (a.itemKey !== b.itemKey) return false;
+    if (a.shiny !== b.shiny) return false;
+  }
+  return hasPokemon;
+}
+
 function renderSavedTeams() {
   savedTeamDropdown.innerHTML = "";
   const selected = savedTeams.find(t => t.id === selectedTeamId) || null;
@@ -529,6 +546,7 @@ function renderSavedTeams() {
   savedTeams.forEach(team => {
     const option = document.createElement("div");
     option.className = "combobox-item saved-team-option";
+    option.dataset.id = team.id;
     if (team.id === selectedTeamId) option.classList.add("selected");
     const sprites = document.createElement("span");
     sprites.className = "saved-team-option-sprites";
@@ -550,6 +568,24 @@ function renderSavedTeams() {
     option.appendChild(name);
     option.addEventListener("click", () => loadTeam(team.id));
     savedTeamDropdown.appendChild(option);
+  });
+  updateActiveBadges();
+}
+
+function updateActiveBadges() {
+  document.querySelectorAll("#savedTeamDropdown .saved-team-option").forEach(optionEl => {
+    const team = savedTeams.find(t => t.id === optionEl.dataset.id);
+    const isActive = !!team && isTeamActive(team, teamSlots);
+    optionEl.classList.toggle("active", isActive);
+    let badge = optionEl.querySelector(".saved-team-active-badge");
+    if (isActive && !badge) {
+      badge = document.createElement("span");
+      badge.className = "saved-team-active-badge";
+      badge.textContent = "● ACTIVE";
+      optionEl.appendChild(badge);
+    } else if (!isActive && badge) {
+      badge.remove();
+    }
   });
 }
 

@@ -804,6 +804,26 @@ body {
   white-space: nowrap;
 }
 
+.saved-teams-dropdown .combobox-item .saved-team-option-name {
+  flex: 1;
+  min-width: 0;
+}
+
+.saved-team-active-badge {
+  flex-shrink: 0;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--success) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--success) 45%, transparent);
+  color: var(--success);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .btn-sm {
   padding: 6px 12px;
   font-size: 0.75rem;
