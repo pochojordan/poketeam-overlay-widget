@@ -219,15 +219,49 @@ body {
   font-size: 0.8rem;
 }
 
-.save-feedback {
-  font-size: 0.75rem;
-  color: var(--success);
-  opacity: 0;
-  transition: opacity var(--transition-normal);
+/* === TOASTS === */
+#toastContainer {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  z-index: 1100;
+  pointer-events: none;
 }
 
-.save-feedback.show {
+.toast {
+  max-width: 320px;
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity var(--transition-normal), transform var(--transition-normal);
+  pointer-events: auto;
+}
+
+.toast.show {
   opacity: 1;
+  transform: translateX(0);
+}
+
+.toast-success {
+  border-left: 3px solid var(--success);
+}
+
+.toast-error {
+  border-left: 3px solid var(--danger);
+}
+
+.toast-info {
+  border-left: 3px solid var(--accent);
 }
 
 /* === PANEL BODY === */

@@ -41,7 +41,6 @@ const importerApply = $("#importerApply");
 const importerCancel = $("#importerCancel");
 const importerPaste = $("#importerPaste");
 const saveBtn = $("#saveBtn");
-const saveFeedback = $("#saveFeedback");
 const channelDisplay = $("#channelDisplay");
 const saveTeamBtn = $("#saveTeamBtn");
 const savedTeamSelect = $("#savedTeamSelect");
@@ -488,17 +487,12 @@ async function handleImporterPaste() {
 async function handleSave() {
   saveBtn.disabled = true;
   saveBtn.classList.add("loading");
-  saveFeedback.classList.remove("show");
-  saveFeedback.style.color = "var(--success)";
 
   try {
     await saveTeamConfig(channelName, { slots: teamSlots, config });
-    saveFeedback.textContent = "Saved successfully!";
-    saveFeedback.classList.add("show");
+    showToast("Saved successfully!", "success");
   } catch (err) {
-    saveFeedback.textContent = `Error: ${err.message}`;
-    saveFeedback.style.color = "var(--danger)";
-    saveFeedback.classList.add("show");
+    showToast(`Error: ${err.message}`, "error");
   } finally {
     saveBtn.disabled = false;
     saveBtn.classList.remove("loading");
@@ -678,7 +672,7 @@ function loadTeam(id) {
   updatePreview();
   renderSavedTeams();
   closeSavedTeamDropdown();
-  showSaveFeedback(`Loaded "${team.name}". Press Save to publish.`, false);
+  showToast(`Loaded "${team.name}". Press Save to publish.`, "info");
 }
 
 function deleteTeam(id) {
@@ -689,7 +683,7 @@ function deleteTeam(id) {
   try {
     persistTeams(channelName, teams);
   } catch (error) {
-    showSaveFeedback("Could not delete team: storage error.", true);
+    showToast("Could not delete team: storage error.", "error");
     return;
   }
   savedTeams = teams;
@@ -706,13 +700,22 @@ function deleteTeam(id) {
     updatePreview();
   }
   renderSavedTeams();
-  showSaveFeedback("Team deleted.", false);
+  showToast("Team deleted.", "success");
 }
 
-function showSaveFeedback(msg, isError) {
-  saveFeedback.textContent = msg;
-  saveFeedback.style.color = isError ? "var(--danger)" : "var(--success)";
-  saveFeedback.classList.add("show");
+function showToast(message, type) {
+  const container = $("#toastContainer");
+  const toast = document.createElement("div");
+  toast.className = `toast toast-${type}`;
+  toast.textContent = message;
+  container.appendChild(toast);
+  requestAnimationFrame(() => requestAnimationFrame(() => toast.classList.add("show")));
+  setTimeout(() => {
+    toast.classList.remove("show");
+    setTimeout(() => {
+      if (toast.isConnected) toast.remove();
+    }, 200);
+  }, 3000);
 }
 
 function closeSaveTeamModal() {
@@ -722,7 +725,7 @@ function closeSaveTeamModal() {
 function openSaveTeamModal() {
   const hasAny = teamSlots.some(s => s.pokemonKey);
   if (!hasAny) {
-    showSaveFeedback("Add at least one Pokémon before saving a team.", true);
+    showToast("Add at least one Pokémon before saving a team.", "info");
     return;
   }
   saveTeamName.value = "";
@@ -762,14 +765,14 @@ function handleSaveTeamConfirm() {
   try {
     persistTeams(channelName, teams);
   } catch (error) {
-    showSaveFeedback("Could not save team: storage error.", true);
+    showToast("Could not save team: storage error.", "error");
     return;
   }
   overwritePending = false;
   savedTeams = teams;
   closeSaveTeamModal();
   renderSavedTeams();
-  showSaveFeedback("Team saved!", false);
+  showToast("Team saved!", "success");
 }
 
 function handleSaveTeamAsNew() {
@@ -781,13 +784,13 @@ function handleSaveTeamAsNew() {
   try {
     persistTeams(channelName, teams);
   } catch (error) {
-    showSaveFeedback("Could not save team: storage error.", true);
+    showToast("Could not save team: storage error.", "error");
     return;
   }
   savedTeams = teams;
   closeSaveTeamModal();
   renderSavedTeams();
-  showSaveFeedback("Team saved!", false);
+  showToast("Team saved!", "success");
 }
 
 document.addEventListener("DOMContentLoaded", initPanel);
