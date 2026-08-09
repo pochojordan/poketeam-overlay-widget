@@ -216,6 +216,13 @@ function bindPanelEvents() {
       document.querySelectorAll(".combobox-dropdown.open").forEach(d => d.classList.remove("open"));
     }
   });
+
+  saveTeamBtn.addEventListener("click", openSaveTeamModal);
+  saveTeamCancel.addEventListener("click", closeSaveTeamModal);
+  saveTeamConfirm.addEventListener("click", handleSaveTeamConfirm);
+  saveTeamModal.addEventListener("click", (e) => {
+    if (e.target === saveTeamModal) closeSaveTeamModal();
+  });
 }
 
 function renderSlots() {
@@ -527,6 +534,68 @@ function renderSavedTeams() {
     }
     savedTeamsList.appendChild(card);
   });
+}
+
+function showSaveFeedback(msg, isError) {
+  saveFeedback.textContent = msg;
+  saveFeedback.style.color = isError ? "var(--danger)" : "var(--success)";
+  saveFeedback.classList.add("show");
+}
+
+function closeSaveTeamModal() {
+  saveTeamModal.classList.remove("open");
+}
+
+function openSaveTeamModal() {
+  const hasAny = teamSlots.some(s => s.pokemonKey);
+  if (!hasAny) {
+    showSaveFeedback("Add at least one Pokémon before saving a team.", true);
+    return;
+  }
+  saveTeamName.value = "";
+  saveTeamHint.textContent = "Enter a name for this team.";
+  saveTeamHint.classList.remove("error");
+  saveTeamAsNew.style.display = "none";
+  saveTeamConfirm.textContent = "Save";
+  saveTeamModal.classList.add("open");
+  saveTeamName.focus();
+}
+
+function handleSaveTeamConfirm() {
+  const name = saveTeamName.value.trim();
+  if (!name) {
+    saveTeamHint.textContent = "The team name cannot be empty.";
+    saveTeamHint.classList.add("error");
+    return;
+  }
+  const existing = savedTeams.find(t => t.name === name);
+  if (existing && saveTeamConfirm.textContent !== "Overwrite") {
+    saveTeamHint.textContent = `A team named "${name}" already exists.`;
+    saveTeamHint.classList.add("error");
+    saveTeamAsNew.style.display = "inline-flex";
+    saveTeamConfirm.textContent = "Overwrite";
+    return;
+  }
+  const slots = teamSlots.map(s => ({ ...s }));
+  let teams;
+  if (existing) {
+    existing.slots = slots;
+    existing.updatedAt = Date.now();
+    teams = savedTeams;
+  } else {
+    const newTeam = { id: makeTeamId(), name, slots, updatedAt: Date.now() };
+    teams = [...savedTeams, newTeam];
+  }
+  try {
+    persistTeams(channelName, teams);
+  } catch (error) {
+    showSaveFeedback("Could not save team: storage error.", true);
+    return;
+  }
+  savedTeams = teams;
+  closeSaveTeamModal();
+  renderSavedTeams();
+  showSaveFeedback("Team saved!", false);
 }
 
 document.addEventListener("DOMContentLoaded", initPanel);
