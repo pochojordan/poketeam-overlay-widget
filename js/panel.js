@@ -109,6 +109,17 @@ function handleAuthChange(user) {
   } else {
     showView(authView);
     channelName = "";
+    savedTeams = [];
+    selectedTeamId = null;
+    overwritePending = false;
+    teamSlots = Array(6).fill(null).map(() => ({
+      pokemonKey: null,
+      pokemonName: "",
+      itemKey: null,
+      itemName: "",
+      shiny: false
+    }));
+    renderSavedTeams();
   }
 }
 
@@ -217,12 +228,33 @@ function bindPanelEvents() {
 
   document.addEventListener("click", (e) => {
     if (!e.target.closest(".combobox-wrapper")) {
-      document.querySelectorAll(".combobox-dropdown.open").forEach(d => d.classList.remove("open"));
+      document.querySelectorAll(".combobox-dropdown.open").forEach(d => {
+        d.classList.remove("open");
+        if (d === savedTeamDropdown) savedTeamSelect.setAttribute("aria-expanded", "false");
+      });
     }
   });
 
   saveTeamBtn.addEventListener("click", openSaveTeamModal);
-  savedTeamSelect.addEventListener("click", () => savedTeamDropdown.classList.toggle("open"));
+  savedTeamSelect.addEventListener("click", toggleSavedTeamDropdown);
+  savedTeamSelect.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggleSavedTeamDropdown();
+    } else if (e.key === "ArrowDown") {
+      e.preventDefault();
+      openSavedTeamDropdown();
+      const options = Array.from(savedTeamDropdown.querySelectorAll(".combobox-item"));
+      if (options.length) {
+        moveSavedTeamHighlight(options, options[0]);
+        options[0].focus();
+      }
+    } else if (e.key === "Escape") {
+      e.preventDefault();
+      closeSavedTeamDropdown();
+      savedTeamSelect.focus();
+    }
+  });
   savedTeamDelete.addEventListener("click", () => {
     if (selectedTeamId) deleteTeam(selectedTeamId);
   });
@@ -519,6 +551,26 @@ function loadSavedTeamsForChannel() {
   renderSavedTeams();
 }
 
+function openSavedTeamDropdown() {
+  savedTeamDropdown.classList.add("open");
+  savedTeamSelect.setAttribute("aria-expanded", "true");
+}
+
+function closeSavedTeamDropdown() {
+  savedTeamDropdown.classList.remove("open");
+  savedTeamSelect.setAttribute("aria-expanded", "false");
+}
+
+function toggleSavedTeamDropdown() {
+  if (savedTeamDropdown.classList.contains("open")) closeSavedTeamDropdown();
+  else openSavedTeamDropdown();
+}
+
+function moveSavedTeamHighlight(options, target) {
+  options.forEach(o => o.classList.remove("highlighted"));
+  target.classList.add("highlighted");
+}
+
 function isTeamActive(team, slots) {
   const teamSlots = team.slots || [];
   let hasPokemon = false;
@@ -547,6 +599,9 @@ function renderSavedTeams() {
     const option = document.createElement("div");
     option.className = "combobox-item saved-team-option";
     option.dataset.id = team.id;
+    option.setAttribute("role", "option");
+    option.setAttribute("tabindex", "-1");
+    option.setAttribute("aria-selected", team.id === selectedTeamId ? "true" : "false");
     if (team.id === selectedTeamId) option.classList.add("selected");
     const sprites = document.createElement("span");
     sprites.className = "saved-team-option-sprites";
@@ -567,6 +622,32 @@ function renderSavedTeams() {
     name.textContent = team.name;
     option.appendChild(name);
     option.addEventListener("click", () => loadTeam(team.id));
+    option.addEventListener("keydown", (e) => {
+      const options = Array.from(savedTeamDropdown.querySelectorAll(".combobox-item"));
+      const idx = options.indexOf(option);
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        loadTeam(team.id);
+      } else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const next = options[idx + 1];
+        if (next) {
+          moveSavedTeamHighlight(options, next);
+          next.focus();
+        }
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        const prev = options[idx - 1];
+        if (prev) {
+          moveSavedTeamHighlight(options, prev);
+          prev.focus();
+        }
+      } else if (e.key === "Escape") {
+        e.preventDefault();
+        closeSavedTeamDropdown();
+        savedTeamSelect.focus();
+      }
+    });
     savedTeamDropdown.appendChild(option);
   });
   updateActiveBadges();
@@ -576,7 +657,6 @@ function updateActiveBadges() {
   document.querySelectorAll("#savedTeamDropdown .saved-team-option").forEach(optionEl => {
     const team = savedTeams.find(t => t.id === optionEl.dataset.id);
     const isActive = !!team && isTeamActive(team, teamSlots);
-    optionEl.classList.toggle("active", isActive);
     let badge = optionEl.querySelector(".saved-team-active-badge");
     if (isActive && !badge) {
       badge = document.createElement("span");
@@ -597,7 +677,7 @@ function loadTeam(id) {
   renderSlots();
   updatePreview();
   renderSavedTeams();
-  savedTeamDropdown.classList.remove("open");
+  closeSavedTeamDropdown();
   showSaveFeedback(`Loaded "${team.name}". Press Save to publish.`, false);
 }
 

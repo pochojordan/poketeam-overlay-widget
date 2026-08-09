@@ -90,10 +90,10 @@
           </div>
           <div class="saved-teams-row">
             <div class="combobox-wrapper saved-teams-combobox">
-              <input type="text" id="savedTeamSelect" readonly autocomplete="off" placeholder="Select a saved team...">
-              <div class="combobox-dropdown saved-teams-dropdown" id="savedTeamDropdown"></div>
+              <input type="text" id="savedTeamSelect" readonly autocomplete="off" placeholder="Select a saved team..." role="combobox" aria-expanded="false" aria-controls="savedTeamDropdown">
+              <div class="combobox-dropdown saved-teams-dropdown" id="savedTeamDropdown" role="listbox"></div>
             </div>
-            <button id="savedTeamDelete" class="btn btn-danger btn-sm" disabled>🗑</button>
+            <button id="savedTeamDelete" class="btn btn-danger btn-sm" disabled aria-label="Delete selected team" title="Delete selected team">🗑</button>
           </div>
         </section>
         <div id="slotsContainer"></div>
